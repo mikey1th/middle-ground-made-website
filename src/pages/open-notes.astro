@@ -1,0 +1,32 @@
+---
+
+import '../styles/global.css';
+import Navigation from '../components/navigation.astro'
+
+
+const pageTitle = "Open-Notes";
+
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+	<Navigation />
+		<h1>{pageTitle}</h1>
+		<p> Open Notes, is a collection of essays that share small thjoughts about the big picture. The Open Notes Published Archive is upded on
+		a weekly basis. Each month one note is shared via the Ground Up Newsletter. Occassionaly notes are collected and oublished as a physical book!</p>
+		<ul>
+			<li> <a href="/src/pages/open-notes-archive/pages-per-day.md"> Pages per Day</a></li>
+			<li> <a href="/src/pages/open-notes-archive/the-tree-spirit.md"> The Tree Spirit</a></li>
+			<li> <a href="/src/pages/open-notes-archive/democratization-vs-decentralization.md"> Democratization vs Decentralization</a></li>
+		</ul>
+	</body>
+</html>
