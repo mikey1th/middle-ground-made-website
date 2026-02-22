@@ -1,4 +1,14 @@
 ---
+const pageTitle = "About";
+
+const aboutMiddleGround = {
+    location: "Greenville, SC",
+    whatIs: "Heirloom design studio",
+    forProduct: "digital essentalists",
+    forService: "people making a difference",
+    owner: "Mikey Hayes",
+    foundedDate: "2019",
+};
 
 ---
 
@@ -9,20 +19,21 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>About</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 	    <a href="/">Home</a>
         <a href="/about/">About</a>
-        <a href="/blog/">Open Notes</a>
+        <a href="/open-notes/">Open Notes</a>
         <main>
          <section class="About Context">
       <div class="container">
-        <h1>About</h1>
+        <h1>{pageTitle}</h1>
         <hr>
-        <p>ThereS's not too much to earn about Middle Ground Made. Ots a Deisgn Studio founded in Greenville SC. Its owned and operated by MIkey Hayes,
-        who is also writing this copy and every othe rpice of copy on this website.
-        Middle Ground, is, in essence the entire collection of my creative work.</p>
+        <p>What Middle Ground Made is has always changed. When I first started sharing work in {aboutMiddleGround.foundedDate} it wasn't anything. Middle Ground essentially started as a generic "bucket"
+            for my creative work. In 2020 I called Middle Ground a "design shop" in 2021 after I release my first book I reframed Middle Ground as a "design and publishing" studio.
+            Each change in perspective made Middle Ground more honest. Now though I think Middle Ground made is {aboutMiddleGround.whatIs}. I make products for {aboutMiddleGround.forProduct} and offer services to {aboutMiddleGround.forService}.
+            I do all this from {aboutMiddleGround.location}. As a final note {aboutMiddleGround.owner} the founder and sole operator of Midde Ground Made.</p>
       </div>
     </section>
   </main>
