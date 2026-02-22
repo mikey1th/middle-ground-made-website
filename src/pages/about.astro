@@ -1,4 +1,14 @@
 ---
+const pageTitle = "About";
+
+const aboutMiddleGround = {
+    location: "Greenville, SC",
+    whatIs: "Heirloom design studio",
+    forProduct: "digital essentalists",
+    forService: "people making a difference",
+    owner: "Mikey Hayes",
+    foundedDate: "2019",
+};
 
 import '../styles/global.css';
 import Navigation from '../components/navigation.astro'
@@ -31,6 +41,7 @@ const linkCase = "uppercase";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+<<<<<<< HEAD
         <style define:vars={{linkColor, linkWeight, linkCase}}>
             h1 {
             color: purple;
@@ -46,6 +57,13 @@ const linkCase = "uppercase";
 	</head>
 	<body>
 	    <Navigation />
+=======
+	</head>
+	<body>
+	    <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/open-notes/">Open Notes</a>
+>>>>>>> 2653e5bdf11c488ffa6c1fc9a8364a252545b994
         <main>
          <section class="About Context">
       <div class="container">
@@ -55,11 +73,14 @@ const linkCase = "uppercase";
             for my creative work. In 2020 I called Middle Ground a "design shop" in 2021 after I release my first book I reframed Middle Ground as a "design and publishing" studio.
             Each change in perspective made Middle Ground more honest. Now though I think Middle Ground made is {aboutMiddleGround.whatIs}. I make products for {aboutMiddleGround.forProduct} and offer services to {aboutMiddleGround.forService}.
             I do all this from {aboutMiddleGround.location}. As a final note {aboutMiddleGround.owner} the founder and sole operator of Midde Ground Made.</p>
+<<<<<<< HEAD
         <div>
             <ul>
             {links.map((link) => <li class="links">{link}</li>)}
         </ul>
      </div> 
+=======
+>>>>>>> 2653e5bdf11c488ffa6c1fc9a8364a252545b994
       </div>
     </section>
   </main>
