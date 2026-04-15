@@ -1,0 +1,13 @@
+---
+import Subscribe from './Subscribe.astro';
+const platform = "github";
+const username = "withastro";
+
+---
+
+<footer>
+  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+  <Subscribe platform="twitter" username="astrodotbuild" />
+  <Subscribe platform="github" username="withastro" />
+  <Subscribe platform="youtube" username="astrodotbuild" />
+</footer>
