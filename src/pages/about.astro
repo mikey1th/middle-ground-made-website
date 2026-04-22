@@ -14,9 +14,7 @@ import '../styles/global.css';
 import Navigation from '../components/navigation.astro'
 import Footer from '../components/footer.astro'
 
-
-
-const links = ["Bio", "CV", "What/Why", "Equipment", "snippets", "Reccomended Reading",];
+const links = ["Bio", "CV", "What/Why", "Equipment", "Snippets", "Reccomended Reading", "Projects", "Essays"];
 
 const linkColor = "#2D2D2D"; //Darkest Gray
 const linkWeight = "700";
@@ -32,18 +30,20 @@ const linkCase = "uppercase";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-        <style define:vars={{linkColor, linkWeight, linkCase}}>
-            h1 {
-            color: purple;
-            font-size: 4rem;
-         }
+        <style define:vars={{linkColor, linkWeight, linkCase}}></style>
 
-         .links {
-            color:var(--linkColor);
-            font-weight: var(--linkWeight);
-            text-transform: var(--linkCase);
-         }
-    </style>
+<style>
+    h1 {
+      color: #2d2d2d;
+      font-size: 4rem;
+    }
+
+    .links {
+      color: var(--linkColor);
+      font-weight: var(--linkWeight);
+      text-transform: var(--linkCase);
+    }
+</style>
 	</head>
 	<body>
 	    <Navigation />

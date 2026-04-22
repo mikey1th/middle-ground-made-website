@@ -15,10 +15,49 @@ const pageTitle = "Middle Ground Made";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+
+		<style>
+			span {
+			color: #2d2d2d; /* Darkest Gray */   
+    		text-transform: uppercase;
+    		font-family: "Atkinson Hyperlegible Mono Semibold";
+    		font-size: .75rem;
+   	 		letter-spacing: 0.05rem;
+    		text-decoration: none;
+			align-self: stretch;
+
+			}
+
+			p {
+			font-size: .75rem;
+			align-self: stretch;
+			}
+
+			main {
+			/* layout*/
+			margin-top: 50px;
+			display: flex;
+			padding: 25px 20px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 15px;
+
+			/* style */
+			border-radius: 10px;
+			border: 0.75px solid #E8E8E8;
+			background: #FFF;
+			box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+			}
+
+		</style>
 	</head>
 	<body>
-		<Navigation />
-		<h1>Middle Ground Made</h1>
-		<Footer />
+		<Navigation/>
+		<main>
+			<span> Featured Releases </span>
+			<p> Open Notes, is a collection of essays that share small thjoughts about the big picture. The Open Notes Published Archive is upded on a weekly basis. Each month one note is shared via the Ground Up Newsletter. Occassionaly notes are collected and oublished as a physical book!</p>
+		</main>
+		<Footer/>
 	</body>
 </html>

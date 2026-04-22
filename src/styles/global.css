@@ -1,5 +1,5 @@
 html {
-  background-color: #f1f5f9;
+  background-color: #FCFCFC;
   font-family: sans-serif;
 }
 
@@ -18,4 +18,37 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+  font-family: "Atkinson Hyperlegible Semibold";
+}
+
+p {
+  font-family: "Atkinson Hyperlegible Light";
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono Semibold";
+  src: url("/AtkinsonHyperlegibleMono-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Semibold";
+  src: url("/AtkinsonHyperlegibleNext-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Light";
+  src: url("/AtkinsonHyperlegibleNext-Light.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono Regular";
+  src: url("/AtkinsonHyperlegibleMono-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
 }

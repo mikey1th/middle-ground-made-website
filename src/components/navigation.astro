@@ -1,19 +1,99 @@
 ---
 
+import mgLogo from "../assets/Middle-Ground-Made-Web-Logo.svg";
+
 ---
 
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/open-notes/">Open Notes</a>
+
+
+<header>
+
+<div class="header-group-outter">
+<a href="/">
+  <img src={mgLogo.src} alt="Middle Ground Made Logo" />
+</a>
+
+<div class="header-group-inner">
+    <span class="site-name"> Middle Ground Made</span>
+    <spa class="mg-tagline"> Heirloom design studio. </span>
+</div>
+</div>
+
+
+ <nav>
+    <a href="/">Home</a>
+    <a href="/open-notes/">Open Notes</a>
+    <a href="/projects/">Projects</a>
+    <a href="/projects/">Newsletter</a>
+    <a href="/about/">About</a>
+    <a href="/projects/">Bookshop</a>
+</nav>   
+
+</header>
+
+
 
 <style>
     a {
-    color: #2d2d2d; /* Darkets Gray */   
+    color: #2d2d2d; /* Darkest Gray */   
     text-transform: uppercase;
-    font-weight: 700;
+    font-family: "Atkinson Hyperlegible Mono Regular";
+    font-size: .75rem;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+    }  
+
+    a:hover{
+    color: #AEAEAE
     }
-    
 
 
-    
+    nav {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: .75px solid var(--Line-Gray, #E8E8E8);
+    background: var(--White, #FFF);
+    }
+
+    nav a {
+     padding-inline: 20px; 
+     border-left: .75px solid #E8E8E8;
+    }
+
+    nav a:first-child {
+    border-left: none; /* removes line before the first link */
+    }
+
+    .header-group-outter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    padding-bottom: 25px;
+    padding-top: 35px
+    }
+
+    .header-group-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    }
+
+    .site-name {
+    color: #000;
+    font-family: "Atkinson Hyperlegible Semibold";
+    font-size: 2rem;
+    }
+
+    .mg-tagline {
+    color: #000;
+    font-family: "Atkinson Hyperlegible Light";
+    font-size: 1rem;
+    }
+
 </style>
+

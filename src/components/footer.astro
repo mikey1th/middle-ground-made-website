@@ -1,13 +1,36 @@
 ---
-import Subscribe from './Subscribe.astro';
-const platform = "github";
-const username = "withastro";
 
+import EmailSignup from './email-signup.astro';
 ---
 
 <footer>
-  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
-  <Subscribe platform="twitter" username="astrodotbuild" />
-  <Subscribe platform="github" username="withastro" />
-  <Subscribe platform="youtube" username="astrodotbuild" />
+  <span class="newsletter-header"> The Ground Up Newsletter </span>
+  <p>A monthly newsletter that contains an Open Note and a Resource.</p>
+  
+  <EmailSignup/>
+
 </footer>
+
+<style>
+  .newsletter-header {
+    color: #2d2d2d; /* Darkest Gray */   
+    text-transform: uppercase;
+    font-family: "Atkinson Hyperlegible Mono Semibold";
+    font-size: .75rem;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+  }
+
+  p {
+  font-size: .75rem;
+  }
+
+  footer {
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  }
+</style>
