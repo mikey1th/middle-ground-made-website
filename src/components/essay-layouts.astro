@@ -9,36 +9,37 @@ const { frontmatter } = Astro.props;
 
 ---
 
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter.title}</title>
+     </head>
 
-<PageWrapper>
-<Navigation />     
-     <ContextSection>
-
-          
-
-
-     <div class="content-links">
-          <span> {frontmatter.title} </span>
-          <span class="link-details"> / </span>
-          <time class="link-details"> {frontmatter.date} </time>
-          <span class="link-details"> / </span>
-          <span class="link-details"> No.35 </span>
-     </div>
-     <hr>
-     <slot /> 
-     <hr>
-     <button onclick="history.back()" aria-label="Go back" class="primary-button"> Back </button>
-
-      
-     </ContextSection>
-<Footer />
-</PageWrapper>
-
+     <body>
+          <PageWrapper>
+               <Navigation />
+               <ContextSection>
+                    <div class="content-links">
+                    <span> {frontmatter.title} </span>
+                    <span class="link-details"> / </span>
+                    <time class="link-details"> {frontmatter.date} </time>
+                    <span class="link-details"> / </span>
+                    <span class="link-details"> {frontmatter.number}</span>
+                    </div>
+                    <slot /> 
+                    <button onclick="history.back()" aria-label="Go back" class="primary-button"> Back </button>
+               </ContextSection>
+               <Footer />
+          </PageWrapper>
+     </body>
+</html>
 
 <style>
-
      .content-links:hover{
      cursor: default;
      background: #FAFAFA;}
-
-</style>
+     </style>

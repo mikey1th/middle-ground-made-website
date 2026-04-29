@@ -1,7 +1,8 @@
 ---
 
-title: "Democratization vs Decentralization"
-date: "Mar 15"
+title: Democratization vs Decentralization
+date: Mar, 15
+number: No. 50
 layout: ../../components/essay-layouts.astro
 
 ---

@@ -1,9 +1,9 @@
 ---
 
-title: 'The Tree Spirit'
-pubDate: 2026-02-20
-tags: ["mythology"]
-series: No
+title: The Tree Spirit
+date: Jan, 26
+number: No. 35
+layout: ../../components/essay-layouts.astro
 
 ---
 

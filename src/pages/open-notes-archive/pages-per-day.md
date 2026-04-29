@@ -1,10 +1,9 @@
 ---
 
-title: 'Pages Per Day'
-pubDate: 2026-02-22
-tags: ["philosohpy", "reading"]
-series: No
-
+title: Pages Per Day
+date: Apr, 20
+number: No. 40
+layout: ../../components/essay-layouts.astro
 ---
 
 Is a simple method to track and maintain your reading goals. Much like physical books, this analog system is free of distractions, network connections, and screen-based technology.

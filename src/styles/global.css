@@ -52,9 +52,17 @@ p {
   font-display: swap;
 }
 @font-face {
-  font-family: "Atkinson Hyperlegible Semibold";
+  font-family: "Atkinson Hyperlegible Next";
   src: url("/AtkinsonHyperlegibleNext-SemiBold.woff2") format("woff2");
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src: url("/AtkinsonHyperlegibleMono-Light.woff2") format("woff2");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -151,6 +159,7 @@ p{
   font-weight: 400;
   font-size: .90rem;
   color: #2d2d2d;
+  text-decoration: none;
 }
 
 .open-note-headers {
@@ -176,8 +185,10 @@ cursor: pointer;
 
 .link-details{
 font-family: "Atkinson Hyperlegible Mono"; 
-font-weight: 400;
+font-weight: 300;
 text-transform: uppercase;
 font-size: .75rem;
-letter-spacing: .15em;
+letter-spacing: .10em;
+text-decoration: none;
+color: #AEAEAE;
 }

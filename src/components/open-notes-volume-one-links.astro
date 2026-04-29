@@ -1,28 +1,25 @@
 ---
 
 import '../styles/global.css';
-
+const allPosts = Object.values(import.meta.glob('../pages/open-notes-archive/*.md', { eager: true }));
 ---
 
 
+{allPosts.map((post: any) =>
+<li class="content-links">
+    <a href={post.url}>
+        <span> {post.frontmatter.title} </span> 
+        <span class = "link-details"> / </span>
+        <span class = "link-details"> {post.frontmatter.date} </span>
+        <span class = "link-details"> / </span>
+        <span class = "link-details"> {post.frontmatter.number} </span>
+    </a>
+</li>)}
 
-<a href= "/open-notes-archive/test" class="content-links">
-    <span> Democratization vs Decentralization </span>
-    <span class ="link-details"> / </span>
-    <time class ="link-details"> Mar, 15 </time>
-    <span class ="link-details"> / </span>
-    <span class ="link-details"> No. 35 </span>
-</a>
-
-<a href= "/open-notes-archive/test" class="content-links">
-    <span class ="bold"> Democratization vs Decentralization </span>
-    <span class ="link-details"> / </span>
-    <time class ="link-details"> Mar, 15</time>
-    <span class ="link-details"> / </span>
-    <span class ="link-details"> No. 35 </span>
-</a>
 
 <style>
-
-
+    a {
+  text-decoration: none;
+  color: inherit;
+}
 </style>
