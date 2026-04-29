@@ -1,8 +1,13 @@
 ---
 
 import '../styles/global.css';
-import Navigation from '../components/navigation.astro'
-import Footer from '../components/footer.astro'
+import Navigation from '../components/navigation.astro';
+import Footer from '../components/footer.astro';
+import PageWrapper from '../components/page-wrapper.astro';
+import ContextSection from '../components/context-section.astro';
+import FeaturedReleaseThumbnail from '../components/featured-release-thumbnail.astro';
+import { Image } from 'astro:assets';
+import TestImage from '../assets/website-images/Open-Quote-01-Test.png';
 
 const pageTitle = "Middle Ground Made";
 ---
@@ -17,47 +22,88 @@ const pageTitle = "Middle Ground Made";
 		<title>{pageTitle}</title>
 
 		<style>
-			span {
-			color: #2d2d2d; /* Darkest Gray */   
-    		text-transform: uppercase;
-    		font-family: "Atkinson Hyperlegible Mono Semibold";
-    		font-size: .75rem;
-   	 		letter-spacing: 0.05rem;
-    		text-decoration: none;
-			align-self: stretch;
 
+			hr {
+			border: none;
+  			border-top: 1px solid #E8E8E8;
+			width: 100%;
 			}
 
-			p {
+			.featured-work-row {
+
+				/* layout */
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				width: 100%;
+    			align-items: stretch;
+
+				/* styling */ 
+			}
+				
+			.thumbnail-title{
+			font-size: 1rem;
+			font-family: "Atkinson Hyperlegible Medium";
+			}
+
+			.thumbnail-date{
+			text-transform: uppercase;
+			letter-spacing: .15em;
+			font-size: .75rem;			}
+
+			.thumbnail-category{
+			text-transform: uppercase;
+			letter-spacing: .15em;
 			font-size: .75rem;
-			align-self: stretch;
+			font-family: "Atkinson Hyperlegible Mono Medium";
+			max-width: 135px;
 			}
 
-			main {
-			/* layout*/
-			margin-top: 50px;
-			display: flex;
-			padding: 25px 20px;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			gap: 15px;
-
-			/* style */
+			.featured-image{
+			width: 100%;
+  			height: auto;
 			border-radius: 10px;
-			border: 0.75px solid #E8E8E8;
-			background: #FFF;
-			box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+			}
+
+			.featured-work-info{
+			display: flex;
+			flex-direction: column;
+			gap: 7.5px;
 			}
 
 		</style>
 	</head>
 	<body>
-		<Navigation/>
-		<main>
-			<span> Featured Releases </span>
-			<p> Open Notes, is a collection of essays that share small thjoughts about the big picture. The Open Notes Published Archive is upded on a weekly basis. Each month one note is shared via the Ground Up Newsletter. Occassionaly notes are collected and oublished as a physical book!</p>
-		</main>
-		<Footer/>
+		<PageWrapper>
+		<Navigation/>	
+		<ContextSection>
+		<h2> Featured Work </h2>
+		<hr>
+		<p> Here's a collection of work that I am particularly proud of. These selections could be recently finished, or they could be recently re-discovered. I hope you enjoy them as much as I do! </p>
+		<div class="featured-work-row">
+			<FeaturedReleaseThumbnail>
+			<Image src={TestImage} alt="Project 1" width={800} height={600} class="featured-image"/>
+			<p class="thumbnail-title"> Shipping is better than scrolling </p>
+			<hr>
+			<div class ="featured-work-info">
+			<p class="thumbnail-date"> April 26, 2026 </p>
+			<p class="thumbnail-category"> Open Notes </p>	
+			</div>
+			</FeaturedReleaseThumbnail>
+
+			<FeaturedReleaseThumbnail>
+			<Image src={TestImage} alt="Project 1" width={800} height={600} class="featured-image"/>
+			<p class="thumbnail-title"> Shipping is better than scrolling </p>
+			<hr>
+			<div class ="featured-work-info">
+			<p class="thumbnail-date"> April 26, 2026 </p>
+			<p class="thumbnail-category"> Compendium </p>	
+			</div>	
+			</FeaturedReleaseThumbnail>
+
+		</div>	
+		</ContextSection>
+		<Footer/>	
+		</PageWrapper>
 	</body>
 </html>

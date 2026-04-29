@@ -3,9 +3,13 @@
 import '../styles/global.css';
 import Navigation from '../components/navigation.astro'
 import Footer from '../components/footer.astro'
+import PageWrapper from '../components/page-wrapper.astro';
+import ContextSection from '../components/context-section.astro';
+import ContextSectionLinks from '../components/context-section-links.astro'
 
 
-const pageTitle = "Open-Notes";
+const pageTitle = "Open Notes";
+
 
 ---
 
@@ -20,15 +24,21 @@ const pageTitle = "Open-Notes";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
+	<PageWrapper>
 	<Navigation />
-		<h1>{pageTitle}</h1>
-		<p> Open Notes, is a collection of essays that share small thjoughts about the big picture. The Open Notes Published Archive is upded on
-		a weekly basis. Each month one note is shared via the Ground Up Newsletter. Occassionaly notes are collected and oublished as a physical book!</p>
-		<ul>
-			<li> <a href="/src/pages/open-notes-archive/pages-per-day.md"> Pages per Day</a></li>
-			<li> <a href="/src/pages/open-notes-archive/the-tree-spirit.md"> The Tree Spirit</a></li>
-			<li> <a href="/src/pages/open-notes-archive/democratization-vs-decentralization.md"> Democratization vs Decentralization</a></li>
-		</ul>
-		<Footer />
+	<ContextSection>
+	<h2>{pageTitle}</h2>
+	<hr>
+	<p> Open Notes is a collection of observational essays and fantastical myths. I publish a few new entries per week,
+		and share one each month in the Middle Ground Newsletter. </p>
+	<ContextSectionLinks>
+		<a href="/open-notes-volume-one/" class="primary-button">Volume One</a>
+		<button class ="primary-button"> Snippets </button>
+		<button class ="primary-button"> Newsletter </button>
+	</ContextSectionLinks>
+	</ContextSection>
+
+	</PageWrapper>
+	<Footer />
 	</body>
 </html>

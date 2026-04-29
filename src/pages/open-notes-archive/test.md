@@ -1,9 +1,8 @@
 ---
 
-title: 'Democratization vs Decentralization'
-pubDate: 2026-02-25
-tags: ["business"]
-series: Yes
+title: "Democratization vs Decentralization"
+date: "Mar 15"
+layout: ../../components/essay-layouts.astro
 
 ---
 

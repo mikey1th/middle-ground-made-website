@@ -23,20 +23,7 @@ h1 {
 
 p {
   font-family: "Atkinson Hyperlegible Light";
-}
-
-@font-face {
-  font-family: "Atkinson Hyperlegible Mono Semibold";
-  src: url("/AtkinsonHyperlegibleMono-SemiBold.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Atkinson Hyperlegible Semibold";
-  src: url("/AtkinsonHyperlegibleNext-SemiBold.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
+  font-size: 0.85rem 
 }
 
 @font-face {
@@ -47,8 +34,131 @@ p {
 }
 
 @font-face {
+  font-family: "Atkinson Hyperlegible Regular";
+  src: url("/public/AtkinsonHyperlegibleNext-Regular.woff2")
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Medium";
+  src: url("/public/AtkinsonHyperlegibleNext-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Semibold";
+  src: url("/AtkinsonHyperlegibleNext-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono Semibold";
+  src: url("/AtkinsonHyperlegibleMono-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+@font-face {
   font-family: "Atkinson Hyperlegible Mono Regular";
   src: url("/AtkinsonHyperlegibleMono-Regular.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono Medium";
+  src: url("/public/AtkinsonHyperlegibleMono-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+
+h2, h3, h4, h5, h6 {
+  font-family: "Atkinson Hyperlegible Mono Medium";
+  text-transform: uppercase;
+  font-size: .85rem;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  align-self: stretch;
+  color: #2d2d2d; /* Darkest Gray */   
+}
+
+
+h1, h3, h2, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-top: 1px solid #E8E8E8;
+	width: 100%;
+}
+
+.primary-button {
+display: inline-flex;
+width: fit-content;
+padding: 10px 20px;
+cursor: pointer; 
+text-decoration: none;
+border-radius: 100px;
+border: 1px solid #E8E8E8;
+background: #FAFAFA;
+font-family: "Atkinson Hyperlegible Mono Regular";
+text-transform: uppercase;
+letter-spacing: .15em;
+font-size: .65rem;
+color: #2d2d2d;
+}
+
+.primary-button:hover {
+  background: #ffffff
+}
+
+p{
+  line-height: 1.35;
+}
+
+
+.content-links {
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: center;
+  cursor: pointer; 
+  text-decoration: none;
+  width: fit-content;
+
+  border-radius: 100px;
+  border: 1px solid #E8E8E8;
+  background: #FAFAFA;
+  font-family: "Atkinson Hyperlegible Regular";
+  font-size: .90rem;
+  color: #2d2d2d;
+}
+
+.open-note-headers {
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: center;
+  text-decoration: none;
+  width: fit-content;
+
+  border-radius: 100px;
+  border: 1px solid #E8E8E8;
+  background: #FAFAFA;
+  font-family: "Atkinson Hyperlegible Regular";
+  font-size: .85rem;
+  color: #2d2d2d;
+}
+
+.content-links:hover{
+background: #FFFFFF
 }
