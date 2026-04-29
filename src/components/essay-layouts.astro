@@ -18,11 +18,11 @@ const { frontmatter } = Astro.props;
 
 
      <div class="content-links">
-          <span class="note-title"> {frontmatter.title} </span>
-          <span class="note-details"> / </span>
-          <time class="note-details"> {frontmatter.date} </time>
-          <span class="note-details"> / </span>
-          <span class="note-details"> No.35 </span>
+          <span> {frontmatter.title} </span>
+          <span class="link-details"> / </span>
+          <time class="link-details"> {frontmatter.date} </time>
+          <span class="link-details"> / </span>
+          <span class="link-details"> No.35 </span>
      </div>
      <hr>
      <slot /> 
@@ -37,20 +37,8 @@ const { frontmatter } = Astro.props;
 
 <style>
 
-     .content-links{
-    gap: 15px
-     }
-
-     .note-details{
-     font-family: "Atkinson Hyperlegible Mono Regular"; 
-     text-transform: uppercase;
-     font-size: .75rem;
-     letter-spacing: .15em;
-     }
-     
      .content-links:hover{
-    background: #FAFAFA;
-    cursor: default;
-}
+     cursor: default;
+     background: #FAFAFA;}
 
 </style>
