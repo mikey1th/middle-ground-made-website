@@ -5,13 +5,12 @@ import Navigation from '../components/navigation.astro'
 import Footer from '../components/footer.astro'
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
-import OpenNotesVolumeOneLinks from '../components/open-notes-volume-one-links.astro';
+import SnippetCollection from '../components/snippet-collection.astro';
 
-const pageTitle = "Open Notes Volume One"
+const pageTitle= "Snippets"
+
 
 ---
-
-
 
 <html lang="en">
 	<head>
@@ -21,23 +20,26 @@ const pageTitle = "Open Notes Volume One"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-
-        <style>
-     
-        </style>
-    </head>
-    <body>
+	</head>
+	<body>
         <PageWrapper>
         <Navigation/>
             <ContextSection>
             <h2>{pageTitle}</h2> 
 	        <hr>
-	        <p> Volume One began in 2025, and I'm not really sure when it will end. There are eassays that predate this archive,
-                whihc you can find using the link on the previous page.
+            <p>
+            Anne Lamott once said that "the truth doesn't come out in bumper stickers." Generally, I think this is true
+            but every rule has its exceptions. Not every truth can be consened to a small phrase, but the ones that I encountered
+            and have hung onto are what makes up this collection.
             </p>
-            <OpenNotesVolumeOneLinks/>
+             <p class="note">
+            * In no particular order
+            </p>
+            <SnippetCollection/>
+            <hr>
+            <button onclick="history.back()" aria-label="Go back" class="primary-button"> Back </button>
             </ContextSection>
         </PageWrapper>
         <Footer/>
-    </body>
-<html/>
+	</body>
+</html>

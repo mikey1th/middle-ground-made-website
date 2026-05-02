@@ -2,24 +2,61 @@
 
 import '../styles/global.css';
 const allPosts = Object.values(import.meta.glob('../pages/open-notes-archive/*.md', { eager: true }));
+const sorted = [...allPosts].sort((a: any, b: any) => b.frontmatter.entry - a.frontmatter.entry);
+const posts2025 = sorted.filter((post: any) => post.frontmatter.year === 2025);
+const posts2026 = sorted.filter((post: any) => post.frontmatter.year === 2026);
+
 ---
 
+<div class="all-links">
 
-{allPosts.map((post: any) =>
-<li class="content-links">
-    <a href={post.url}>
-        <span> {post.frontmatter.title} </span> 
-        <span class = "link-details"> / </span>
-        <span class = "link-details"> {post.frontmatter.date} </span>
-        <span class = "link-details"> / </span>
-        <span class = "link-details"> {post.frontmatter.number} </span>
-    </a>
-</li>)}
+<div class="link-year">
+    {posts2026.map((post: any) =>
+        <a href={post.url} class="content-links">
+            <span> {post.frontmatter.title} </span> 
+            <span class = "link-details"> / </span>
+            <span class = "link-details"> {post.frontmatter.date} </span>
+            <span class = "link-details"> / </span>
+            <span class = "link-details"> {post.frontmatter.number} </span>
+        </a>
+    )}  
+</div>
+
+<hr>
+
+<div class = "link-year">
+    {posts2025.map((post: any) =>
+        <a href={post.url} class="content-links">
+            <span> {post.frontmatter.title} </span> 
+            <span class = "link-details"> / </span>
+            <span class = "link-details"> {post.frontmatter.date} </span>
+            <span class = "link-details"> / </span>
+            <span class = "link-details"> {post.frontmatter.number} </span>
+        </a>
+    )}
+</div>
+
+</div>
+
 
 
 <style>
-    a {
+a {
   text-decoration: none;
   color: inherit;
 }
+
+.all-links{
+display: flex;
+gap: 20px;
+flex-direction: column;
+}
+
+.link-year{
+display: flex;
+gap: 12.5px;
+flex-direction: column;
+}
+
+
 </style>

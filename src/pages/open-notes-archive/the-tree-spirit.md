@@ -1,9 +1,12 @@
 ---
 
-title: The Tree Spirit
-date: Jan, 26
-number: No. 35
-layout: ../../components/essay-layouts.astro
+title: "The Tree Spirit"
+date: "Feb 15, 2026"
+number: "No. 51"
+entry: 51
+year: 2026
+volume: 1
+layout: ../../components/open-notes-layouts.astro
 
 ---
 

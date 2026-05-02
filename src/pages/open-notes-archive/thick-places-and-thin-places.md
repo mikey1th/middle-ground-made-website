@@ -1,9 +1,12 @@
 ---
 
-title: Tick Places and Thin Places
-date: Apr, 21
-number: No. 64
-layout: ../../components/essay-layouts.astro
+title: "Thick Places and Thin Places"
+date: "Apr 21, 2026"
+number: "No. 64"
+entry: 64
+year: 2026
+volume: 1
+layout: ../../components/open-notes-layouts.astro
 
 ---
 

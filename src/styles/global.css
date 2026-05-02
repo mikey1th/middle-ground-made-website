@@ -22,7 +22,7 @@ h1 {
   font-weight: 600;
 }
 
-p {
+p, li {
   font-family: "Atkinson Hyperlegible Next";
   font-weight: 300;
   font-size: 0.85rem 
@@ -92,7 +92,7 @@ p {
 }
 
 
-h2, h3, h4, h5, h6 {
+h2, h4, h5, h6 {
   font-family: "Atkinson Hyperlegible Mono";
   font-weight: 500;
   text-transform: uppercase;
@@ -100,6 +100,14 @@ h2, h3, h4, h5, h6 {
   letter-spacing: 0.05rem;
   text-decoration: none;
   align-self: stretch;
+  color: #2d2d2d; /* Darkest Gray */   
+}
+
+h3 {
+  font-family: "Atkinson Hyperlegible Next";
+  font-weight: 400;
+  font-size: .90rem;
+  text-decoration: none;
   color: #2d2d2d; /* Darkest Gray */   
 }
 
@@ -191,4 +199,34 @@ font-size: .75rem;
 letter-spacing: .10em;
 text-decoration: none;
 color: #AEAEAE;
+}
+
+.note{
+font-family: "Atkinson Hyperlegible Mono";
+text-transform: uppercase;
+font-weight: 300;
+letter-spacing: .10em;
+font-size: .65rem;
+}
+
+.snippet-links {
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: center;
+  cursor: pointer; 
+  text-decoration: none;
+  width: fit-content;
+  gap: 15px;
+
+  border-radius: 100px;
+  border: 1px solid #E8E8E8;
+  font-family: "Atkinson Hyperlegible Next";
+  font-weight: 400;
+  font-size: .90rem;
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.snippet-links:hover {
+  cursor: default;
 }

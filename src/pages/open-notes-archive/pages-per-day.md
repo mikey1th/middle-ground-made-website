@@ -1,9 +1,12 @@
 ---
 
 title: Pages Per Day
-date: Apr, 20
-number: No. 40
-layout: ../../components/essay-layouts.astro
+date: Feb 15, 2026
+number: No. 50
+entry: 50
+year: 2026
+volume: 1
+layout: ../../components/open-notes-layouts.astro
 ---
 
 Is a simple method to track and maintain your reading goals. Much like physical books, this analog system is free of distractions, network connections, and screen-based technology.

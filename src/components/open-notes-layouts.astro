@@ -24,11 +24,11 @@ const { frontmatter } = Astro.props;
                <Navigation />
                <ContextSection>
                     <div class="content-links">
-                    <span> {frontmatter.title} </span>
-                    <span class="link-details"> / </span>
-                    <time class="link-details"> {frontmatter.date} </time>
-                    <span class="link-details"> / </span>
-                    <span class="link-details"> {frontmatter.number}</span>
+                         <span> {frontmatter.title} </span>
+                         <span class="link-details"> / </span>
+                         <time class="link-details"> {frontmatter.date} </time>
+                         <span class="link-details"> / </span>
+                         <span class="link-details"> {frontmatter.number}</span>
                     </div>
                     <slot /> 
                     <button onclick="history.back()" aria-label="Go back" class="primary-button"> Back </button>

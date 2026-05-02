@@ -1,9 +1,12 @@
 ---
 
-title: Democratization vs Decentralization
-date: Mar, 15
-number: No. 50
-layout: ../../components/essay-layouts.astro
+title: "Democratization vs Decentralization"
+date: "Mar 15, 2026"
+number: "No. 53"
+entry: 53
+year: 2026
+volume: 1
+layout: ../../components/open-notes-layouts.astro
 
 ---
 

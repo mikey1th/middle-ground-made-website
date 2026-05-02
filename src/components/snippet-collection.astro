@@ -1,0 +1,68 @@
+---
+
+import '../styles/global.css';
+import snippets from '../data/snippet-data.js';
+
+---
+
+<div class="all-snippets">
+    <ul>
+        {snippets.map((snippet) => (
+        <li> 
+            <span class="snippet-links"> {snippet.text} </span>
+            
+            {(snippet.openNote || snippet.design) && (
+            <div class="content-links">
+                {snippet.openNote && (
+                <a href= {snippet.openNote} class="link-details"> Open Note</a>
+                )}
+                
+                {snippet.openNote && snippet.design && (
+                <span class="link-details"> / </span>
+                )}
+                
+                {snippet.design && (
+                <a href= {snippet.design} class="link-details"> Design</a>
+                )}
+             </div>
+            )}
+        </li>
+        ))}
+    </ul>
+
+  
+<style>
+    ul{
+    padding-left: 0;
+    list-style-position: inside; /* keeps numbers from getting clipped */
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    list-style: none;
+    }
+
+    .all-snippets{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    }
+
+    .link-details:hover{
+    font-weight: 400;
+    color: #2d2d2d;
+    }
+
+    li{
+    display: inline-flex;
+    gap: 10px;
+    width: fit-content;
+    }
+
+    .content-links:hover{
+    background: #FAFAFA;
+    cursor: pointer;
+    }
+
+</style>
+

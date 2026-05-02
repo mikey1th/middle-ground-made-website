@@ -1,0 +1,43 @@
+---
+
+import '../styles/global.css';
+import Navigation from '../components/navigation.astro'
+import Footer from '../components/footer.astro'
+import PageWrapper from '../components/page-wrapper.astro';
+import ContextSection from '../components/context-section.astro';
+import ContextSectionLinks from '../components/context-section-links.astro'
+
+
+const pageTitle = "Writing";
+
+
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+	<PageWrapper>
+	<Navigation />
+	<ContextSection>
+	<h2>{pageTitle}</h2>
+	<hr>
+	<p> I didn't plan on my writing fitting this neatly into categories, but here we have it. </p>
+	<ContextSectionLinks>
+		<a href="/open-notes/" class="primary-button">Open Notes</a>
+		<a href="/snippets" class ="primary-button"> Snippets </a>
+		<a href="/rephrases" class ="primary-button"> Rephrases </a>
+	</ContextSectionLinks>
+	</ContextSection>
+
+	</PageWrapper>
+	<Footer />
+	</body>
+</html>
