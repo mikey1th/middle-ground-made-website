@@ -6,7 +6,7 @@ import Footer from '../components/footer.astro'
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
 import OpenNotesVolumeOneLinks from '../components/open-notes-volume-one-links.astro';
-
+import BackButton from '../components/back-button.astro';
 const pageTitle = "Open Notes"
 
 ---
@@ -37,8 +37,7 @@ const pageTitle = "Open Notes"
             </p>
             <OpenNotesVolumeOneLinks/>
             <hr>
-            <button onclick="history.back()" aria-label="Go back" class="primary-button"> Back </button>
-            </ContextSection>
+            <BackButton/>
         </PageWrapper>
         <Footer/>
     </body>

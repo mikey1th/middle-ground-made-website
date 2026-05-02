@@ -4,6 +4,7 @@ import PageWrapper from './page-wrapper.astro';
 import ContextSection from './context-section.astro';
 import Navigation from './navigation.astro';
 import Footer from './footer.astro';
+import BackButton from './back-button.astro';
 
 const { frontmatter } = Astro.props;
 
@@ -31,7 +32,7 @@ const { frontmatter } = Astro.props;
                          <span class="link-details"> {frontmatter.number}</span>
                     </div>
                     <slot /> 
-                    <button onclick="history.back()" aria-label="Go back" class="primary-button"> Back </button>
+                <BackButton/>
                </ContextSection>
                <Footer />
           </PageWrapper>

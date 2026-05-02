@@ -6,6 +6,7 @@ import Footer from '../components/footer.astro'
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
 import SnippetCollection from '../components/snippet-collection.astro';
+import BackButton from '../components/back-button.astro';
 
 const pageTitle= "Snippets"
 
@@ -37,7 +38,7 @@ const pageTitle= "Snippets"
             </p>
             <SnippetCollection/>
             <hr>
-            <button onclick="history.back()" aria-label="Go back" class="primary-button"> Back </button>
+            <BackButton/>
             </ContextSection>
         </PageWrapper>
         <Footer/>
