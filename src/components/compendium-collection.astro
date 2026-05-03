@@ -18,10 +18,10 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
                 <div class="compendium-header-info">
                     <div class="content-bubble">
                         <span> {entry.data.title} </span>
-                        <span class="link-details"> / </span>
-                        <span class="link-details"> {entry.data.date} </span>
-                        <span class="link-details"> / </span>
-                        <span class="link-details"> {entry.data.id} </span>
+                        <span class="link-details header"> / </span>
+                        <span class="link-details header"> {entry.data.date} </span>
+                        <span class="link-details header"> / </span>
+                        <span class="link-details header"> {entry.data.id} </span>
                     </div>
                         {/* this stuff is conditionally rendered appears to the right of the link. The js conditionally renders the entire div.
                         Then the categories are themselves conditionally rendered. */}
@@ -89,6 +89,11 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
     .link-details:hover{
     font-weight: 500;
     color: #2d2d2d;
+    }
+
+    .link-details.header:hover{
+    pointer-events: none;
+    font-weight: 300;
     }
 
 </style>
