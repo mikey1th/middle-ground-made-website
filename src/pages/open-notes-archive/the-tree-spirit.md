@@ -1,8 +1,8 @@
 ---
 
 title: "The Tree Spirit"
-date: "Feb 15, 2026"
-number: "No. 51"
+date: "02-26"
+number: "51"
 entry: 51
 year: 2026
 volume: 1

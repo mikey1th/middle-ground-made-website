@@ -1,8 +1,8 @@
 ---
 
 title: "Democratization vs Decentralization"
-date: "Mar 15, 2026"
-number: "No. 53"
+date: "03-26"
+number: "53"
 entry: 53
 year: 2026
 volume: 1

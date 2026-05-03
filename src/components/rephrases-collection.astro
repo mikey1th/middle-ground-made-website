@@ -9,8 +9,8 @@ import rephrases from '../data/rephrases-data.js';
 <div class="all-rephrases">
     {rephrases.map((rephrase) => (
         <div class="individual-rephrase"> 
-            <p class="rephrase-original"> {rephrase.original} </p>
-            <p class="rephrase-improved"> {rephrase.improved} </p>
+            <p class="rephrase-original" set:html={rephrase.original} />
+            <p class="rephrase-improved" set:html={rephrase.improved} />
         </div>       
     ))}
 </div>
@@ -45,7 +45,5 @@ import rephrases from '../data/rephrases-data.js';
     width: 100%;
     padding-bottom: 20px;
     }
-
-
 
 </style>

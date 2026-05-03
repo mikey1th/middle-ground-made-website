@@ -1,8 +1,8 @@
 ---
 
-title: Pages Per Day
-date: Feb 15, 2026
-number: No. 50
+title: "Pages Per Day"
+date: "02-26"
+number: "50"
 entry: 50
 year: 2026
 volume: 1

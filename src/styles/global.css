@@ -158,7 +158,7 @@ p{
   cursor: pointer; 
   text-decoration: none;
   width: fit-content;
-  gap: 15px;
+  gap: 7.5px;
 
   border-radius: 100px;
   border: 1px solid #E8E8E8;
@@ -209,14 +209,14 @@ letter-spacing: .10em;
 font-size: .65rem;
 }
 
-.snippet-links {
+.content-bubble{
   display: inline-flex;
   padding: 10px 20px;
   align-items: center;
   cursor: pointer; 
   text-decoration: none;
   width: fit-content;
-  gap: 15px;
+  gap: 7.5px;
 
   border-radius: 100px;
   border: 1px solid #E8E8E8;
@@ -229,4 +229,14 @@ font-size: .65rem;
 
 .snippet-links:hover {
   cursor: default;
+}
+
+.body-link{
+  text-decoration: underline;
+  color: #2d2d2d;
+}
+
+.content-bubble:hover{
+    background: #FFF;
+    cursor: default;
 }

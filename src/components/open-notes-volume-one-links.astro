@@ -18,6 +18,10 @@ const posts2026 = sorted.filter((post: any) => post.frontmatter.year === 2026);
             <span class = "link-details"> {post.frontmatter.date} </span>
             <span class = "link-details"> / </span>
             <span class = "link-details"> {post.frontmatter.number} </span>
+            {post.frontmatter.series && (
+                <span class = "link-details"> / </span>
+                <span class = "link-details"> {post.frontmatter.series} </span>
+            )}
         </a>
     )}  
 </div>
@@ -32,6 +36,10 @@ const posts2026 = sorted.filter((post: any) => post.frontmatter.year === 2026);
             <span class = "link-details"> {post.frontmatter.date} </span>
             <span class = "link-details"> / </span>
             <span class = "link-details"> {post.frontmatter.number} </span>
+            {post.frontmatter.series && (
+                <span class = "link-details"> / </span>
+                <span class = "link-details bold"> {post.frontmatter.series} </span>
+            )}
         </a>
     )}
 </div>
@@ -56,6 +64,10 @@ flex-direction: column;
 display: flex;
 gap: 12.5px;
 flex-direction: column;
+}
+
+.content-links{
+  gap: 7.5px; 
 }
 
 

@@ -1,8 +1,8 @@
 ---
 
 title: "Self Supported"
-date: "March 03, 2025"
-number: "No. 04"
+date: "03-25"
+number: "04"
 entry: 04
 year: 2025
 volume: 1

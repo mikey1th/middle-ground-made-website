@@ -30,6 +30,10 @@ const { frontmatter } = Astro.props;
                          <time class="link-details"> {frontmatter.date} </time>
                          <span class="link-details"> / </span>
                          <span class="link-details"> {frontmatter.number}</span>
+                         {frontmatter.series && (
+                              <span class = "link-details"> / </span>
+                              <span class = "link-details"> {frontmatter.series} </span>
+                         )}
                     </div>
                     <slot /> 
                 <BackButton/>
@@ -39,8 +43,16 @@ const { frontmatter } = Astro.props;
      </body>
 </html>
 
+
 <style>
+
      .content-links:hover{
      cursor: default;
-     background: #FAFAFA;}
-     </style>
+     background: #FAFAFA;
+     }
+
+     .content-links{
+     gap: 7.5px
+     }
+     
+</style>

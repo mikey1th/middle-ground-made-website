@@ -9,7 +9,7 @@ const snippets =[
     },
 
     {
-        text: "Sketch more, scoll less",
+        text: "Sketch more, scroll less",
         design: "../design/"
     },
 

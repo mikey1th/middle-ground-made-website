@@ -9,14 +9,15 @@ import snippets from '../data/snippet-data.js';
     <ul>
         {snippets.map((snippet) => (
         <li> 
-            <span class="snippet-links"> {snippet.text} </span>
+            <span class="content-bubble"> {snippet.text} </span>
             
             {(snippet.openNote || snippet.design) && (
-            <div class="content-links">
+            /* this stuff is conditionally rendered appears to the right of the link*/
+            <div class="content-links"> 
                 {snippet.openNote && (
                 <a href= {snippet.openNote} class="link-details"> Open Note</a>
                 )}
-                
+            
                 {snippet.openNote && snippet.design && (
                 <span class="link-details"> / </span>
                 )}
@@ -61,11 +62,6 @@ import snippets from '../data/snippet-data.js';
     display: inline-flex;
     gap: 10px;
     width: fit-content;
-    }
-
-    .content-links:hover{
-    background: #FFF
-    cursor: pointer;
     }
 
 </style>

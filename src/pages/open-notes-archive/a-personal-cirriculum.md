@@ -1,8 +1,8 @@
 ---
 
 title: "A Personal Cirriculum"
-date: "Feb 05, 2025"
-number: "No. 01"
+date: "02-25"
+number: "01"
 entry: 01
 year: 2025
 volume: 1

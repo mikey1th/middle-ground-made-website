@@ -1,12 +1,13 @@
 ---
 
 title: "Thick Places and Thin Places"
-date: "Apr 21, 2026"
-number: "No. 64"
+date: "04-26"
+number: "64"
 entry: 64
 year: 2026
 volume: 1
 layout: ../../components/open-notes-layouts.astro
+series: 1-4
 
 ---
 

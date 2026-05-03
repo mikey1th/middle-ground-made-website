@@ -1,0 +1,94 @@
+---
+
+import '../styles/global.css';
+import {getCollection} from 'astro:content';
+import {Image} from 'astro:assets';
+
+
+import type { CollectionEntry } from 'astro:content';
+const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendium')).sort((a, b) => b.data.id - a.data.id);
+
+---
+
+
+<div class="all-compendium-entries">
+    {entries.map((entry) => (
+        <div class="compendium-entry"> 
+                {/* the div below renders the unconditonal header info */}
+                <div class="compendium-header-info">
+                    <div class="content-bubble">
+                        <span> {entry.data.title} </span>
+                        <span class="link-details"> / </span>
+                        <span class="link-details"> {entry.data.date} </span>
+                        <span class="link-details"> / </span>
+                        <span class="link-details"> {entry.data.id} </span>
+                    </div>
+                        {/* this stuff is conditionally rendered appears to the right of the link. The js conditionally renders the entire div.
+                        Then the categories are themselves conditionally rendered. */}
+                        {(entry.data.openNote || entry.data.project) && (
+                        <div class="content-links"> 
+                            {entry.data.openNote && (
+                            <a href= {entry.data.openNote} class="link-details"> Open Note</a>
+                            )}
+                            {entry.data.openNote && entry.data.project && (
+                            <span class="link-details"> / </span>
+                            )}
+                            {entry.data.project && (
+                            <a href= {entry.data.project} class="link-details"> Project</a>
+                            )}
+                        </div>
+                        )}
+                </div>
+            <Image src={entry.data.image} alt={entry.data.title} />
+            <h3> {entry.data.description} </h3>
+        </div>       
+    ))}
+</div>
+
+<p>{entries.length}</p>
+
+
+<style>
+    .all-compendium-entries{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px
+    }
+
+    .compendium-entry{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 20px;
+    }
+
+    .compendium-entry img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    }
+
+    h3 {
+    font-size: .90rem;
+    font-weight: 400;
+    }
+
+    .compendium-header-info{
+    display: inline-flex;
+    gap: 10px;
+    width: fit-content;
+    }
+
+    .link-details{
+    color: #2d2d2d;
+    }
+
+    .link-details:hover{
+    font-weight: 500;
+    color: #2d2d2d;
+    }
+
+</style>

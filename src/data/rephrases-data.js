@@ -17,13 +17,13 @@ const rephrases =[
     },
 
     {
-        original: "We don’t have to make more thin places.",
-        improved: "If instead we choose to make more places thin.",
+        original: 'We don\'t have to make more <a href = "/open-notes-archive/thick-places-and-thin-places" class = "body-link"> thin places.</a>',
+        improved: "If instead, we make more places thin.",
     },
 
     {
-        original: "I’m not better because this thing is done.",
-        improved: "I’m better because I’ve done this thing.",
+        original: "I\'m not better because this thing is done.",
+        improved: "I\'m better because I\'ve done this thing.",
     },
 
 ]
