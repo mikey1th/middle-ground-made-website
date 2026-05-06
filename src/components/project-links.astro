@@ -1,0 +1,118 @@
+---
+
+import '../styles/global.css';
+import {getCollection} from 'astro:content';
+import {Image} from 'astro:assets';
+
+
+import type { CollectionEntry } from 'astro:content';
+const additions: CollectionEntry<'projects'>[] = (await getCollection('projects')).sort((a, b) => b.data.id - a.data.id);
+
+
+---
+
+
+<div class="poject-tag-filters"> 
+    {[...new Set(additions.flatMap(p => p.data.tags))].map(tag => (
+    <a href={`/project-archive/type/${tag}`} class="content-links">{tag}</a>
+    ))}
+</div>
+
+
+<div class="all-project-additions">
+    {additions.map((project) => (
+        <div class="project-entry"> 
+            {/* the div below renders the unconditonal header info */}
+            <div class="project-header-info">
+                <div class="content-bubble">
+                    <span> {project.data.title} </span>
+                    <span class="link-details header"> / </span>
+                    <span class="link-details header"> {project.data.date} </span>
+                    <span class="link-details header"> / </span>
+                    <span class="link-details header"> {project.data.id} </span>
+                </div>
+                    {/* these tags are not conditionally rendered, but the / is. If an entry only has 
+                    one tag, it will not render. These appear on another bubble to the right */}
+                    <span class="content-links"> {project.data.tags.map((tag, index) => (
+                        <span>
+                        <span> {tag} </span>
+                        {index !== project.data.tags.length - 1 ? <span> / </span> : null}
+                        </span>
+                        ))}
+                    </span>
+                </div>
+                    <a href={`/project-archive/${project.slug}`}>
+                    <Image src={project.data.coverImage} alt={project.data.title} />    
+                    </a>
+            </div>
+    ))}
+</div>
+
+<p>{additions.length}</p>
+
+
+
+
+
+<style>
+    .all-project-additions{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px
+    }
+
+    .project-entry{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 20px;
+    }
+
+    .project-entry img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    }
+
+    h3 {
+    font-size: .90rem;
+    font-weight: 400;
+    }
+
+    .project-header-info{
+    display: inline-flex;
+    gap: 10px;
+    width: fit-content;
+    }
+
+    .link-details{
+    color: #2d2d2d;
+    }
+
+    .link-details:hover{
+    font-weight: 500;
+    color: #2d2d2d;
+    }
+
+    .link-details.header:hover{
+    pointer-events: none;
+    font-weight: 300;
+    }
+
+    .poject-tag-filters{
+    display: inline-flex;
+    gap: 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    }
+
+    .content-links{
+    text-transform: capitalize;
+    }
+
+
+</style>

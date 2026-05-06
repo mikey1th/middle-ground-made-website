@@ -28,7 +28,7 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
                         {(entry.data.openNote || entry.data.project) && (
                         <div class="content-links"> 
                             {entry.data.openNote && (
-                            <a href= {entry.data.openNote} class="link-details"> Open Note</a>
+                            <a href= {entry.data.openNote} class="link-details"> Note</a>
                             )}
                             {entry.data.openNote && entry.data.project && (
                             <span class="link-details"> / </span>

@@ -1,0 +1,81 @@
+---
+
+import PageWrapper from '../../components/page-wrapper.astro';
+import ContextSection from '../../components/context-section.astro';
+import Navigation from '../../components/navigation.astro';
+import Footer from '../../components/footer.astro';
+import BackButton from '../../components/back-button.astro';
+
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await project.render();
+
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{project.data.title}</title>
+     </head>
+
+     <body>
+          <PageWrapper>
+               <Navigation />
+               <ContextSection>
+                    <div class="project-header-info">
+                    <div class="content-bubble">
+                        <span> {project.data.title} </span>
+                        <span class="link-details header"> / </span>
+                        <span class="link-details header"> {project.data.date} </span>
+                        <span class="link-details header"> / </span>
+                        <span class="link-details header"> {project.data.id} </span>
+                    </div>
+                        {/* these tags are not conditionally rendered, but is another bubble */}
+                        <span class="content-links"> {project.data.tags} </span>
+                </div>
+                <Content /> 
+                {project.data.images.map((image) => (
+                <Image src={image} alt={project.data.title} />
+                ))}
+                <BackButton/>
+               </ContextSection>
+               <Footer />
+          </PageWrapper>
+     </body>
+</html>
+
+
+<style>
+
+     .content-links:hover{
+     cursor: default;
+     background: #FAFAFA;
+     }
+
+     .content-links{
+     gap: 7.5px
+     }
+
+
+    img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    }
+     
+</style>
