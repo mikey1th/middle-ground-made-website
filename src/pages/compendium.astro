@@ -27,6 +27,7 @@ const pageTitle = "Compendium";
 	<body>
 	<PageWrapper>
 	<Navigation />
+
 	<ContextSection>
 	<h2>{pageTitle}</h2>
 	<hr>
@@ -35,9 +36,13 @@ const pageTitle = "Compendium";
     <p class="note">
     * In order from newest to oldest
     </p>
+	</ContextSection>
+
+	<ContextSection>
 	<CompendiumCollection/>
 	<BackButton/>
 	</ContextSection>
+	
 	<Footer />
 	<PageWrapper/>
 	</body>

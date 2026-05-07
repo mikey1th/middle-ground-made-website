@@ -241,3 +241,10 @@ font-size: .65rem;
     background: #FFF;
     cursor: default;
 }
+
+
+.project-tag-filters{
+  display: inline-flex;
+  gap: 10px;
+  width: fit-content;
+}

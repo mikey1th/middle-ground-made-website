@@ -8,13 +8,8 @@ import ContextSection from '../../../components/context-section.astro';
 import BackButton from '../../../components/back-button.astro';
 import { Image } from 'astro:assets';
 
-
-
-
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
-
-
 
 export async function getStaticPaths () {
     const projects = await getCollection ('projects');
@@ -57,9 +52,11 @@ const tagDescriptions : Record<string, string> = {
 	<ContextSection>
 	<h2>{pageTitle}</h2>
 	<hr>
-    {tagDescriptions[pageTitle] && <p>{tagDescriptions[pageTitle]}</p>}
+    {tagDescriptions[pageTitle] && <p>{tagDescriptions[pageTitle]}</p>} {/* Tells this <p> element to render the text associate with each tag */}
 	<p class="note"> * Explore {projects.length} entires </p>
+    </ContextSection>
 
+    <ContextSection>
     <div class="all-project-additions">
         {projects.map((project) => (
             <div class="project-entry"> 
@@ -79,8 +76,6 @@ const tagDescriptions : Record<string, string> = {
                 </div>
         ))}
     </div>
-
-
     <BackButton/>
 	</ContextSection>
 	<Footer />

@@ -3,23 +3,13 @@
 import '../styles/global.css';
 import {getCollection} from 'astro:content';
 import {Image} from 'astro:assets';
+import ContextSection from './context-section.astro';
 
 
 import type { CollectionEntry } from 'astro:content';
 const additions: CollectionEntry<'projects'>[] = (await getCollection('projects')).sort((a, b) => b.data.id - a.data.id);
 
-
 ---
-
-<p class="note"> * Sort projects by tag or explore all {additions.length} entries! </p>
-
-<div class="project-tag-filters"> 
-    {[...new Set(additions.flatMap(p => p.data.tags))].map(tag => (
-    <a href={`/project-archive/type/${tag}`} class="primary-button">{tag}</a>
-    ))}
-</div>
-
-<hr>
 
 <div class="all-project-additions">
     {additions.map((project) => (
@@ -49,6 +39,7 @@ const additions: CollectionEntry<'projects'>[] = (await getCollection('projects'
         </div>
     ))}
 </div>
+
 
 
 
