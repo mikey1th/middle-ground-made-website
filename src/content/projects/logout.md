@@ -11,7 +11,6 @@ images:
     - ../../assets/website-images/project-images/logout-02.jpg
     - ../../assets/website-images/project-images/logout-02.jpg
 tags:
-    - "publishing" 
     - "books"
 
 ---

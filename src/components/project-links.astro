@@ -11,13 +11,15 @@ const additions: CollectionEntry<'projects'>[] = (await getCollection('projects'
 
 ---
 
+<p class="note"> * Sort projects by tag or explore all {additions.length} entries! </p>
 
-<div class="poject-tag-filters"> 
+<div class="project-tag-filters"> 
     {[...new Set(additions.flatMap(p => p.data.tags))].map(tag => (
-    <a href={`/project-archive/type/${tag}`} class="content-links">{tag}</a>
+    <a href={`/project-archive/type/${tag}`} class="primary-button">{tag}</a>
     ))}
 </div>
 
+<hr>
 
 <div class="all-project-additions">
     {additions.map((project) => (
@@ -33,7 +35,7 @@ const additions: CollectionEntry<'projects'>[] = (await getCollection('projects'
                 </div>
                     {/* these tags are not conditionally rendered, but the / is. If an entry only has 
                     one tag, it will not render. These appear on another bubble to the right */}
-                    <span class="content-links"> {project.data.tags.map((tag, index) => (
+                    <span class="content-links header"> {project.data.tags.map((tag, index) => (
                         <span>
                         <span> {tag} </span>
                         {index !== project.data.tags.length - 1 ? <span> / </span> : null}
@@ -44,11 +46,9 @@ const additions: CollectionEntry<'projects'>[] = (await getCollection('projects'
                     <a href={`/project-archive/${project.slug}`}>
                     <Image src={project.data.coverImage} alt={project.data.title} />    
                     </a>
-            </div>
+        </div>
     ))}
 </div>
-
-<p>{additions.length}</p>
 
 
 
@@ -59,7 +59,7 @@ const additions: CollectionEntry<'projects'>[] = (await getCollection('projects'
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 40px
+    gap: 30px
     }
 
     .project-entry{
@@ -67,14 +67,19 @@ const additions: CollectionEntry<'projects'>[] = (await getCollection('projects'
     flex-direction: column;
     width: 100%;
     gap: 20px;
-    border-bottom: 1px solid #E8E8E8;
     padding-bottom: 20px;
+    border-bottom: 1px solid #E8E8E8
     }
 
     .project-entry img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: filter 0.3s ease;
+    }
+
+    .project-entry img:hover {
+    filter: brightness(0.85);
     }
 
     h3 {
@@ -102,17 +107,24 @@ const additions: CollectionEntry<'projects'>[] = (await getCollection('projects'
     font-weight: 300;
     }
 
-    .poject-tag-filters{
+    .project-tag-filters{
     display: inline-flex;
     gap: 10px;
     width: fit-content;
-    margin-bottom: 20px;
-    text-transform: capitalize;
     }
 
     .content-links{
     text-transform: capitalize;
     }
 
+    hr{
+        margin: 10px;
+    }
+
+    .content-links.header:hover{
+     cursor: default;
+     background: #FAFAFA;
+     text-transform: capitalize;
+     }
 
 </style>

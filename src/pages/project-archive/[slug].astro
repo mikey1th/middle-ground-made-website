@@ -62,9 +62,14 @@ const { Content } = await project.render();
 
 <style>
 
+    .content-links{
+     text-transform: capitalize;
+     }
+
      .content-links:hover{
      cursor: default;
      background: #FAFAFA;
+     text-transform: capitalize;
      }
 
      .content-links{
@@ -76,6 +81,12 @@ const { Content } = await project.render();
     width: 100%;
     height: auto;
     border-radius: 10px;
+    }
+
+    .project-header-info{
+    display: inline-flex;
+    gap: 10px;
+    width: fit-content;
     }
      
 </style>
