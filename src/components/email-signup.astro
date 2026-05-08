@@ -2,7 +2,8 @@
 
 ---
 
-<form id="Ground-Up-Newsletter-Signup-Form">
+
+<form id="middle-ground-newsletter-signup-Form">
   <input id="first-name" type="text" placeholder="First Name /" />
   <input id="email" type="email" placeholder="Email /" required />
   <button type="submit">Subscribe</button>
@@ -13,12 +14,13 @@
 
     form {
         display: flex;
-        gap: 0.75rem;
+        gap: 20px;
         justify-content: space-between;
         align-items: center;
         font-family: "Atkinson Hyperlegible Mono";
         font-weight: 400;
         text-transform: uppercase;
+        width: 100%
     }
 
 
@@ -32,6 +34,7 @@
     color: inherit;
     border-radius: 50px;
     letter-spacing: .1rem;
+    width: 100%
     }
 
     button {
@@ -44,5 +47,11 @@
     background: #FFA800;
     color: #ffffff;
     border: none;
+    width: fit-content
+    }
+
+    input:focus{
+        outline: none;
+        border: 1px solid #AEAEAE;
     }
 </style>

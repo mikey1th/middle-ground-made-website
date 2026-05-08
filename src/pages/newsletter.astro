@@ -8,11 +8,9 @@ import ContextSection from '../components/context-section.astro';
 import ContextSectionLinks from '../components/context-section-links.astro'
 
 
-const pageTitle = "Writing";
-
+const pageTitle = "Newsletter";
 
 ---
-
 
 <html lang="en">
 	<head>
@@ -31,11 +29,12 @@ const pageTitle = "Writing";
 	<hr>
 	<p> I didn't plan on my writing fitting this neatly into categories, but here we have it. </p>
 	<ContextSectionLinks>
-		<a href="/open-notes/" class="primary-button">Open Notes</a>
-		<a href="/snippets" class ="primary-button"> Snippets </a>
-		<a href="/rephrases" class ="primary-button"> Rephrases </a>
+        <a href="/sign-up" class ="primary-button"> Sign Up </a>
+        <a href="/resources/" class="primary-button">Resources</a>
+        <a href="https://middle-ground-made.kit.com/profile" class="primary-button" target="_blank" rel="noopener noreferrer"> Archive (↗︎) </a>
 	</ContextSectionLinks>
+	</ContextSection>
+    <Footer />
 	</PageWrapper>
-	<Footer />
 	</body>
 </html>

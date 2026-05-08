@@ -2,22 +2,29 @@
 
 import EmailSignup from './email-signup.astro';
 
-const lastUpdated = new Date().toLocaleDateString('en-US', { 
-  year: 'numeric', 
-  month: 'long', 
-  day: 'numeric' 
-});
-
 
 ---
 
 <footer>
-  <span class="newsletter-header"> The Middle Ground Newsletter </span>
-  <p>A monthly newsletter that shares an Open Note and a Resource.</p>
+  <div class="title-and-sign-up"> 
+    <span class="newsletter-header"> The Middle Ground Newsletter </span>
+    <p> Sign up to recieve a monthly note and resource! </p>  
+  </div>
+  
   <EmailSignup/>
+
+  <div class="tagline">
+    <span class="link-details"> 2026 Middle Ground Made </span>
+    <span class="link-details"> / </span>
+    <p class="link-details bottom">Follow the spark!</p>
+</div>
 </footer>
 
+
+
+
 <style>
+
   .newsletter-header {
     color: #2d2d2d; /* Darkest Gray */   
     text-transform: uppercase;
@@ -28,19 +35,45 @@ const lastUpdated = new Date().toLocaleDateString('en-US', {
   }
 
   p {
-  font-size: .75rem;
+  font-size: .80rem;
   }
 
   footer {
   display: flex;
-  padding-top: 100px;
+  margin-top: 200px;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
+  width: 100%;
   }
 
   .note{
   margin-top: 20px;
   }
+
+
+    .link-details {
+    color: #2d2d2d; /* Darkest Gray */   
+    font-weight: 400;
+  }
+
+    .link-details.bottom {
+    color: #FFA800; /* Darkest Gray */   
+    font-weight: 400;
+  }
+
+  .tagline {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .title-and-sign-up{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+  }
+
 </style>

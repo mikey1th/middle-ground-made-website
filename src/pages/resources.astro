@@ -5,10 +5,11 @@ import Navigation from '../components/navigation.astro'
 import Footer from '../components/footer.astro'
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
-import ContextSectionLinks from '../components/context-section-links.astro'
+import BackButton from '../components/back-button.astro';
+import ResourcesCollection from '../components/resources-collection.astro';
 
 
-const pageTitle = "Writing";
+const pageTitle = "Resources";
 
 
 ---
@@ -29,13 +30,22 @@ const pageTitle = "Writing";
 	<ContextSection>
 	<h2>{pageTitle}</h2>
 	<hr>
-	<p> I didn't plan on my writing fitting this neatly into categories, but here we have it. </p>
-	<ContextSectionLinks>
-		<a href="/open-notes/" class="primary-button">Open Notes</a>
-		<a href="/snippets" class ="primary-button"> Snippets </a>
-		<a href="/rephrases" class ="primary-button"> Rephrases </a>
-	</ContextSectionLinks>
-	</PageWrapper>
+	<p> 
+		Resources are shared monthly in the Midde Ground Newsletter. Over the years I've found some pretty
+		remarkable stuff. Somtimes its a simple quote, other times a video, other times an object or even a website.
+		If you love rabbit holes, and cool stuff you'll enjoy the collection below!
+    </p>
+	<p class="note">
+    * Links incoming
+    </p>
+	</ContextSection>
+
+	<ContextSection>
+	<ResourcesCollection/>
+	<BackButton/>	
+	</ContextSection>
 	<Footer />
+	</PageWrapper>
+	
 	</body>
 </html>
