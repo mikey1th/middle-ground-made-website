@@ -1,16 +1,18 @@
 ---
 
-import '../styles/global.css';
-import rephrases from '../data/rephrases-data.js';
+import content from '../data/what-why.js';
+import '../styles/global.css'
 
 
 ---
 
+
+
 <div class="all-rephrases">
-    {rephrases.map((rephrase) => (
+    {content.map((subject) => (
         <div class="individual-rephrase"> 
-            <p class="rephrase-original" set:html={rephrase.original} />
-            <p class="rephrase-improved" set:html={rephrase.improved} />
+            <p class="rephrase-improved"> {subject.label} </p>
+            <p class="rephrase-original"> {subject.text} </p>
         </div>       
     ))}
 </div>
@@ -27,6 +29,7 @@ import rephrases from '../data/rephrases-data.js';
     .rephrase-improved{
     font-weight: 500;
     color: #2d2d2d;
+    font-size: .90rem;
     }
 
     .individual-rephrase{

@@ -160,6 +160,7 @@ p{
   text-decoration: none;
   width: fit-content;
   gap: 7.5px;
+  align-items: center;
 
   border-radius: 100px;
   border: 1px solid #E8E8E8;
@@ -218,6 +219,7 @@ font-size: .65rem;
   text-decoration: none;
   width: fit-content;
   gap: 7.5px;
+  align-items: center;
 
   border-radius: 100px;
   border: 1px solid #E8E8E8;
@@ -247,4 +249,74 @@ font-size: .65rem;
   display: inline-flex;
   gap: 10px;
   width: fit-content;
+}
+
+
+.list-item-title{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    width: fit-content;
+    gap: 7.5px;
+
+    font-family: "Atkinson Hyperlegible Next";
+    font-weight: 500;
+    font-size: .90rem;
+}
+
+.list-item-title:hover{
+    text-decoration: underline;
+}
+
+.list-item-title.no-link:hover{
+    text-decoration: none;
+}
+
+.text-list-item{
+    display: flex;
+    width: fit-content;
+    gap: 7.5px;
+    align-items: center;
+}
+
+
+.list-item-details{
+    display: flex;
+    width: fit-content;
+    gap: 7.5px;
+    font-size: .75rem;
+
+    font-family: "Atkinson Hyperlegible Mono"; 
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .10em;
+    text-decoration: none;
+    color: #AEAEAE;
+}
+
+
+.list-item-details a {
+    display: flex;
+    width: fit-content;
+    gap: 7.5px;
+    font-size: .75rem;
+
+    font-family: "Atkinson Hyperlegible Mono"; 
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .10em;
+    text-decoration: none;
+    color: #AEAEAE;
+}
+
+.list-item-details a:hover {
+    font-weight: 500;
+    color: #2d2d2d;
+}
+
+
+.all-map-list-items{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }

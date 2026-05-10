@@ -1,26 +1,19 @@
 ---
+
 const pageTitle = "About";
 
-const aboutMiddleGround = {
-    location: "Greenville, SC",
-    whatIs: "Heirloom design studio",
-    forProduct: "digital essentalists",
-    forService: "people making a difference",
-    owner: "Mikey Hayes",
-    foundedDate: "2019",
-};
 
 import '../styles/global.css';
 import Navigation from '../components/navigation.astro'
 import Footer from '../components/footer.astro'
-
-const links = ["Bio", "CV", "What/Why", "Equipment", "Snippets", "Reccomended Reading", "Projects", "Essays"];
-
-const linkColor = "#2D2D2D"; //Darkest Gray
-const linkWeight = "700";
-const linkCase = "uppercase";
+import PageWrapper from '../components/page-wrapper.astro';
+import ContextSection from '../components/context-section.astro';
+import BackButton from '../components/back-button.astro';
+import CompendiumCollection from '../components/compendium-collection.astro';
+import ContextSectionLinks from '../components/context-section-links.astro';
 
 ---
+
 
 <html lang="en">
 	<head>
@@ -30,7 +23,36 @@ const linkCase = "uppercase";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-        <style define:vars={{linkColor, linkWeight, linkCase}}></style>
+	</head>
+	<body>
+	  <PageWrapper>
+	    <Navigation />
+	      <ContextSection>
+          <h2>{pageTitle}</h2>
+          <hr>
+          <p>
+          What Middle Ground Made is has always changed. When I first started sharing work in 2019 it wasn't anything. Middle Ground essentially started as a generic "bucket" for my creative work. In 2020 I called Middle Ground a "design shop" in 2021 after I release my first book I reframed Middle Ground as a "design and publishing" studio.
+          <br>
+          <br>
+          Each change in perspective made Middle Ground more honest. Now though I think Middle Ground made is an heirloom design studio.
+          I do all this from Greenville, SC. As a final note, Mikey Hayes is the founder and sole operator of Midde Ground Made.</p>
+          <ContextSectionLinks>
+            <a href="/bio/" class="primary-button">Bio</a>
+            <a href="/what-why" class ="primary-button"> What / Why </a>
+            <a href="/cv" class ="primary-button"> curriculum vitae </a>
+            <a href="/stacks" class ="primary-button"> Stacks </a>
+          </ContextSectionLinks>
+	      </ContextSection>   
+    <Footer />
+    <PageWrapper/>
+    </body>
+    </html>
+
+
+
+
+
+
 
 <style>
     h1 {
@@ -43,27 +65,7 @@ const linkCase = "uppercase";
       font-weight: var(--linkWeight);
       text-transform: var(--linkCase);
     }
-</style>
-	</head>
-	<body>
-	    <Navigation />
-        <main>
-         <section class="About Context">
-      <div class="container">
-        <h1>{pageTitle}</h1>
-        <hr>
-        <p>What Middle Ground Made is has always changed. When I first started sharing work in {aboutMiddleGround.foundedDate} it wasn't anything. Middle Ground essentially started as a generic "bucket"
-            for my creative work. In 2020 I called Middle Ground a "design shop" in 2021 after I release my first book I reframed Middle Ground as a "design and publishing" studio.
-            Each change in perspective made Middle Ground more honest. Now though I think Middle Ground made is {aboutMiddleGround.whatIs}. I make products for {aboutMiddleGround.forProduct} and offer services to {aboutMiddleGround.forService}.
-            I do all this from {aboutMiddleGround.location}. As a final note {aboutMiddleGround.owner} the founder and sole operator of Midde Ground Made.</p>
-        <div>
-            <ul>
-            {links.map((link) => <li class="links">{link}</li>)}
-        </ul>
-     </div> 
-      </div>
-    </section>
-  </main>
-  <Footer />
-	</body>
-</html>
+
+
+
+    

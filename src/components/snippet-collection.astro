@@ -5,43 +5,32 @@ import snippets from '../data/snippet-data.js';
 
 ---
 
+{/* style similar to resources page */}
+
 <div class="all-snippets">
-    <ul>
-        {snippets.map((snippet) => (
-        <li> 
-            <span class="content-bubble"> {snippet.text} </span>
-            
+    {snippets.map((snippet) => (
+    <div class="snippet-row">
+        <span class="content-bubble"> {snippet.text} </span>
             {(snippet.openNote || snippet.design) && (
             /* this stuff is conditionally rendered appears to the right of the link*/
             <div class="content-links"> 
                 {snippet.openNote && (
                 <a href= {snippet.openNote} class="link-details"> Note</a>
                 )}
-            
                 {snippet.openNote && snippet.design && (
                 <span class="link-details"> / </span>
                 )}
-                
                 {snippet.design && (
                 <a href= {snippet.design} class="link-details"> Design</a>
                 )}
              </div>
             )}
-        </li>
-        ))}
-    </ul>
+    </div>
+    ))}
 
   
 <style>
-    ul{
-    padding-left: 0;
-    list-style-position: inside; /* keeps numbers from getting clipped */
-    margin: 0;
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    list-style: none;
-    }
+
 
     .all-snippets{
     display: flex;
@@ -58,11 +47,11 @@ import snippets from '../data/snippet-data.js';
     color: #2d2d2d;
     }
 
-    li{
+    .snippet-row{
     display: inline-flex;
     gap: 10px;
     width: fit-content;
+    align-items: center;
     }
 
 </style>
-

@@ -6,77 +6,60 @@ import resources from '../data/resources-data';
 ---
 
 
-<div class="all-resources">
+<div class="all-map-list-items">
     {resources.map((resource) => (
-        <div class="individual-resource">
-
-        {resource.text && (
         <div>
-            <div class="resources"> 
-                <a href={resource.link}> {resource.text} </a>
-            </div> 
-            <span class="link-details"> / </span>
-            <span class="link-details"> {resource.number} </span>
-            {resource.quote && ( <p class="resources-quote"> {resource.quote} </p> )}
-        </div>
-        )}
+            {resource.text && (
+                <div>
+                <div class="text-list-item">
+                    <a href={resource.link} target="_blank" rel="noopener noreferrer" class="list-item-title"> {resource.text} </a>
+                    <div class="list-item-details">
+                        <span> / </span>            
+                        <span> {resource.number} </span>
+                    </div> 
+                </div>
+                {resource.quote && (
+                <p class="resources-quote"> {resource.quote} </p> 
+                )}    
+                </div>
+                )}
 
-        {/*conditional rendering set up. The stuff above renders for a link, the stuff below renders for no link
-        this is decided in the js data collection. has a lot to do with hover states, kwho knows if it was worth it*/}
+            {/*conditional rendering set up. The stuff above renders for a link, the stuff below renders for no link
+            this is decided in the js data collection. has a lot to do with hover states, kwho knows if it was worth it*/}
 
-        {!resource.text && (
-        <div>
-            <div class="resources no-link">
-                <span> {resource.textNoLink}</span>
-            </div>
-            <span class="link-details"> / </span>
-            <span class="link-details"> {resource.number} </span>
-            {resource.quote && ( <p class="resources-quote"> {resource.quote} </p> )}
-        </div> 
-        )}
-        </div>
+            {!resource.text && (
+                <div>
+                    <div class="text-list-item">
+                        <span class="list-item-title no-link"> {resource.textNoLink}</span>
+                        <div class="list-item-details">
+                            <span> / </span>
+                            <span> {resource.number} </span>
+                        </div>
+                    </div>
+                    {resource.quote && (
+                    <p class="resources-quote"> {resource.quote} </p>
+                    )}
+                </div>
+                )}      
+        </div>  
     ))}
 </div>
 
 
 <style>
 
-
-    .resources{
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    width: fit-content;
-    gap: 7.5px;
-
-    font-family: "Atkinson Hyperlegible Next";
-    font-weight: 500;
-    font-size: .90rem;
-    }
-
-    .resources:hover{
-    text-decoration: underline;
-    }
-
-    .resources.no-link:hover{
-    text-decoration: none;
-    }
-
+    {/* stays, specific paragraph styling  */}
     .resources-quote{
     font-weight: 300;
     }
 
+    {/* stays, specific link styling  */}
     a {
     text-decoration: none;
     color: inherit;
     }
 
-    .all-resources{
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    }
-
+    {/* stays, specific paragraph styling  */}
     .resource-text-link{
     font-family: "Atkinson Hyperlegible Next";
     color: black;
@@ -85,11 +68,7 @@ import resources from '../data/resources-data';
     font-size: .90rem;
     }
 
-    .individual-resource{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    }
+
 
 </style>
 
