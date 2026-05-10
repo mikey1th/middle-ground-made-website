@@ -1,0 +1,52 @@
+---
+
+import '../styles/global.css';
+import Navigation from '../components/navigation.astro'
+import Footer from '../components/footer.astro'
+import PageWrapper from '../components/page-wrapper.astro';
+import ContextSection from '../components/context-section.astro';
+import BackButton from '../components/back-button.astro';
+import BioLayout from '../components/bio-layout.astro';
+
+
+const pageTitle = "Bio";
+
+
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+	<PageWrapper>
+	<Navigation />
+	<ContextSection>
+	<h2>{pageTitle}</h2>
+	<hr>
+	<p> 
+		Resources are shared monthly in the Midde Ground Newsletter. Over the years I've found some pretty
+		remarkable stuff. Somtimes its a simple quote, other times a video, other times an object or even a website.
+		If you love rabbit holes, and cool stuff you'll enjoy the collection below!
+    </p>
+	<p class="note">
+    * Info incoming 
+    </p>
+	</ContextSection>
+    
+	<ContextSection>
+        <BioLayout />
+	    <hr>
+	    <BackButton/>	
+	</ContextSection>
+	<Footer />
+	</PageWrapper>
+	
+	</body>
+</html>

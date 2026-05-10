@@ -1,0 +1,67 @@
+---
+
+import '../styles/global.css';
+import { Image } from 'astro:assets';
+import grokShot from '../assets/website-images/mikey-hayes-bio-images/grok-shot.jpg'
+import headShot from '../assets/website-images/mikey-hayes-bio-images/head-shot.jpg'
+import sage from '../assets/website-images/mikey-hayes-bio-images/sage.jpg'
+import rebbyGrad from '../assets/website-images/mikey-hayes-bio-images/rebby-graduation.jpg'
+
+
+
+
+
+---
+
+
+    <p>
+        My name is Mikey Hayes, I started Middle Ground in 2020.
+        <br>
+        <br>
+        When I founded Middle Ground I had absolutely no idea what I was getting into.
+        I did not know how to produce well-made artifacts, I didn't conceptualize myself as an artist, and I felt confused pretty much constantly.
+        <br>
+        <br>
+        I remember filling journals with questions and I desperately wanted to know where the creative journey was headed. I felt that if I knew where I was going I could sprint in that direction. After a year or so of trying to figure it all out I realized knowledge about where I was headed wasn't all that essential.
+        <br>
+        <br>
+        So I decided to keep making things. To build my way there even if I didn't know where "there" actually was. The decision to keep making things eventually became a project I started called Saturday Type Club. Every Saturday I would publish a type-based design project regardless of what I thought about it. This weekly, mandatory practice grew my design chops and formed me into someone who can regularly show up.
+        <br>
+        <br>
+        After some time of being solely a designer I started implementing writing into what I made. I chewed on how to best combine type-based design and writing and stumbled my way into forming the Tid-Bit Badge Catalog. I completed the project in 2022 and subsequently set off to start another writing gig.
+        <br>
+        <br>
+        With my passion for writing now top of mind I wrote, designed, and published my first book Stepless, in 2023. It was exactly the project I needed to make. Although the process of publishing Stepless was confusing and tedious it confirmed that Middle Ground needed to change at its core.
+        <br>
+        <br>
+        In 2024 Middle Ground officially became Middle Ground Design and Publishing. Writing had been fully integrated into my ongoing creative practice.My passion for publishing didn't stop either, in 2024 I self-published my second book Log Out.
+        <br>
+        <br>
+        Even though I have more clarity the story of Middle Ground is still being written. I'm sure this long bio will at some point be even longer. I've had many confusing days and a ton of second guesses.
+        <br>
+        <br>
+        Something that has helped me stay on track is a phrase I coined. "Sketch more scroll less." If I can manage to prioritize the meaningful and ignore the distractions, I know I'm well on my way, regardless of where I end up.
+    </p>
+
+    <div class="images">
+    <Image src={grokShot} alt="Project 1" class="bio-image"/>
+    <Image src={rebbyGrad} alt="Project 1" class="bio-image"/>
+    <Image src={sage} alt="Project 1" class="bio-image"/>
+    </div>
+
+
+    <style>
+        .bio-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .images{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+    </style>
+
+    

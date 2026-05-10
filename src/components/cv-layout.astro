@@ -1,0 +1,142 @@
+---
+
+import '../styles/global.css';
+import items from '../data/cv-data.js';
+const itemsProjects = items.filter((post: any) => post.type === "project");
+const itemsWork = items.filter((post: any) => post.type === "work");
+const itemsEdu = items.filter((post: any) => post.type === "education");
+
+
+
+
+
+
+---
+<div class="items-wrapper">
+
+<div class="all-map-list-items">
+    <div class="cv-header">
+        <span class="list-item-title large"> Select Projects </h2>
+        <span class="list-item-details large"> / </span>
+        <span class="list-item-details large"> 2019 - Now </span>
+    </div>
+    <hr>
+    {itemsProjects.map((item) => (
+        <div>
+            <div class="text-list-item">
+                <a href={item.link} target="_blank" rel="noopener noreferrer" class="list-item-title"> {item.title} </a>
+                <div class="list-item-details">
+                    <span> / </span>            
+                    <span> {item.year} </span>
+                </div> 
+            </div>
+            <p class="resources-quote"> {item.description} </p> 
+        </div>
+    ))}
+
+</div>
+
+
+<div class="all-map-list-items">
+    <div class="cv-header">
+        <span class="list-item-title large"> Work History </h2>
+        <span class="list-item-details large"> / </span>
+        <span class="list-item-details large"> 2018 - Now </span>
+    </div>
+    <hr>
+    {itemsWork.map((item) => (
+        <div>
+            <div class="text-list-item">
+                <a href={item.link} target="_blank" rel="noopener noreferrer" class="list-item-title"> {item.title} </a>
+                <div class="list-item-details">
+                    <span> / </span>            
+                    <span> {item.year} </span>
+                </div> 
+            </div>
+            <p class="resources-quote"> {item.description} </p> 
+        </div>
+    ))}
+</div>
+
+<div class="all-map-list-items">
+    <div class="cv-header">
+        <span class="list-item-title large"> Education </h2>
+        <span class="list-item-details large"> / </span>
+        <span class="list-item-details large"> 2017 </span>
+    </div>
+    <hr>
+    {itemsEdu.map((item) => (
+        <div>
+            <div class="text-list-item">
+                <a href={item.link} target="_blank" rel="noopener noreferrer" class="list-item-title"> {item.title} </a>
+                <div class="list-item-details">
+                    <span> / </span>            
+                    <span> {item.year} </span>
+                </div> 
+            </div>
+            <p class="resources-quote"> {item.description} </p> 
+        </div>
+    ))}
+</div>
+
+
+</div>
+
+
+
+<style>
+
+    .list-item-title.large{
+    font-size: .95rem;
+    color: #2d2d2d;
+    font-weight: 500;
+
+    }
+
+    .list-item-title.large:hover{
+    text-decoration: none;
+    cursor: default;
+    }
+
+    .list-item-details.large{
+    font-size: .80rem;
+    color: #2d2d2d;
+    }
+
+    .items-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    }
+
+    .all-map-list-items:last-child {
+    margin-bottom: 15px;
+    }
+
+    .list-item-title{
+    font-weight: 400;
+    }
+
+    .cv-header{
+    display: flex;
+    flex-direction: row;
+    gap: 7.5px;
+    width: 100%;
+    align-content: center;
+    }
+
+    .all-map-list-items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    }
+
+    a {
+    text-decoration: none;
+    color: inherit;
+    }
+
+
+
+
+</style>
