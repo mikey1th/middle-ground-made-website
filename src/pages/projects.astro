@@ -36,6 +36,7 @@ const pageTitle = "Projects";
     		</p>
 			<p class="note"> * Sort projects by tag or explore all {additions.length} entries! </p>
 			<div class="project-tag-filters"> 
+				{/* Conditionally renders tags */}
 				{[...new Set(additions.flatMap(p => p.data.tags))].map(tag => (
 				<a href={`/project-archive/type/${tag}`} class="primary-button">{tag}</a>
 				))}

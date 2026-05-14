@@ -3,7 +3,6 @@
 import '../styles/global.css';
 import {getCollection} from 'astro:content';
 import {Image} from 'astro:assets';
-import ContextSection from './context-section.astro';
 
 
 import type { CollectionEntry } from 'astro:content';
@@ -67,6 +66,8 @@ const additions: CollectionEntry<'projects'>[] = (await getCollection('projects'
     height: auto;
     border-radius: 10px;
     transition: filter 0.3s ease;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    outline-offset: -1px;
     }
 
     .project-entry img:hover {

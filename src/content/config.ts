@@ -1,8 +1,8 @@
 import { defineCollection, z } from 'astro:content';
 
 const compendium = defineCollection({
-  type: 'data',
-  schema: ({ image }) => z.object({
+    type: 'data',
+    schema: ({ image }) => z.object({
     id: z.number(),
     title: z.string(),
     date: z.string(),
@@ -29,4 +29,17 @@ const projects = defineCollection({
   })
 });
 
-export const collections = { compendium, projects };
+
+const stacks = defineCollection({
+  type: 'data',
+  schema: ({ image }) => z.object({
+    id: z.number(),
+    title: z.string(),
+    link: z.string(),
+    image: image(),
+    type: z.string()
+  })
+});
+
+
+export const collections = { compendium, projects, stacks };

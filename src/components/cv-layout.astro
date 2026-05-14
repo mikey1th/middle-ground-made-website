@@ -2,20 +2,17 @@
 
 import '../styles/global.css';
 import items from '../data/cv-data.js';
-const itemsProjects = items.filter((post: any) => post.type === "project");
-const itemsWork = items.filter((post: any) => post.type === "work");
-const itemsEdu = items.filter((post: any) => post.type === "education");
-
-
-
-
+const itemsProjects = items.filter((entry) => entry.type === "project");
+const itemsWork = items.filter((entry) => entry.type === "work");
+const itemsEdu = items.filter((entry) => entry.type === "education");
 
 
 ---
+
 <div class="items-wrapper">
 
 <div class="all-map-list-items">
-    <div class="cv-header">
+    <div class="horizontal-header">
         <span class="list-item-title large"> Select Projects </span>
         <span class="list-item-details large"> / </span>
         <span class="list-item-details large"> 2019 - Now </span>
@@ -79,7 +76,6 @@ const itemsEdu = items.filter((post: any) => post.type === "education");
     ))}
 </div>
 
-
 </div>
 
 
@@ -115,14 +111,6 @@ const itemsEdu = items.filter((post: any) => post.type === "education");
 
     .list-item-title{
     font-weight: 400;
-    }
-
-    .cv-header{
-    display: flex;
-    flex-direction: row;
-    gap: 7.5px;
-    width: 100%;
-    align-content: center;
     }
 
     .all-map-list-items{

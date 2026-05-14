@@ -1,0 +1,92 @@
+---
+
+import '../styles/global.css';
+import {getCollection} from 'astro:content';
+import {Image} from 'astro:assets';
+
+const stacks = (await getCollection('stacks')).sort((a, b) => b.data.id - a.data.id);
+
+
+const obj = stacks.filter((stack) => stack.data.type === "object");
+const diy = stacks.filter((stack) => stack.data.type === "diy");
+const brand = stacks.filter((stack) => stack.data.type === "brand");
+const book = stacks.filter((stack) => stack.data.type === "book");
+
+---
+
+
+
+
+<div class="items-wrapper">
+
+<div class="all-map-list-items">
+    <div class="horizontal-header">
+        <span class="list-item-title large"> Objects </span>
+        <span class="list-item-details large"> / </span>
+        <span class="list-item-details large"> 2019 - Now </span>
+    </div>
+    <hr>
+    <div class="stack-items"> 
+    {obj.map((stack) => (
+        <div class="stack-column">
+            <a href={stack.data.link} target="_blank" rel="noopener noreferrer"> 
+                <Image src={stack.data.image} alt={stack.data.title} /> 
+            </a>
+            <div class="stack-details">
+                <span class="content-bubble"> {stack.data.title} </span>
+                <span class= "content-links header"> {stack.data.type} </span>
+            </div> 
+        </div>
+    ))}
+    </div>
+
+
+</div>
+
+
+
+
+</div>
+
+<p>{stacks.length}</p>
+
+
+<style>
+
+    .stack-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    column-gap: 30px;
+    row-gap: 30px;
+    }
+
+    .stack-items img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    outline-offset: -1px;
+    transition: filter 0.3s ease;
+    }
+
+    .stack-items img:hover {
+    filter: brightness(0.85);
+    }
+
+
+    .stack-details{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 10px;
+    }
+
+    .stack-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12.5px;
+    }
+
+
+</style>

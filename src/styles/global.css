@@ -127,6 +127,7 @@ hr {
 
 .primary-button {
 display: inline-flex;
+align-items: center;
 width: fit-content;
 padding: 10px 20px;
 cursor: pointer; 
@@ -138,13 +139,14 @@ font-family: "Atkinson Hyperlegible Mono";
 font-weight: 300;
 text-transform: uppercase;
 letter-spacing: .15em;
-font-size: .65rem;
+font-size: .675rem;
 color: #2d2d2d;
 }
 
 .primary-button:hover {
   background: #ffffff;
   font-weight: 500;
+  align-items: center;
 }
 
 p{
@@ -170,6 +172,7 @@ p{
   font-size: .90rem;
   color: #2d2d2d;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 .open-note-headers {
@@ -371,4 +374,26 @@ font-size: .65rem;
 
 .title-bubble:hover{
 cursor: default;
+}
+
+
+.content-links.header:hover{
+  cursor: default;
+  background: #FAFAFA;
+  text-transform: capitalize;
+}
+
+
+.horizontal-header{
+  display: flex;
+  flex-direction: row;
+  gap: 7.5px;
+  width: 100%;
+  align-content: center;
+}
+
+
+.list-item-details.large{
+  font-size: .80rem;
+  color: #2d2d2d;
 }
