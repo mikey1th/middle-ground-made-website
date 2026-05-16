@@ -30,16 +30,14 @@ const projects = defineCollection({
 });
 
 
-const stacks = defineCollection({
-  type: 'data',
-  schema: ({ image }) => z.object({
+const gallery = defineCollection({
+    type: 'data',
+    schema: ({ image }) => z.object({
     id: z.number(),
-    title: z.string(),
-    link: z.string(),
+    date: z.string(),
     image: image(),
-    type: z.string()
   })
 });
 
 
-export const collections = { compendium, projects, stacks };
+export const collections = { compendium, projects, gallery };

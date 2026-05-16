@@ -1,0 +1,79 @@
+---
+
+import '../styles/global.css';
+import {getCollection} from 'astro:content';
+import {Image} from 'astro:assets';
+
+
+import type { CollectionEntry } from 'astro:content';
+const pics: CollectionEntry<'gallery'>[] = (await getCollection('gallery')).sort((a, b) => b.data.id - a.data.id);
+
+---
+
+
+<div class="all-compendium-entries">
+    {pics.map((pic) => (
+        <div class="compendium-entry"> 
+                {/* the div below renders the unconditonal header info */}
+                <div class="compendium-header-info">
+                    <span class="link-details header"> {pic.data.date} </span>
+                </div>
+            <Image src={pic.data.image} alt={pic.data.date} />
+        </div>       
+    ))}
+</div>
+
+<p>{pics.length}</p>
+
+
+<style>
+    .all-compendium-entries{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px
+    }
+
+    .compendium-entry{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 20px;
+    }
+
+    .compendium-entry img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    outline-offset: -1px;
+    }
+
+    h3 {
+    font-size: .90rem;
+    font-weight: 400;
+    }
+
+    .compendium-header-info{
+    display: inline-flex;
+    gap: 10px;
+    width: fit-content;
+    }
+
+    .link-details{
+    color: #2d2d2d;
+    }
+
+    .link-details:hover{
+    font-weight: 500;
+    color: #2d2d2d;
+    }
+
+    .link-details.header:hover{
+    pointer-events: none;
+    font-weight: 300;
+    }
+
+</style>

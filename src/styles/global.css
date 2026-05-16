@@ -249,8 +249,8 @@ font-size: .65rem;
 
 
 .project-tag-filters{
-  display: inline-flex;
-  gap: 10px;
+  display: flex;
+  gap: 15px;
   width: fit-content;
 }
 
@@ -396,4 +396,47 @@ cursor: default;
 .list-item-details.large{
   font-size: .80rem;
   color: #2d2d2d;
+}
+
+
+
+.filter-by-tag{
+font-family: "Atkinson Hyperlegible Mono"; 
+font-weight: 300;
+text-transform: uppercase;
+font-size: .75rem;
+letter-spacing: .10em;
+text-decoration: none;
+color: #AEAEAE;
+}
+
+
+.filter-by-tag:hover{
+font-weight: 500;
+}
+
+.filter-by-tag + .filter-by-tag::before {
+  content: "/";
+  margin-right: 15px;
+  font-weight: 300;
+}
+
+.filter-by-tag + .filter-by-tag:hover::before {
+  font-weight: 300;
+}
+
+
+
+:root {
+  --line-gray: #E8E8E8;
+  --fill-gray: #FAFAFA;
+  --med-gray: #AEAEAE;
+  --dark-gray: #2D2D2D;
+
+}
+
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
 }

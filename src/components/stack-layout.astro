@@ -1,92 +1,117 @@
 ---
 
 import '../styles/global.css';
-import {getCollection} from 'astro:content';
-import {Image} from 'astro:assets';
+import stacks from '../data/stacks-data.js';
+const apparel = stacks.filter((entry) => entry.type === "apparel");
+const objects = stacks.filter((entry) => entry.type === "object");
+const books = stacks.filter((entry) => entry.type === "book");
 
-const stacks = (await getCollection('stacks')).sort((a, b) => b.data.id - a.data.id);
 
-
-const obj = stacks.filter((stack) => stack.data.type === "object");
-const diy = stacks.filter((stack) => stack.data.type === "diy");
-const brand = stacks.filter((stack) => stack.data.type === "brand");
-const book = stacks.filter((stack) => stack.data.type === "book");
+{/* types: apparel, objects, books */}
 
 ---
 
-
-
-
 <div class="items-wrapper">
 
-<div class="all-map-list-items">
-    <div class="horizontal-header">
-        <span class="list-item-title large"> Objects </span>
-        <span class="list-item-details large"> / </span>
-        <span class="list-item-details large"> 2019 - Now </span>
-    </div>
+<section id=apparel class="all-map-list-items">
+    <span class="list-item-title large"> Things you can wear </span>
     <hr>
-    <div class="stack-items"> 
-    {obj.map((stack) => (
-        <div class="stack-column">
-            <a href={stack.data.link} target="_blank" rel="noopener noreferrer"> 
-                <Image src={stack.data.image} alt={stack.data.title} /> 
-            </a>
-            <div class="stack-details">
-                <span class="content-bubble"> {stack.data.title} </span>
-                <span class= "content-links header"> {stack.data.type} </span>
-            </div> 
+    {apparel.map((item) => (
+        <div>
+            <div class="text-list-item">
+                <a href={item.link} target="_blank" rel="noopener noreferrer" class="list-item-title"> {item.title} </a>
+                <div class="list-item-details">
+                    <span> / </span>            
+                    <span> {item.type} </span>
+                </div>
+            </div>
         </div>
     ))}
-    </div>
+    </section>
+
+
+<section id=apparel class="all-map-list-items">
+    <span class="list-item-title large"> Things you can use </span>
+    <hr>
+    {objects.map((item) => (
+        <div>
+            <div class="text-list-item">
+                <a href={item.link} target="_blank" rel="noopener noreferrer" class="list-item-title"> {item.title} </a>
+                <div class="list-item-details">
+                    <span> / </span>            
+                    <span> {item.type} </span>
+                </div>
+            </div>
+        </div>
+    ))}
+    </section>
+
+
+<section id=apparel class="all-map-list-items">
+    <span class="list-item-title large"> Things you can read </span>
+    <hr>
+    {books.map((item) => (
+        <div>
+            <div class="text-list-item">
+                <a href={item.link} target="_blank" rel="noopener noreferrer" class="list-item-title"> {item.title} </a>
+                <div class="list-item-details">
+                    <span> / </span>            
+                    <span> {item.type} </span>
+                </div>
+            </div>
+        </div>
+    ))}
+    </section>
 
 
 </div>
 
-
-
-
-</div>
-
-<p>{stacks.length}</p>
 
 
 <style>
 
-    .stack-items{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    column-gap: 30px;
-    row-gap: 30px;
+    .list-item-title.large{
+    font-size: .95rem;
+    color: #2d2d2d;
+    font-weight: 500;
+
     }
 
-    .stack-items img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    outline: 1px solid rgba(0, 0, 0, 0.1);
-    outline-offset: -1px;
-    transition: filter 0.3s ease;
+    .list-item-title{
+    font-weight: 400;
     }
 
-    .stack-items img:hover {
-    filter: brightness(0.85);
+    .list-item-title.large:hover{
+    text-decoration: none;
+    cursor: default;
     }
 
-
-    .stack-details{
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    gap: 10px;
-    }
-
-    .stack-column {
+    .items-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 12.5px;
+    gap: 30px;
     }
+
+    .all-map-list-items:last-child {
+    margin-bottom: 15px;
+    }
+
+
+    .all-map-list-items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid var(--line-gray);
+    border-radius: 10px;
+    padding: 20px;
+    }
+
+    a {
+    text-decoration: none;
+    color: inherit;
+    }
+
+
 
 
 </style>

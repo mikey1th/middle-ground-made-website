@@ -8,6 +8,7 @@ import ContextSection from '../components/context-section.astro';
 import BackButton from '../components/back-button.astro';
 import ProjectLinks from '../components/project-links.astro';
 import { getCollection } from 'astro:content';
+import ContextSectionWithFilters from '../components/context-section-with-filters.astro';
 const additions = await getCollection('projects');
 
 
@@ -35,19 +36,20 @@ const pageTitle = "Projects";
     			so much code involvd with making them. Enjoy the slightly un-optimized collection.
     		</p>
 			<p class="note"> * Sort projects by tag or explore all {additions.length} entries! </p>
-			<div class="project-tag-filters"> 
-				{/* Conditionally renders tags */}
-				{[...new Set(additions.flatMap(p => p.data.tags))].map(tag => (
-				<a href={`/project-archive/type/${tag}`} class="primary-button">{tag}</a>
-				))}
-			</div>
 		</ContextSection>
-
-		<ContextSection>
+		<ContextSectionWithFilters>
 			<ProjectLinks/>
 			<BackButton/>
-		</ContextSection>
+		</ContextSectionWithFilters>
 		<Footer />
 	<PageWrapper/>
 	</body>
 </html>
+
+
+<style>
+.context-section{
+padding-top: 40px;
+}
+
+</style>
