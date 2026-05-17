@@ -23,6 +23,7 @@ const projects = defineCollection({
     merch: z.string().optional(),
     coverImage: image(),
     sortDate: z.string(),
+    displayTag: z.string(),
     /* array fields to pass however many you need */
     images: z.array(image()),
     tags: z.array(z.string()),

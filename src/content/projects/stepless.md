@@ -6,6 +6,7 @@ id: 47
 merch: "March Coming Soon"
 coverImage: ../../assets/website-images/project-images/stepless-01.jpg
 sortDate: "2025-01-24"
+displayTag: "Object"
 images: 
     - ../../assets/website-images/project-images/stepless-01.jpg
     - ../../assets/website-images/project-images/stepless-02.jpg

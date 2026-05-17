@@ -3,9 +3,10 @@
 title: "Book Mark"
 date: "03-25"
 id: 63
-merch: "March Coming Soon"
+merch: "Merch Coming Soon"
 coverImage: ../../assets/website-images/project-images/book-mark-01.jpg
 sortDate: "2025-03-25"
+displayTag: "Object"
 images: 
     - ../../assets/website-images/project-images/book-mark-01.jpg
     - ../../assets/website-images/project-images/book-mark-02.jpg

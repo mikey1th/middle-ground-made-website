@@ -6,6 +6,7 @@ id: 35
 merch: "March Coming Soon"
 coverImage: ../../assets/website-images/project-images/logout-01.jpg
 sortDate: "2025-01-26"
+displayTag: "Object"
 images: 
     - ../../assets/website-images/project-images/logout-01.jpg
     - ../../assets/website-images/project-images/logout-02.jpg

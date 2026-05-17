@@ -10,7 +10,8 @@ const additions: CollectionEntry<'projects'>[] = (await getCollection('projects'
 
 
 const allProjects = await getCollection('projects');
-const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))];
+const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
+
 ---
 
 
@@ -35,20 +36,13 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))];
                     <span class="link-details header"> {project.data.date} </span>
                     <span class="link-details header"> / </span>
                     <span class="link-details header"> {project.data.id} </span>
+                    <span class="link-details header"> / </span>
+                    <span class="link-details header"> {project.data.displayTag} </span>
                 </div>
-                    {/* these tags are not conditionally rendered, but the / is. If an entry only has 
-                    one tag, it will not render. These appear on another bubble to the right */}
-                    <span class="content-links header"> {project.data.tags.map((tag, index) => (
-                        <span>
-                        <span> {tag} </span>
-                        {index !== project.data.tags.length - 1 ? <span> / </span> : null}
-                        </span>
-                        ))}
-                    </span>
-                </div>
-                    <a href={`/project-archive/${project.slug}`}>
-                    <Image src={project.data.coverImage} alt={project.data.title} />    
-                    </a>
+            </div>
+                <a href={`/project-archive/${project.slug}`}>
+                <Image src={project.data.coverImage} alt={project.data.title} />    
+                </a>
         </div>
     ))}
 </div>
@@ -68,7 +62,6 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))];
     flex-direction: column;
     width: 100%;
     gap: 30px;
-    align-content: center;
     }
 
 
@@ -98,12 +91,7 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))];
     }
 
     .project-entry img:hover {
-    filter: brightness(0.85);
-    }
-
-    h3 {
-    font-size: .90rem;
-    font-weight: 400;
+    filter: brightness(0.75);
     }
 
     .project-header-info{
@@ -112,34 +100,10 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))];
     width: fit-content;
     }
 
-    .link-details{
-    color: #2d2d2d;
-    }
-
-    .link-details:hover{
-    font-weight: 500;
-    color: #2d2d2d;
-    }
-
-    .link-details.header:hover{
-    pointer-events: none;
-    font-weight: 300;
-    }
-
     .project-tag-filters{
     display: inline-flex;
     gap: 10px;
     width: fit-content;
     }
-
-    .content-links{
-    text-transform: capitalize;
-    }
-
-    .content-links.header:hover{
-     cursor: default;
-     background: #FAFAFA;
-     text-transform: capitalize;
-     }
 
 </style>

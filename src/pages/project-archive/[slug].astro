@@ -38,17 +38,17 @@ const { Content } = await project.render();
                <Navigation />
                <ContextSection>
                     <div class="project-header-info">
-                    <div class="content-bubble">
-                        <span> {project.data.title} </span>
-                        <span class="link-details header"> / </span>
-                        <span class="link-details header"> {project.data.date} </span>
-                        <span class="link-details header"> / </span>
-                        <span class="link-details header"> {project.data.id} </span>
+                         <div class="content-bubble">
+                              <span> {project.data.title} </span>
+                              <span class="link-details header"> / </span>
+                              <span class="link-details header"> {project.data.date} </span>
+                              <span class="link-details header"> / </span>
+                              <span class="link-details header"> {project.data.id} </span>
+                              <span class="link-details header"> / </span>
+                              <span class="link-details header"> {project.data.displayTag} </span>
+                         </div>
                     </div>
-                        {/* these tags are not conditionally rendered, but is another bubble */}
-                        <span class="content-links"> {project.data.tags} </span>
-                </div>
-                <Content /> 
+                <Content/> 
                 {project.data.images.map((image) => (
                 <Image src={image} alt={project.data.title} />
                 ))}
@@ -60,35 +60,21 @@ const { Content } = await project.render();
 </html>
 
 
+
 <style>
 
-    .content-links{
-     text-transform: capitalize;
-     }
-
-     .content-links:hover{
-     cursor: default;
-     background: #FAFAFA;
-     text-transform: capitalize;
-     }
-
-     .content-links{
-     gap: 7.5px
-     }
-
-
     img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
      outline: 1px solid rgba(0, 0, 0, 0.1);
-    outline-offset: -1px;
+     outline-offset: -1px;
     }
 
     .project-header-info{
-    display: inline-flex;
-    gap: 10px;
-    width: fit-content;
+     display: inline-flex;
+     gap: 10px;
+     width: fit-content;
     }
      
 </style>
