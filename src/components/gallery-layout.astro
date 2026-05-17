@@ -13,12 +13,9 @@ const pics: CollectionEntry<'gallery'>[] = (await getCollection('gallery')).sort
 
 <div class="all-compendium-entries">
     {pics.map((pic) => (
-        <div class="compendium-entry"> 
-                {/* the div below renders the unconditonal header info */}
-                <div class="compendium-header-info">
-                    <span class="link-details header"> {pic.data.date} </span>
-                </div>
-            <Image src={pic.data.image} alt={pic.data.date} />
+        <div class="gallery-entry">    
+            <Image src={pic.data.image} alt={pic.data.date} class="bg-image" />                
+            <span class="link-details gallery"> {pic.data.date} </span>
         </div>       
     ))}
 </div>
@@ -26,7 +23,9 @@ const pics: CollectionEntry<'gallery'>[] = (await getCollection('gallery')).sort
 <p>{pics.length}</p>
 
 
+
 <style>
+    
     .all-compendium-entries{
     display: flex;
     flex-direction: column;
@@ -34,46 +33,47 @@ const pics: CollectionEntry<'gallery'>[] = (await getCollection('gallery')).sort
     gap: 30px
     }
 
-    .compendium-entry{
+    .gallery-entry{
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 20px;
     border-bottom: 1px solid #E8E8E8;
     padding-bottom: 20px;
+    position: relative;
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    overflow: hidden;
     }
 
-    .compendium-entry img {
+    .link-details.gallery{
+    border-radius: 50px;
+    width: auto;
+    color: rgba(255, 255, 255, 0.50);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(1px);
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 7.5px 15px;
+    z-index: 1;
+    }
+
+
+    .bg-image {
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 10px;
     border-radius: 10px;
     outline: 1px solid rgba(0, 0, 0, 0.1);
     outline-offset: -1px;
     }
 
-    h3 {
-    font-size: .90rem;
-    font-weight: 400;
-    }
-
-    .compendium-header-info{
-    display: inline-flex;
-    gap: 10px;
-    width: fit-content;
-    }
-
-    .link-details{
-    color: #2d2d2d;
-    }
-
-    .link-details:hover{
-    font-weight: 500;
-    color: #2d2d2d;
-    }
-
-    .link-details.header:hover{
-    pointer-events: none;
-    font-weight: 300;
-    }
-
 </style>
+
+

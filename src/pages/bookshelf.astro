@@ -5,10 +5,11 @@ import Navigation from '../components/navigation.astro'
 import Footer from '../components/footer.astro'
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
-import ContextSectionLinks from '../components/context-section-links.astro'
+import BackButton from '../components/back-button.astro';
+import BookshelfLayout from '../components/bookshelf-layout.astro';
 
 
-const pageTitle = "Extras";
+const pageTitle = "CV";
 
 
 ---
@@ -29,13 +30,23 @@ const pageTitle = "Extras";
 	<ContextSection>
 	<h2>{pageTitle}</h2>
 	<hr>
-	<p> I didn't plan on my writing fitting this neatly into categories, but here we have it. </p>
-	<ContextSectionLinks>
-		<a href="/bookshelf" class ="primary-button"> Bookshelf </a>
-        <a href="/gallery" class ="primary-button"> Gallery </a>
-		<span class="primary-button"> Merch (coming soon) </span>
-	</ContextSectionLinks>
-	</PageWrapper>
+	<p> 
+		Rephrases are short bits of writing that help me rethink common
+        trains of thought. There arent many but their quality 
+        makes up for thier lack of quantity
+    </p>
+	<p class="note">
+    * Contradictions incoming
+    </p>
+	</ContextSection>
+
+	<ContextSection>
+	<BookshelfLayout/>
+    <hr>
+	<BackButton/>
+	</ContextSection>
+
 	<Footer />
+	</PageWrapper>
 	</body>
 </html>

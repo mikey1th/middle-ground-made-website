@@ -1,0 +1,50 @@
+---
+
+import '../styles/global.css';
+import books from '../data/bookshelf-data';
+
+---
+
+
+<div class="all-map-list-items"> 
+    {books.map((book) => (
+        <div>
+            <div class="text-list-item">
+                <a href={book.link} target="_blank" rel="noopener noreferrer" class="list-item-title"> {book.titleAuthor} </a>
+                <div class="list-item-details">
+                    <span> / </span>            
+                    <span> {book.novelNonFitcion} </span>
+                    <span> / </span>            
+                    <span> {book.genre} </span>
+                </div> 
+            </div>
+        </div>
+    ))}
+    
+
+
+<style>
+
+    {/* stays, specific paragraph styling  */}
+    .resources-quote{
+    font-weight: 300;
+    }
+
+    {/* stays, specific link styling  */}
+    a {
+    text-decoration: none;
+    color: inherit;
+    }
+
+    {/* stays, specific paragraph styling  */}
+    .resource-text-link{
+    font-family: "Atkinson Hyperlegible Next";
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: .90rem;
+    }
+
+
+
+</style>
