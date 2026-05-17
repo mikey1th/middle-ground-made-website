@@ -5,10 +5,8 @@ import Navigation from '../components/navigation.astro';
 import Footer from '../components/footer.astro';
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
-import FeaturedReleaseThumbnail from '../components/featured-release-thumbnail.astro';
-import { Image } from 'astro:assets';
-import TestImage from '../assets/website-images/Open-Quote-01-Test.png';
-
+import FeaturedWorkLayout from '../components/featured-work-layout.astro';
+import FeaturedEssay from '../components/featured-essay-layout.astro';
 const pageTitle = "Middle Ground Made";
 ---
 
@@ -20,93 +18,28 @@ const pageTitle = "Middle Ground Made";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-
-		<style>
-
-			hr {
-			border: none;
-  			border-top: 1px solid #E8E8E8;
-			width: 100%;
-			}
-
-			.featured-work-row {
-
-				/* layout */
-				display: flex;
-				justify-content: center;
-				gap: 20px;
-				width: 100%;
-    			align-items: stretch;
-
-				/* styling */ 
-			}
-				
-			.thumbnail-title{
-			font-size: 1rem;
-			font-family: "Atkinson Hyperlegible Next";
-			font-weight: 500;
-			}
-
-			.thumbnail-date{
-			text-transform: uppercase;
-			letter-spacing: .15em;
-			font-size: .75rem;
-			}
-
-			.thumbnail-category{
-			text-transform: uppercase;
-			letter-spacing: .15em;
-			font-size: .75rem;
-			font-family: "Atkinson Hyperlegible Mono";
-			font-weight: 500;
-			max-width: 135px;
-			}
-
-			.featured-image{
-			width: 100%;
-  			height: auto;
-			border-radius: 10px;
-			}
-
-			.featured-work-info{
-			display: flex;
-			flex-direction: column;
-			gap: 7.5px;
-			}
-
-		</style>
 	</head>
 	<body>
 		<PageWrapper>
 		<Navigation/>	
 		<ContextSection>
-		<h2> Featured Work </h2>
+		<h2> The Basics </h2>
 		<hr>
-		<p> Here's a collection of work that I am particularly proud of. These selections could be recently finished, or they could be recently re-discovered. I hope you enjoy them as much as I do! </p>
-		<div class="featured-work-row">
-			<FeaturedReleaseThumbnail>
-			<Image src={TestImage} alt="Project 1" width={800} height={600} class="featured-image"/>
-			<p class="thumbnail-title"> Shipping is better than scrolling </p>
-			<hr>
-			<div class ="featured-work-info">
-			<p class="thumbnail-date"> April 26, 2026 </p>
-			<p class="thumbnail-category"> Open Notes </p>	
-			</div>
-			</FeaturedReleaseThumbnail>
-
-			<FeaturedReleaseThumbnail>
-			<Image src={TestImage} alt="Project 1" width={800} height={600} class="featured-image"/>
-			<p class="thumbnail-title"> Shipping is better than scrolling </p>
-			<hr>
-			<div class ="featured-work-info">
-			<p class="thumbnail-date"> April 26, 2026 </p>
-			<p class="thumbnail-category"> Compendium </p>	
-			</div>	
-			</FeaturedReleaseThumbnail>
-
-		</div>	
+		<p> I follow the spark by creating herilooms. Here's a collection of work that I am particularly proud of. These selections could be recently finished, or they could be recently re-discovered. I hope you enjoy them as much as I do! </p>
+		<p class="note">
+    	* Featured work incoming
+    	</p>
 		</ContextSection>
-		<Footer/>	
+
+		<ContextSection>
+		<FeaturedWorkLayout/>
+		</ContextSection>
+
+		<ContextSection>
+		<FeaturedEssay/>
+		</ContextSection>
+
+		<Footer/>
 		</PageWrapper>
 	</body>
 </html>

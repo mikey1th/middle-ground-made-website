@@ -1,0 +1,88 @@
+---
+
+import '../styles/global.css';
+import { Image } from 'astro:assets';
+import Entry206 from '../assets/website-images/compendium-images/mgc-206.jpg';
+import BookMark from '../assets/website-images/project-images/book-mark-01.jpg';
+
+---
+
+
+
+
+<div class="all-featured-work-items">
+    <div class="gallery-entry">    
+        <Image src={Entry206} alt="Logo Sign painting" class="bg-image" />                
+        <a href="/compendium" class="link-details gallery dark"> Compendium </a>
+    </div>    
+    <div class="gallery-entry">    
+        <Image src={BookMark} alt="Logo Sign painting" class="bg-image" />                
+        <a href="/projects" class="link-details gallery dark"> projects </a>
+    </div>  
+    </div>
+</div>
+
+
+
+
+
+
+
+<style>
+
+    .link-details.gallery.dark:hover{
+    font-weight: 500;
+    }
+
+    .categories{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    }
+
+    .list-item-title.large{
+    font-size: .95rem;
+    color: #2d2d2d;
+    font-weight: 500;
+
+    }
+
+    .list-item-title.large:hover{
+    text-decoration: none;
+    cursor: default;
+    }
+
+    .list-item-details.large{
+    font-size: .80rem;
+    color: #2d2d2d;
+    }
+
+    .items-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    }
+
+    .all-map-list-items:last-child {
+    margin-bottom: 10px;
+    }
+
+    .list-item-title{
+    font-weight: 400;
+    }
+
+    .all-featured-work-items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    }
+
+    a {
+    text-decoration: none;
+    color: inherit;
+    }
+
+
+
+
+</style>
