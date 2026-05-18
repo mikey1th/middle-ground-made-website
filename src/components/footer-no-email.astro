@@ -1,32 +1,45 @@
 ---
 
+import ContextSection from "./context-section.astro"
 
 ---
-
+<div>
+<ContextSection>
 <footer>
   <span class="link-details"> 2026 Middle Ground Made </span>
   <span class="link-details"> / </span>
   <p class="link-details bottom">Follow the spark!</p>
 </footer>
+</ContextSection>
+</div>
+
+
 
 <style>
+
+  div{
+    margin-top: 85px;
+    width: 100%;
+  }
+
+
   .link-details {
     color: #2d2d2d; /* Darkest Gray */   
     font-weight: 400;
+    font-size: .65rem;
+
   }
 
     .link-details.bottom {
     color: #FFA800; /* Darkest Gray */   
-    font-weight: 400;
+    font-weight: 500;
+    font-size: .65rem;
   }
 
   footer {
   display: flex;
-  padding-top: 100px;
-  align-items: flex-start;
   gap: 10px;
-  align-self: stretch;
-  width: 685px;
+  width: 100%;
   margin: 0 auto;
   }
 

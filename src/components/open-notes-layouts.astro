@@ -3,7 +3,7 @@
 import PageWrapper from './page-wrapper.astro';
 import ContextSection from './context-section.astro';
 import Navigation from './navigation.astro';
-import Footer from './footer.astro';
+import ContextSectionFooter from '../components/context-section-footer.astro';
 import BackButton from './back-button.astro';
 
 const { frontmatter } = Astro.props;
@@ -38,7 +38,7 @@ const { frontmatter } = Astro.props;
                     <slot /> 
                 <BackButton/>
                </ContextSection>
-               <Footer />
+               <ContextSectionFooter />
           </PageWrapper>
      </body>
 </html>

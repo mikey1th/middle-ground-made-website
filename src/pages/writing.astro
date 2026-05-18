@@ -6,6 +6,8 @@ import Footer from '../components/footer.astro'
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
 import ContextSectionLinks from '../components/context-section-links.astro'
+import ContextSectionFooter from '../components/context-section-footer.astro';
+
 
 
 const pageTitle = "Writing";
@@ -35,7 +37,8 @@ const pageTitle = "Writing";
 		<a href="/snippets" class ="primary-button"> Snippets </a>
 		<a href="/rephrases" class ="primary-button"> Rephrases </a>
 	</ContextSectionLinks>
+	</ContextSection>
+	<ContextSectionFooter/>
 	</PageWrapper>
-	<Footer />
 	</body>
 </html>

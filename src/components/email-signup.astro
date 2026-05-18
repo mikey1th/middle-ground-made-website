@@ -4,8 +4,8 @@
 
 
 <form id="middle-ground-newsletter-signup-Form">
-  <input id="first-name" type="text" placeholder="First Name /" />
-  <input id="email" type="email" placeholder="Email /" required />
+  <input id="first-name" type="text" placeholder="First Name " />
+  <input id="email" type="email" placeholder="Email " required />
   <button type="submit">Subscribe</button>
 </form>
 
@@ -48,11 +48,22 @@
     background: #FFA800;
     color: #ffffff;
     border: none;
-    width: fit-content
+    width: fit-content;
+    transition: background-color .5s ease;
+
+    }
+
+    button:hover {
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #2D2D2D;
+
+
+
     }
 
     input:focus{
-        outline: none;
-        border: 1px solid #AEAEAE;
+    outline: none;
+    background: #FAFAFA;
     }
 </style>

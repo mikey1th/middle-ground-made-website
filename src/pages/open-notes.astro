@@ -2,7 +2,7 @@
 
 import '../styles/global.css';
 import Navigation from '../components/navigation.astro'
-import Footer from '../components/footer.astro'
+import ContextSectionFooter from '../components/context-section-footer.astro';
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
 import OpenNotesVolumeOneLinks from '../components/open-notes-volume-one-links.astro';
@@ -41,9 +41,9 @@ const pageTitle = "Open Notes"
             <hr>
             <BackButton/>  
             </ContextSection>
-
+            <ContextSectionFooter/>
         </PageWrapper>
-        <Footer/>
+        
     </body>
 <html/>
 

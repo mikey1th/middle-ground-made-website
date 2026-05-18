@@ -7,6 +7,7 @@ import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
 import FeaturedWorkLayout from '../components/featured-work-layout.astro';
 import FeaturedEssay from '../components/featured-essay-layout.astro';
+import ContextSectionFooter from '../components/context-section-footer.astro';
 const pageTitle = "Middle Ground Made";
 ---
 
@@ -31,15 +32,27 @@ const pageTitle = "Middle Ground Made";
     	</p>
 		</ContextSection>
 
-		<ContextSection>
+		<ContextSection class="more-space">
 		<FeaturedWorkLayout/>
-		</ContextSection>
-
-		<ContextSection>
+		<hr class="more-space">
 		<FeaturedEssay/>
 		</ContextSection>
 
-		<Footer/>
+		<ContextSectionFooter/>
+
 		</PageWrapper>
 	</body>
 </html>
+
+
+<style>
+
+	.more-space{
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	}
+
+
+	
+</style>
