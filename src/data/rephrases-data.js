@@ -26,6 +26,16 @@ const rephrases =[
         improved: "I\'m better because I\'ve done this thing.",
     },
 
+    {
+        original: "Long essays take a shorter amount of time.",
+        improved: "Short essays take a longer amount of time.",
+    },
+
+    {
+        original: "A plant does not harm because it is a weed.",
+        improved: "A plant is a weed because it does harm.",
+    },
+
 ]
 
 export default rephrases
