@@ -26,7 +26,7 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
 <hr>
 
 <div class="all-project-additions">
-    {additions.map((project) => (
+    {additions.map((project, index) => (
         <div class="project-entry"> 
             {/* the div below renders the unconditonal header info */}
             <div class="project-header-info">
@@ -41,7 +41,10 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
                 </div>
             </div>
                 <a href={`/project-archive/${project.slug}`}>
-                <Image src={project.data.coverImage} alt={project.data.title} />    
+                <Image
+                    src={project.data.coverImage}
+                    alt={project.data.title}
+                    loading={index === 0 ? "eager" : "lazy"} />    
                 </a>
         </div>
     ))}

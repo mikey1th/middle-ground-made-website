@@ -12,9 +12,13 @@ const pics: CollectionEntry<'gallery'>[] = (await getCollection('gallery')).sort
 
 
 <div class="all-compendium-entries">
-    {pics.map((pic) => (
+    {pics.map((pic,index) => (
         <div class="gallery-entry">    
-            <Image src={pic.data.image} alt={pic.data.date} class="bg-image" />                
+            <Image
+                src={pic.data.image}
+                alt={pic.data.date}
+                loading={index === 0 ? "eager" : "lazy"}
+                class="bg-image" />                
             <span class="link-details gallery"> {pic.data.date} </span>
         </div>       
     ))}

@@ -12,7 +12,7 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
 
 
 <div class="all-compendium-entries">
-    {entries.map((entry) => (
+    {entries.map((entry, index) => (
         <div class="compendium-entry"> 
                 {/* the div below renders the unconditonal header info */}
                 <div class="compendium-header-info">
@@ -39,7 +39,10 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
                         </div>
                         )}
                 </div>
-            <Image src={entry.data.image} alt={entry.data.title} />
+            <Image
+                src={entry.data.image}
+                alt={entry.data.title}
+                loading={index === 0 ? "eager" : "lazy"} />
             <h3> {entry.data.description} </h3>
         </div>       
     ))}
