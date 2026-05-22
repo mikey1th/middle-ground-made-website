@@ -24,13 +24,17 @@ import ContextSection from "./context-section.astro";
 
  <nav>
     <a href="/">Home</a>
+    <div class="vl"></div>
     <a href="/writing/">Writing</a>
+    <div class="vl"></div>
     <a href="/design/">Design</a>
+    <div class="vl"></div>
     <a href="/newsletter/">Newsletter</a>
+    <div class="vl"></div>
     <a href="/about/">About</a>
+    <div class="vl"></div>
     <a href="/extras/">Extras</a>
 </nav>   
-
 
 </header>
 
@@ -60,13 +64,16 @@ import ContextSection from "./context-section.astro";
     }
     
     nav {
-    display: flex;
     padding: 15px;
-    justify-content: space-between;
+    display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: space-evenly;
+
     border-radius: 10px;
     border: 1px solid var(--Line-Gray, #E8E8E8);
     background:  #ffffff;
+
     }
 
     a {
@@ -78,14 +85,18 @@ import ContextSection from "./context-section.astro";
     color: #AEAEAE
     }
 
+    .vl {
+    border-left: 1px solid var(--Line-Gray, #E8E8E8);
+    height: 17.5px;
+    }
+
     nav a {
-        padding-inline: 20px; 
-        border-left: 1px solid #E8E8E8;
         text-transform: uppercase;
         font-family: "Atkinson Hyperlegible Mono";
         font-weight: 400;
         font-size: .70rem;
         letter-spacing: 0.05rem;
+        text-align: center;
     }
 
     nav a:first-child {
