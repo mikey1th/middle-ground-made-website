@@ -10,18 +10,21 @@ import BookMark from '../assets/website-images/project-images/book-mark-01.jpg';
 
 
 
-<div class="all-featured-work-items">
-    <div class="gallery-entry">    
+<div class="image-collection-div">
+    <div class="image-entry">    
         <Image
         src={Entry206}
         alt="Logo Sign painting"
         class="bg-image"
         loading= "eager" />              
-        <a href="/compendium" class="link-details gallery dark"> Compendium </a>
+        <a href="/compendium" class="link-details images dark"> Compendium </a>
     </div>    
-    <div class="gallery-entry">    
-        <Image src={BookMark} alt="Logo Sign painting" class="bg-image" />                
-        <a href="/projects" class="link-details gallery dark"> projects </a>
+    <div class="image-entry">    
+        <Image
+        src={BookMark}
+        alt="Logo Sign painting"
+        class="bg-image" />                
+        <a href="/projects" class="link-details images dark"> projects </a>
     </div>  
     </div>
 </div>
@@ -29,64 +32,10 @@ import BookMark from '../assets/website-images/project-images/book-mark-01.jpg';
 
 
 
-
-
-
 <style>
 
-    .link-details.gallery.dark:hover{
+a:hover{
     font-weight: 500;
-    }
-
-    .categories{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    }
-
-    .list-item-title.large{
-    font-size: .95rem;
-    color: #2d2d2d;
-    font-weight: 500;
-
-    }
-
-    .list-item-title.large:hover{
-    text-decoration: none;
-    cursor: default;
-    }
-
-    .list-item-details.large{
-    font-size: .80rem;
-    color: #2d2d2d;
-    }
-
-    .items-wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    }
-
-    .all-map-list-items:last-child {
-    margin-bottom: 10px;
-    }
-
-    .list-item-title{
-    font-weight: 400;
-    }
-
-    .all-featured-work-items{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    }
-
-    a {
-    text-decoration: none;
-    color: inherit;
-    }
-
-
-
+}
 
 </style>

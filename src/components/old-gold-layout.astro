@@ -6,27 +6,27 @@ import {Image} from 'astro:assets';
 
 
 import type { CollectionEntry } from 'astro:content';
-const pics: CollectionEntry<'gallery'>[] = (await getCollection('gallery')).sort((a, b) => b.data.id - a.data.id);
+const entries: CollectionEntry<'oldGold'>[] = (await getCollection('oldGold')).sort((a, b) => b.data.id - a.data.id);
 
 ---
 
 
 <div class="image-collection-div">
-    {pics.map((pic,index) => (
+    {entries.map((pic,index) => (
         <div class="image-entry">    
             <Image
                 src={pic.data.image}
-                alt={pic.data.date}
+                alt={pic.data.type}
                 width={pic.data.image.width}
                 height={pic.data.image.height}
                 loading={index === 0 ? "eager" : "lazy"}
                 class="bg-image" />                
-            <span class="link-details images"> {pic.data.date} </span>
+            <span class="link-details images"> {pic.data.type} </span>
         </div>       
     ))}
 </div>
 
-<p>{pics.length}</p>
+<p>{entries.length}</p>
 
 
 

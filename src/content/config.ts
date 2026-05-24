@@ -9,6 +9,7 @@ const compendium = defineCollection({
     description: z.string(),
     openNote: z.string().optional(),
     project: z.string().optional(),
+    lightBorder: z.boolean().default(false),
     image: image(),
   })
 });
@@ -40,5 +41,14 @@ const gallery = defineCollection({
   })
 });
 
+const oldGold = defineCollection({
+    type: 'data',
+    schema: ({ image }) => z.object({
+    id: z.number(),
+    type: z.string(),
+    image: image(),
+  })
+});
 
-export const collections = { compendium, projects, gallery };
+
+export const collections = { compendium, projects, gallery, oldGold };

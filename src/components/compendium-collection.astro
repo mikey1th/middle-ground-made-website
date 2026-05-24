@@ -11,6 +11,7 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
 ---
 
 
+
 <div class="all-compendium-entries">
     {entries.map((entry, index) => (
         <div class="compendium-entry"> 
@@ -39,11 +40,25 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
                         </div>
                         )}
                 </div>
-            <Image
-                src={entry.data.image}
-                alt={entry.data.title}
-                loading={index === 0 ? "eager" : "lazy"} />
-            <h3> {entry.data.description} </h3>
+                {/* Wanted to do a conditionalky rendered light border, didnt look that great not worth the effort but keeping the code just in case.
+                To render in the alt border change the boolean on data to be true. */}
+                {entry.data.lightBorder ? (
+                    <Image class="image-light-border"
+                        src={entry.data.image}
+                        alt={entry.data.title}
+                        width={entry.data.image.width}
+                        height={entry.data.image.height}
+                        loading={index === 0 ? "eager" : "lazy"} />
+                ) : (
+                    <Image class="image-dark-border"
+                        src={entry.data.image}
+                        alt={entry.data.title}
+                        width={entry.data.image.width}
+                        height={entry.data.image.height}
+                        loading={index === 0 ? "eager" : "lazy"} />
+                )}
+                <h3>{entry.data.description} </h3>
+
         </div>       
     ))}
 </div>
@@ -66,14 +81,6 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
     gap: 20px;
     border-bottom: 1px solid #E8E8E8;
     padding-bottom: 20px;
-    }
-
-    .compendium-entry img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    outline: 1px solid rgba(0, 0, 0, 0.1);
-    outline-offset: -1px;
     }
 
     h3 {
