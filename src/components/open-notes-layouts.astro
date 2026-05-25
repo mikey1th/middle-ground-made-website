@@ -25,16 +25,18 @@ const { frontmatter } = Astro.props;
           <PageWrapper>
                <Navigation />
                <ContextSection>
-                    <div class="content-links">
+                    <div class="content-links open-notes">
                          <span> {frontmatter.title} </span>
-                         <span class="link-details"> / </span>
-                         <time class="link-details"> {frontmatter.date} </time>
-                         <span class="link-details"> / </span>
-                         <span class="link-details"> {frontmatter.number}</span>
-                         {frontmatter.series && (
-                              <span class = "link-details"> / </span>
-                              <span class = "link-details"> {frontmatter.series} </span>
-                         )}
+                         <div class="link-details">
+                              <span class="link-details hide-mobile"> / </span>
+                              <time> {frontmatter.date} </time>
+                              <span> / </span>
+                              <span> {frontmatter.number}</span>
+                              {frontmatter.series && (
+                                   <span> / </span>
+                                   <span> {frontmatter.series} </span>
+                              )}
+                         </div>
                     </div>
                     <slot /> 
                 <BackButton/>
@@ -43,6 +45,31 @@ const { frontmatter } = Astro.props;
           </PageWrapper>
      </body>
 </html>
+
+
+
+{/*
+
+    <div class = "link-year">
+        {posts2025.map((post: any) =>
+            <a href={post.url} class="content-links open-notes">
+                <span> {post.frontmatter.title} </span>
+                <div class = "link-details">
+                <span class="link-details hide-mobile"> / </span>
+                <span> {post.frontmatter.date} </span>
+                <span> / </span>
+                <span> {post.frontmatter.number} </span>
+                {post.frontmatter.series && (
+                    <span class = "link-details"> / </span>
+                    <span class = "link-details"> {post.frontmatter.series} </span>
+                )}    
+                </div>
+            </a>
+        )}  
+    </div>
+
+
+*/}
 
 
 <style>

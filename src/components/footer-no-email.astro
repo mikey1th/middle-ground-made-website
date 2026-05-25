@@ -6,7 +6,7 @@ import ContextSection from "./context-section.astro"
 
 <div>
   <span class="link-details"> 2026 Middle Ground Made </span>
-  <span class="link-details"> / </span>
+  <span class="link-details hide-mobile"> / </span>
   <p class="link-details bottom">Follow the spark!</p>
 </div>
 
@@ -36,12 +36,19 @@ import ContextSection from "./context-section.astro"
     font-size: .65rem;
   }
 
-  footer {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-  margin: 0 auto;
+
+  {/* MOBILE VIEWPORT */}
+
+  @media (max-width: 768px) {
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
+
+
+}
 
 
 </style>

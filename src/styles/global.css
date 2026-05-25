@@ -164,7 +164,6 @@ p{
   text-decoration: none;
   width: fit-content;
   gap: 7.5px;
-  align-items: center;
 
   border-radius: 100px;
   border: 1px solid #E8E8E8;
@@ -579,7 +578,6 @@ body {
     display: none;
   }
 
-
   .text-list-item{
     display: flex;
     flex-direction: column;
@@ -596,6 +594,28 @@ body {
   body{
     padding: 1rem 1.5rem;
   }
+
+  .content-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+  }
+
+  .content-links.open-notes {
+    border-radius: 35px;
+    gap: 0px;
+    padding: 10px 25px;
+
+  }
+
+  .content-links.mobile-row{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    width: fit-content
+  }
+
 
 
 }

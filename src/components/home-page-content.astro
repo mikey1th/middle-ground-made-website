@@ -13,10 +13,10 @@ import FeaturedCompendium from './featured-compendium.astro';
 
     {/* OPEN NOTES BLOCK */}
     <div class="work-div">
-        <div class="work-header"> 
+        <a href="/open-notes/" class="work-header"> 
         <div> Open Notes </div> 
         <RightArrow/>
-        </div>
+        </a>
         <FeaturedEssayLayout/>
     </div>
 
@@ -24,10 +24,10 @@ import FeaturedCompendium from './featured-compendium.astro';
 
     {/* COMPENDIUM BLOCK */}
     <div class="work-div">
-        <div class="work-header"> 
+        <a href="/compendium/" class="work-header"> 
         <div> Compendium </div> 
         <RightArrow/>
-        </div>
+        </a>
         <FeaturedCompendium/>
     </div>
 
@@ -35,10 +35,10 @@ import FeaturedCompendium from './featured-compendium.astro';
 
     {/* PROJECTS BLOCK */}
     <div class="work-div">
-        <div class="work-header"> 
+        <a href="/projects/" class="work-header"> 
         <div> Projects </div> 
         <RightArrow/>
-        </div>
+        </a>
         <FeaturedWorkLayout/>
     </div>
 
@@ -77,7 +77,7 @@ import FeaturedCompendium from './featured-compendium.astro';
     }
 
     .work-header:hover{
-        background-color: rgba(0, 0, 0, 0.05);
+        background-color: rgba(0, 0, 0, 0.075);
         cursor: pointer;
     }
 

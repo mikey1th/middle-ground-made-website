@@ -13,7 +13,7 @@ import snippets from '../data/snippet-data.js';
         <span class="content-bubble"> {snippet.text} </span>
             {(snippet.openNote || snippet.design) && (
             /* this stuff is conditionally rendered appears to the right of the link*/
-            <div class="content-links"> 
+            <div class="content-links mobile-row"> 
                 {snippet.openNote && (
                 <a href= {snippet.openNote} class="link-details"> Note</a>
                 )}
@@ -53,5 +53,28 @@ import snippets from '../data/snippet-data.js';
     width: fit-content;
     align-items: center;
     }
+
+
+/* MOBILE VIEWPORT */
+
+    @media (max-width: 768px) {
+        .snippet-row{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .all-snippets{
+            display: flex;
+            gap: 25px;
+            flex-direction: column;
+        }
+
+
+    }
+
+
+
+
 
 </style>

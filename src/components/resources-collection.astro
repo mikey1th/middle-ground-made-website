@@ -14,7 +14,7 @@ import resources from '../data/resources-data';
                 <div class="text-list-item">
                     <a href={resource.link} target="_blank" rel="noopener noreferrer" class="list-item-title"> {resource.text} </a>
                     <div class="list-item-details">
-                        <span> / </span>            
+                        <span class="list-item-details hide-mobile" > / </span>            
                         <span> {resource.number} </span>
                     </div> 
                 </div>
@@ -32,7 +32,7 @@ import resources from '../data/resources-data';
                     <div class="text-list-item">
                         <span class="list-item-title no-link"> {resource.textNoLink}</span>
                         <div class="list-item-details">
-                            <span> / </span>
+                            <span class="list-item-details hide-mobile" > / </span>
                             <span> {resource.number} </span>
                         </div>
                     </div>
