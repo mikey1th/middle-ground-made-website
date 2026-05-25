@@ -48,39 +48,11 @@ const { frontmatter } = Astro.props;
 
 
 
-{/*
-
-    <div class = "link-year">
-        {posts2025.map((post: any) =>
-            <a href={post.url} class="content-links open-notes">
-                <span> {post.frontmatter.title} </span>
-                <div class = "link-details">
-                <span class="link-details hide-mobile"> / </span>
-                <span> {post.frontmatter.date} </span>
-                <span> / </span>
-                <span> {post.frontmatter.number} </span>
-                {post.frontmatter.series && (
-                    <span class = "link-details"> / </span>
-                    <span class = "link-details"> {post.frontmatter.series} </span>
-                )}    
-                </div>
-            </a>
-        )}  
-    </div>
-
-
-*/}
-
-
 <style>
 
      .content-links:hover{
      cursor: default;
      background: #FAFAFA;
-     }
-
-     .content-links{
-     gap: 7.5px
      }
      
 </style>
