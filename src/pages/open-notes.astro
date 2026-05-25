@@ -7,6 +7,10 @@ import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
 import OpenNotesVolumeOneLinks from '../components/open-notes-volume-one-links.astro';
 import BackButton from '../components/back-button.astro';
+
+const files = import.meta.glob('../pages/open-notes-archive/*.md');
+const count = Object.keys(files).length;
+
 const pageTitle = "Open Notes"
 
 ---
@@ -34,7 +38,7 @@ const pageTitle = "Open Notes"
 		    and share one each month in the Middle Ground Newsletter
             </p>
             <p class="note">
-            * Notes sorted by year
+            * All {count} Notes sorted by year
             </p>
             </ContextSection>
             <ContextSection>
