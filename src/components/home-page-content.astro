@@ -1,0 +1,93 @@
+---
+
+import '../styles/global.css';
+import FeaturedWorkLayout from './featured-work-layout.astro';
+import FeaturedEssayLayout from '../components/featured-essay-layout.astro';
+import RightArrow from '../components/arrow-svg.astro'
+import FeaturedCompendium from './featured-compendium.astro';
+
+---
+
+
+<div class="all-content">
+
+    {/* OPEN NOTES BLOCK */}
+    <div class="work-div">
+        <div class="work-header"> 
+        <div> Open Notes </div> 
+        <RightArrow/>
+        </div>
+        <FeaturedEssayLayout/>
+    </div>
+
+    <hr>
+
+    {/* COMPENDIUM BLOCK */}
+    <div class="work-div">
+        <div class="work-header"> 
+        <div> Compendium </div> 
+        <RightArrow/>
+        </div>
+        <FeaturedCompendium/>
+    </div>
+
+    <hr>
+
+    {/* PROJECTS BLOCK */}
+    <div class="work-div">
+        <div class="work-header"> 
+        <div> Projects </div> 
+        <RightArrow/>
+        </div>
+        <FeaturedWorkLayout/>
+    </div>
+
+</div>
+
+
+<style>
+
+    .all-content{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .work-div{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .work-header{
+        display: flex;
+        flex-direction: row;
+        background-color: var(--fill-gray);
+        font-size: 1.15rem;
+        padding: 15px 20px;
+        font-family: "Atkinson Hyperlegible Next";
+        font-weight: 500;
+        color: #000;
+        border-radius: 10px;
+        outline: 1px solid rgba(0, 0, 0, 0.1);
+        outline-offset: -1px;
+        gap: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .work-header:hover{
+        background-color: rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+    }
+
+    .h2-p {
+        font-family: "Atkinson Hyperlegible Next";
+        font-weight: 500;
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: #2d2d2d; /* Darkest Gray */   
+    }
+
+
+</style>

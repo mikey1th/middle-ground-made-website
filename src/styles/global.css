@@ -20,7 +20,7 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
-  font-family: "Atkinson Hyperlegible";
+  font-family: "Atkinson Hyperlegible Next";
   font-weight: 600;
 }
 
@@ -267,6 +267,7 @@ font-size: .65rem;
     font-family: "Atkinson Hyperlegible Next";
     font-weight: 500;
     font-size: .90rem;
+    text-decoration: none;
 }
 
 .list-item-title:hover{
@@ -400,6 +401,18 @@ cursor: default;
   color: #2d2d2d;
 }
 
+/* LINK DETAILS BELOW */
+
+a:visited {
+  color: inherit;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* END LINK DETAILS */
+
 
 
 .filter-by-tag{
@@ -507,9 +520,9 @@ body {
   border-radius: 50px;
   width: auto;
   color: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  background: rgba(0, 0, 0, 0.10);
-  backdrop-filter: blur(1px);
+  border: 0.5px solid rgba(0, 0, 0, 0.02);
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(1.5px);
   position: absolute;
   bottom: 15px;
   right: 15px;
@@ -535,7 +548,54 @@ body {
 }
 
 
+/*linked images */
+.linked-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: filter 0.3s ease;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1px;
+}
+
+.linked-image:hover {
+  filter: brightness(0.75);
+}
 
 
 
 
+
+/* MOBILE VIEWPORT */
+
+@media (max-width: 768px) {
+    
+  
+  .hide-mobile {
+    display: none;
+  }
+
+  .list-item-details.hide-mobile {
+    display: none;
+  }
+
+
+  .text-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+  }
+
+  .list-item-details{
+    display: flex;
+    flex-direction: row;
+    gap: 7.5px;
+  }
+
+  body{
+    padding: 1rem 1.5rem;
+  }
+
+
+}

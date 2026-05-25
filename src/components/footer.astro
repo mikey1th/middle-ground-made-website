@@ -15,7 +15,7 @@ import "../styles/global.css"
 
   <div class="tagline">
     <span class="link-details"> 2026 Middle Ground Made </span>
-    <span class="link-details"> / </span>
+    <span class="link-details hide-mobile"> / </span>
     <p class="link-details bottom">Follow the spark!</p>
 </div>
 </footer>
@@ -72,6 +72,19 @@ import "../styles/global.css"
     display: flex;
     flex-direction: column;
     gap: 10px
+  }
+
+
+  {/* MOBILE VIEWPORT */}
+
+  @media (max-width: 768px) {
+
+  .tagline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
   }
 
 </style>

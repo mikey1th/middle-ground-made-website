@@ -2,7 +2,6 @@
 
 import mgLogo from "../assets/Middle-Ground-Made-Web-Logo.svg";
 import '../styles/global.css'
-import ContextSection from "./context-section.astro";
 
 ---
 
@@ -10,31 +9,31 @@ import ContextSection from "./context-section.astro";
 
 <header>
 
-<div class="header-group-outter">
-<a href="/">
-  <img src={mgLogo.src} alt="Middle Ground Made Logo" />
-</a>
+    <div class="header-group-outter">
+        <a href="/">
+            <img src={mgLogo.src} alt="Middle Ground Made Logo" />
+        </a>
 
-<div class="header-group-inner">
-    <span class="site-name"> Middle Ground Made</span>
-    <spa class="mg-tagline"> Heirloom design studio. </span>
-</div>
-</div>
+        <div class="header-group-inner">
+            <span class="site-name"> Middle Ground Made</span>
+            <spa class="mg-tagline"> Heirloom design studio. </span>
+        </div>
+    </div>
 
 
- <nav>
-    <a href="/">Home</a>
-    <div class="vl"></div>
-    <a href="/writing/">Writing</a>
-    <div class="vl"></div>
-    <a href="/design/">Design</a>
-    <div class="vl"></div>
-    <a href="/newsletter/">Newsletter</a>
-    <div class="vl"></div>
-    <a href="/about/">About</a>
-    <div class="vl"></div>
-    <a href="/extras/">Extras</a>
-</nav>   
+    <nav>
+        <a href="/">Home</a>
+        <div class="vl"></div>
+        <a href="/writing/">Writing</a>
+        <div class="vl"></div>
+        <a href="/design/">Design</a>
+        <div class="vl"></div>
+        <a href="/newsletter/">Newsletter</a>
+        <div class="vl"></div>
+        <a href="/about/">About</a>
+        <div class="vl"></div>
+        <a href="/extras/">Extras</a>
+    </nav>   
 
 </header>
 
@@ -43,51 +42,47 @@ import ContextSection from "./context-section.astro";
 <style>
 
     header {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    align-items: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: stretch;
     }
     
     .header-group-outter {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
     }
 
     .header-group-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
     
     nav {
-    padding: 15px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
 
-    border-radius: 10px;
-    border: 1px solid var(--Line-Gray, #E8E8E8);
-    background:  #ffffff;
-
+        border-radius: 10px;
+        border: 1px solid var(--Line-Gray, #E8E8E8);
+        background:  #ffffff;
     }
-
-    a {
-    color: #2d2d2d; /* Darkest Gray */   
-    text-decoration: none;
-    }  
 
     a:hover{
-    color: #AEAEAE
+        color: #AEAEAE
     }
 
+
     .vl {
-    border-left: 1px solid var(--Line-Gray, #E8E8E8);
-    height: 17.5px;
+        border-left: 1px solid var(--Line-Gray, #E8E8E8);
+        height: 17.5px;
     }
 
     nav a {
@@ -105,21 +100,51 @@ import ContextSection from "./context-section.astro";
     }
 
     .site-name {
-    color: #000;
-    font-family: "Atkinson Hyperlegible Next";
-    font-weight: 600;
-    font-size: 2rem;
+        color: #000;
+        font-family: "Atkinson Hyperlegible Next";
+        font-weight: 600;
+        font-size: 2rem;
     }
 
     .mg-tagline {
-    color: #000;
-    font-family: "Atkinson Hyperlegible Next";
-    font-weight: 300;
-    font-size: 1rem;
+        color: #000;
+        font-family: "Atkinson Hyperlegible Next";
+        font-weight: 300;
+        font-size: 1rem;
     }
 
     .link-details{
-    font-size: .65rem;
+        font-size: .65rem;
+    }
+
+
+
+    {/* MOBILE VIEWPORT */}
+
+    @media (max-width: 768px) {
+
+        .site-name{
+            font-size: 1.30rem;
+        }
+
+        .header-group-outter {
+            gap: 15px
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            text-align: left;
+            justify-items: start;
+
+        }
+
+        .vl {
+            display: none;
+        }
+
+
     }
 
    

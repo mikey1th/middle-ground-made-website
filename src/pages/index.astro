@@ -2,13 +2,16 @@
 
 import '../styles/global.css';
 import Navigation from '../components/navigation.astro';
-import Footer from '../components/footer.astro';
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
 import FeaturedWorkLayout from '../components/featured-work-layout.astro';
 import FeaturedEssay from '../components/featured-essay-layout.astro';
 import ContextSectionFooter from '../components/context-section-footer.astro';
+import HomePageContent from '../components/home-page-content.astro';
+import BackButton from '../components/back-button.astro';
+
 const pageTitle = "Middle Ground Made";
+
 ---
 
 <html lang="en">
@@ -33,12 +36,10 @@ const pageTitle = "Middle Ground Made";
     	</p>
 		</ContextSection>
 
-		<ContextSection class="more-space">
-		<FeaturedWorkLayout/>
-		<hr class="more-space">
-		<FeaturedEssay/>
+		<ContextSection>
+		<HomePageContent/>
 		</ContextSection>
-
+		
 		<ContextSectionFooter/>
 
 		</PageWrapper>

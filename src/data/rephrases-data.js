@@ -36,6 +36,11 @@ const rephrases =[
         improved: "A plant is a weed because it does harm.",
     },
 
+    {
+        original: "Question and Response",
+        improved: "Question the Response.",
+    },
+
 ]
 
 export default rephrases

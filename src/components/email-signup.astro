@@ -25,45 +25,62 @@
 
 
     input {
-    padding: .75rem 1rem;
-    border: 1px solid #E8E8E8;
-    background: transparent;
-    font-family: inherit;
-    text-transform: inherit;
-    font-size: .65rem;
-    color: inherit;
-    border-radius: 50px;
-    letter-spacing: .1rem;
-    width: 100%
+        padding: .75rem 1rem;
+        border: 1px solid #E8E8E8;
+        background: transparent;
+        font-family: inherit;
+        text-transform: inherit;
+        font-size: .65rem;
+        color: inherit;
+        border-radius: 50px;
+        letter-spacing: .1rem;
+        width: 100%
     }
 
     button {
-    padding: .75rem 1rem;
-    letter-spacing: .1rem;
-    font-family: "Atkinson Hyperlegible Mono";
-    text-transform: inherit;
-    font-size: .65rem;
-    font-weight: 400;
-    border-radius: 50px;
-    background: #FFA800;
-    color: #ffffff;
-    border: none;
-    width: fit-content;
-    transition: background-color .5s ease;
-
+        padding: .75rem 1rem;
+        letter-spacing: .1rem;
+        font-family: "Atkinson Hyperlegible Mono";
+        text-transform: inherit;
+        font-size: .65rem;
+        font-weight: 400;
+        border-radius: 50px;
+        background: #FFA800;
+        color: #ffffff;
+        border: none;
+        width: fit-content;
+        transition: background-color .5s ease;
     }
+
 
     button:hover {
-    font-weight: 500;
-    cursor: pointer;
-    background-color: #2D2D2D;
-
-
-
+        font-weight: 500;
+        cursor: pointer;
+        background-color: #2D2D2D;
     }
+
 
     input:focus{
-    outline: none;
-    background: #FAFAFA;
+        outline: none;
+        background: #FAFAFA;
     }
+
+
+
+    {/* MOBILE VIEWPORT */}
+
+    @media (max-width: 768px) {
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    }
+
 </style>
