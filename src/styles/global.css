@@ -539,13 +539,11 @@ body {
 
 
 /* these are used only for compendium entries */
-.image-dark-border {
+.compendium-image {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  outline: 1px solid rgba(0, 0, 0, 0.15);
-  outline-offset: -1px;
 }
+
 .image-light-border {
   width: 100%;
   height: auto;
@@ -568,6 +566,17 @@ body {
 .linked-image:hover {
   filter: brightness(0.75);
 }
+
+
+
+
+/* IMAGES END */
+
+
+
+
+
+
 
 /* FOR PROJECT PAGE */
 .project-header-info{
@@ -621,11 +630,11 @@ body {
     padding: 10px 25px;
   }
 
-  .content-links.mobile-row{
+  .mobile-row{
     display: flex;
     flex-direction: row;
-    padding: 10px 20px;
     width: fit-content;
+    justify-content: center;
   }
 
   .content-bubble{
@@ -644,3 +653,9 @@ body {
   }
 
 }
+
+  .compendium-project-title{
+    font-family: "Atkinson Hyperlegible Next";
+    font-size: 1.5rem;
+    font-weight: 500;
+  }

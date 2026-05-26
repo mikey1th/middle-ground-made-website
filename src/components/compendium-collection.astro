@@ -13,91 +13,93 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
 
 
 <div class="all-compendium-entries">
+
     {entries.map((entry, index) => (
         <div class="compendium-entry"> 
-                {/* the div below renders the unconditonal header info */}
-                <div class="compendium-header-info">
-                    <div class="content-bubble">
-                        <span> {entry.data.title} </span>
-                        <div class="link-details header">
-                            <span class="link-details header hide-mobile"> / </span>
-                            <span class="link-details header"> {entry.data.date} </span>
-                            <span class="link-details header"> / </span>
-                            <span class="link-details header"> {entry.data.id} </span>
-                        </div>
-                    </div>
-                        {/* this stuff is conditionally rendered appears to the right of the link. The js conditionally renders the entire div.
-                        Then the categories are themselves conditionally rendered. */}
-                        {(entry.data.openNote || entry.data.project) && (
-                        <div class="content-links mobile-row"> 
-                            {entry.data.openNote && (
-                            <a href= {entry.data.openNote} class="link-details"> Note</a>
-                            )}
-                            {entry.data.openNote && entry.data.project && (
-                            <span class="link-details"> / </span>
-                            )}
-                            {entry.data.project && (
-                            <a href= {entry.data.project} class="link-details"> Project</a>
-                            )}
-                        </div>
-                        )}
-                </div>
-                {/* Wanted to do a conditionalky rendered light border, didnt look that great not worth the effort but keeping the code just in case.
-                To render in the alt border change the boolean on data to be true. */}
-                {entry.data.lightBorder ? (
-                    <Image class="image-light-border"
-                        src={entry.data.image}
-                        alt={entry.data.title}
-                        width={entry.data.image.width}
-                        height={entry.data.image.height}
-                        loading={index === 0 ? "eager" : "lazy"} />
-                ) : (
-                    <Image class="image-dark-border"
-                        src={entry.data.image}
-                        alt={entry.data.title}
-                        width={entry.data.image.width}
-                        height={entry.data.image.height}
-                        loading={index === 0 ? "eager" : "lazy"} />
-                )}
-                <h3>{entry.data.description} </h3>
+                <Image class="compendium-image"
+                    src={entry.data.image}
+                    alt={entry.data.title}
+                    width={entry.data.image.width}
+                    height={entry.data.image.height}
+                    loading={index === 0 ? "eager" : "lazy"} />
 
-        </div>       
+
+            <div class="compendium-info">
+                <div class="link-details">
+                    <span> {entry.data.date} </span>
+                    <span> / </span>
+                     <span> {entry.data.id} </span>
+                    </div>
+                    <span class="compendium-project-title"> {entry.data.title} </span>
+                    <h3>{entry.data.description} </h3>
+
+                {/* CONDITIONAL LINKS (BELOW) */}
+                    {(entry.data.openNote || entry.data.project) && (
+                        <div class="compendium-links"> 
+                            {entry.data.openNote && (
+                                <a href= {entry.data.openNote} class="link-details"> Note</a>
+                                )}
+                                {entry.data.openNote && entry.data.project && (
+                                <span class="link-details"> / </span>
+                                )}
+                                {entry.data.project && (
+                                <a href= {entry.data.project} class="link-details"> Project</a>
+                                )}
+                        </div>
+                    )}   
+                </div>
+            </div>
     ))}
+
 </div>
 
 <p>{entries.length}</p>
 
 
 <style>
+
     .all-compendium-entries{
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 30px
+    gap: 2.5rem
     }
 
     .compendium-entry{
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 20px;
-    border-bottom: 1px solid #E8E8E8;
-    padding-bottom: 20px;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    outline-offset: -1px;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+
+    .compendium-info{
+    display: flex;
+    flex-direction: column;
+    gap: .50rem;
+    width: 100%;
+    padding: 2rem 1.5rem;
     }
 
     h3 {
-    font-size: .90rem;
+    font-size: 1.05rem;
     font-weight: 400;
     }
 
-    .compendium-header-info{
-    display: inline-flex;
-    gap: 10px;
-    width: fit-content;
+    .compendium-links{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    gap: 1rem;
+    padding-top: 1rem;
+    width: 100%;
     }
 
     .link-details{
-    color: #2d2d2d;
+    font-size: .85rem
+
     }
 
     .link-details:hover{
@@ -109,6 +111,8 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
     pointer-events: none;
     font-weight: 300;
     }
+
+
 
     /* MOBILE VIEWPORT */
 

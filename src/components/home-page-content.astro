@@ -1,10 +1,11 @@
 ---
 
 import '../styles/global.css';
-import FeaturedWorkLayout from './featured-work-layout.astro';
-import FeaturedEssayLayout from '../components/featured-essay-layout.astro';
+import FeaturedEssayLayout from '../components/featured-essay-layout.astro'
 import RightArrow from '../components/arrow-svg.astro'
-import FeaturedCompendium from './featured-compendium.astro';
+import FeaturedCompendium from '../components/featured-compendium.astro'
+import FeaturedWorkLayout from '../components/featured-work-layout.astro'
+
 
 ---
 
@@ -36,7 +37,7 @@ import FeaturedCompendium from './featured-compendium.astro';
     {/* PROJECTS BLOCK */}
     <div class="work-div">
         <a href="/projects/" class="work-header"> 
-        <div> Projects </div> 
+        <div> Projects </div>
         <RightArrow/>
         </a>
         <FeaturedWorkLayout/>
