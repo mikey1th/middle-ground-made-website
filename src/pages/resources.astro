@@ -8,6 +8,8 @@ import ContextSection from '../components/context-section.astro';
 import BackButton from '../components/back-button.astro';
 import ResourcesCollection from '../components/resources-collection.astro';
 
+import resources from "../data/resources-data.js";
+const count = resources.length;
 
 const pageTitle = "Resources";
 
@@ -37,7 +39,7 @@ const pageTitle = "Resources";
 		If you love rabbit holes, and cool stuff you'll enjoy the collection below!
     </p>
 	<p class="note">
-    * Links incoming
+    [{count}] Links incoming
     </p>
 	</ContextSection>
 

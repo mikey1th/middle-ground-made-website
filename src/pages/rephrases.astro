@@ -8,6 +8,9 @@ import ContextSection from '../components/context-section.astro';
 import BackButton from '../components/back-button.astro';
 import RephrasesCollection from '../components/rephrases-collection.astro';
 
+import rephrases from "../data/rephrases-data.js";
+const count = rephrases.length;
+
 
 const pageTitle = "Rephrases";
 
@@ -37,7 +40,7 @@ const pageTitle = "Rephrases";
         makes up for thier lack of quantity
     </p>
 	<p class="note">
-    * Contradictions incoming
+    [{count}] Contradictions incoming
     </p>
 	</ContextSection>
 
