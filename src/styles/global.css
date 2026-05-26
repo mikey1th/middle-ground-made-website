@@ -403,7 +403,7 @@ cursor: default;
 /* A-LINK DETAILS BELOW */
 
 a:visited {
-  color: var(--dark-gray);
+  color: inherit;
 }
 
 a{
