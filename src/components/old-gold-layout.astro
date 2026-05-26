@@ -21,7 +21,7 @@ const entries: CollectionEntry<'oldGold'>[] = (await getCollection('oldGold')).s
                 height={pic.data.image.height}
                 loading={index === 0 ? "eager" : "lazy"}
                 class="bg-image" />                
-            <span class="link-details images"> {pic.data.type} </span>
+            <span class="link-details images hide-mobile"> {pic.data.type} </span>
         </div>       
     ))}
 </div>

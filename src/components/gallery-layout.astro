@@ -21,7 +21,7 @@ const pics: CollectionEntry<'gallery'>[] = (await getCollection('gallery')).sort
                 height={pic.data.image.height}
                 loading={index === 0 ? "eager" : "lazy"}
                 class="bg-image" />                
-            <span class="link-details images"> {pic.data.date} </span>
+            <span class="link-details images hide-mobile"> {pic.data.date} </span>
         </div>       
     ))}
 </div>

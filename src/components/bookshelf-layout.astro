@@ -17,7 +17,7 @@ import BookshelfImage from '../assets/website-images/gallery-images/gallery-37.w
             alt="Logo Sign painting"
             class="bg-image"
             loading= "eager" />                
-        <span class="link-details images"> My Literal Bookshelf </span>
+        <span class="link-details images hide-mobile"> My Literal Bookshelf </span>
     </div> 
 
     <hr>
@@ -28,7 +28,7 @@ import BookshelfImage from '../assets/website-images/gallery-images/gallery-37.w
                 <div class="text-list-item">
                     <a href={book.link} target="_blank" rel="noopener noreferrer" class="list-item-title"> {book.titleAuthor} </a>
                     <div class="list-item-details">
-                        <span> / </span>            
+                        <span class="list-item-details hide-mobile"> / </span>            
                         <span> {book.novelNonFitcion} </span>
                         <span> / </span>            
                         <span> {book.genre} </span>
