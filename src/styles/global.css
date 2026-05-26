@@ -400,15 +400,17 @@ cursor: default;
   color: #2d2d2d;
 }
 
-/* LINK DETAILS BELOW */
+/* A-LINK DETAILS BELOW */
 
 a:visited {
-  color: inherit;
+  color: var(--dark-gray);
 }
 
 a{
+  color: inherit;
   text-decoration: none;
 }
+
 
 /* END LINK DETAILS */
 
@@ -603,7 +605,7 @@ body {
   }
 
   .content-links.open-notes {
-    border-radius: 35px;
+    border-radius: 10px;
     gap: 0px;
     padding: 10px 25px;
   }
@@ -614,7 +616,5 @@ body {
     padding: 10px 20px;
     width: fit-content
   }
-
-
 
 }
