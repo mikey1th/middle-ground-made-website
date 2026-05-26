@@ -10,7 +10,7 @@ layout: ../../components/open-notes-layouts.astro
 
 ---
 
-My curiosity about words and phrases has led to various language-based Open Notes being written.  I’ve coined terms like “Silispeak,” pointed out false synonyms like “growing” and “changing,” and created a running list of snippets like “Follow the spark.” Suffice it to say, I’ve become a full on etymology-guy. 
+My curiosity about words and phrases has caused me to write numerous language-based Open Notes. I’ve coined terms like “Silispeak,” pointed out false synonyms like “growing” and “changing,” and created a running list of snippets like “Follow the spark.” Suffice it to say, I’ve become a full on etymology-guy. 
 
 The most recent destination my etymological journey has arrived at has to do with the violent undertone of common day-to-day phrases. And while the militaristic nature of cultural slang may not initially sound like a cause for concern, what could be more conducive to perceiving harm intentionally done unto others as normal or “run of the mill” than our language softening the blow of violent acts?
 

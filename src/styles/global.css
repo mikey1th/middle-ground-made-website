@@ -633,7 +633,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: start;
-    border-radius: 35px;
+    border-radius: 10px;
     gap: 0px;
     padding: 10px 25px;
   }
