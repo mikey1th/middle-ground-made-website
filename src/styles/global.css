@@ -404,6 +404,8 @@ cursor: default;
 
 a:visited {
   color: inherit;
+  background-color: inherit;
+  text-decoration: inherit;
 }
 
 a{
@@ -610,7 +612,7 @@ body {
   }
 
   .content-links.open-notes {
-    border-radius: 10px;
+    border-radius: 35px;
     gap: 0px;
     padding: 10px 25px;
   }
