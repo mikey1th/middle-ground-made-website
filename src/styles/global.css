@@ -563,7 +563,12 @@ body {
   filter: brightness(0.75);
 }
 
-
+/* FOR PROJECT PAGE */
+.project-header-info{
+    display: inline-flex;
+    gap: 10px;
+    width: fit-content;
+}
 
 
 
@@ -614,7 +619,22 @@ body {
     display: flex;
     flex-direction: row;
     padding: 10px 20px;
-    width: fit-content
+    width: fit-content;
+  }
+
+  .content-bubble{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    border-radius: 35px;
+    gap: 0px;
+    padding: 10px 25px;
+  }
+
+  .project-header-info{
+    width: 100%;
+    gap: 0px;
   }
 
 }

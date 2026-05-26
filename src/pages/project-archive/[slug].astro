@@ -41,12 +41,14 @@ const { Content } = await project.render();
                     <div class="project-header-info">
                          <div class="content-bubble">
                               <span> {project.data.title} </span>
-                              <span class="link-details header"> / </span>
-                              <span class="link-details header"> {project.data.date} </span>
-                              <span class="link-details header"> / </span>
-                              <span class="link-details header"> {project.data.id} </span>
-                              <span class="link-details header"> / </span>
-                              <span class="link-details header"> {project.data.displayTag} </span>
+                                   <div class="link-details">
+                                        <span class="link-details header hide-mobile"> / </span>
+                                        <span> {project.data.date} </span>
+                                        <span> / </span>
+                                        <span> {project.data.id} </span>
+                                        <span> / </span>
+                                        <span> {project.data.displayTag} </span>
+                                   </div>
                          </div>
                     </div>
                 <Content/> 
@@ -70,12 +72,6 @@ const { Content } = await project.render();
      border-radius: 10px;
      outline: 1px solid rgba(0, 0, 0, 0.1);
      outline-offset: -1px;
-    }
-
-    .project-header-info{
-     display: inline-flex;
-     gap: 10px;
-     width: fit-content;
     }
      
 </style>

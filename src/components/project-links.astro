@@ -32,12 +32,14 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
             <div class="project-header-info">
                 <div class="content-bubble">
                     <span> {project.data.title} </span>
-                    <span class="link-details header"> / </span>
-                    <span class="link-details header"> {project.data.date} </span>
-                    <span class="link-details header"> / </span>
-                    <span class="link-details header"> {project.data.id} </span>
-                    <span class="link-details header"> / </span>
-                    <span class="link-details header"> {project.data.displayTag} </span>
+                    <div class="link-details header"> 
+                        <span class="link-details header hide-mobile"> / </span>
+                        <span> {project.data.date} </span>
+                        <span> / </span>
+                        <span> {project.data.id} </span>
+                        <span> / </span>
+                        <span> {project.data.displayTag} </span>
+                    </div>
                 </div>
             </div>
                 <a href={`/project-archive/${project.slug}`}>
@@ -97,14 +99,10 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
     filter: brightness(0.75);
     }
 
-    .project-header-info{
-    display: inline-flex;
-    gap: 10px;
-    width: fit-content;
-    }
-
     .project-tag-filters{
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     width: fit-content;
     }

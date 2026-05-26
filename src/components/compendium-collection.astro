@@ -19,15 +19,17 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
                 <div class="compendium-header-info">
                     <div class="content-bubble">
                         <span> {entry.data.title} </span>
-                        <span class="link-details header"> / </span>
-                        <span class="link-details header"> {entry.data.date} </span>
-                        <span class="link-details header"> / </span>
-                        <span class="link-details header"> {entry.data.id} </span>
+                        <div class="link-details header">
+                            <span class="link-details header hide-mobile"> / </span>
+                            <span class="link-details header"> {entry.data.date} </span>
+                            <span class="link-details header"> / </span>
+                            <span class="link-details header"> {entry.data.id} </span>
+                        </div>
                     </div>
                         {/* this stuff is conditionally rendered appears to the right of the link. The js conditionally renders the entire div.
                         Then the categories are themselves conditionally rendered. */}
                         {(entry.data.openNote || entry.data.project) && (
-                        <div class="content-links"> 
+                        <div class="content-links mobile-row"> 
                             {entry.data.openNote && (
                             <a href= {entry.data.openNote} class="link-details"> Note</a>
                             )}
@@ -106,6 +108,27 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
     .link-details.header:hover{
     pointer-events: none;
     font-weight: 300;
+    }
+
+    /* MOBILE VIEWPORT */
+
+    @media (max-width: 768px) {
+
+
+        .compendium-header-info{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 100%;
+        }
+
+        .all-snippets{
+            display: flex;
+            gap: 25px;
+            flex-direction: column;
+        }
+
+
     }
 
 </style>

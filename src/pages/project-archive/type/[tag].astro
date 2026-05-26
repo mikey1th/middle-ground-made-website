@@ -66,10 +66,12 @@ const tagDescriptions : Record<string, string> = {
                     <div class="project-header-info">
                         <div class="content-bubble">
                             <span> {project.data.title} </span>
-                            <span class="link-details header"> / </span>
-                            <span class="link-details header"> {project.data.date} </span>
-                            <span class="link-details header"> / </span>
-                            <span class="link-details header"> {project.data.id} </span>
+                            <div class="link-details header">
+                            <span class="link-details header hide-mobile"> / </span>
+                            <span> {project.data.date} </span>
+                            <span> / </span>
+                            <span> {project.data.id} </span>
+                            </div>
                         </div>
                     </div>
                     <a href={`/project-archive/${project.slug}`}>
@@ -121,12 +123,6 @@ const tagDescriptions : Record<string, string> = {
     h3 {
     font-size: .90rem;
     font-weight: 400;
-    }
-
-    .project-header-info{
-    display: inline-flex;
-    gap: 10px;
-    width: fit-content;
     }
 
     .link-details{
