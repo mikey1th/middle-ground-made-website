@@ -65,7 +65,6 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
     display: flex;
     flex-direction: column;
     width: 100%;
-    outline: 1px solid var(--line-gray);
     border-radius: 10px;
     gap: 2rem;
     overflow: hidden;
@@ -73,7 +72,8 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
-    padding: 1.25rem;
+    border-bottom: 1px solid var(--line-gray);
+    padding-bottom: 2.5rem;
     }
 
 
