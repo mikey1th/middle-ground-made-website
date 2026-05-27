@@ -669,7 +669,7 @@ body {
 
   .hover-box{
     box-sizing: border-box;
-    padding-bottom: .75rem;
+    padding-bottom: 20px;
     border-bottom: 1px solid var(--line-gray);
   }
 
