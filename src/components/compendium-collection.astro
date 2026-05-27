@@ -16,39 +16,35 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
 
     {entries.map((entry, index) => (
         <div class="compendium-entry"> 
-                <Image class="compendium-image"
-                    src={entry.data.image}
-                    alt={entry.data.title}
-                    width={entry.data.image.width}
-                    height={entry.data.image.height}
-                    loading={index === 0 ? "eager" : "lazy"} />
 
-
-            <div class="compendium-info">
-                <div class="link-details">
+            <div class="above-image">
+                <div class="date-details">
                     <span> {entry.data.date} </span>
                     <span> / </span>
-                     <span> {entry.data.id} </span>
-                    </div>
-                    <span class="compendium-project-title"> {entry.data.title} </span>
-                    <h3>{entry.data.description} </h3>
-
-                {/* CONDITIONAL LINKS (BELOW) */}
-                    {(entry.data.openNote || entry.data.project) && (
-                        <div class="compendium-links"> 
-                            {entry.data.openNote && (
-                                <a href= {entry.data.openNote} class="link-details"> Note</a>
-                                )}
-                                {entry.data.openNote && entry.data.project && (
-                                <span class="link-details"> / </span>
-                                )}
-                                {entry.data.project && (
-                                <a href= {entry.data.project} class="link-details"> Project</a>
-                                )}
-                        </div>
-                    )}   
+                    <span> {entry.data.id} </span>
                 </div>
+                <span class="compendium-project-title"> {entry.data.title} </span>
+                <p class="compendium-description">{entry.data.description} </p>      
             </div>
+          
+
+            <Image class="image-dark-border"
+                src={entry.data.image}
+                alt={entry.data.title}
+                width={entry.data.image.width}
+                height={entry.data.image.height}
+                loading={index === 0 ? "eager" : "lazy"} />
+
+
+            {/* CONDITIONAL LINKS (BELOW) */}
+                {(entry.data.openNote || entry.data.project) && (
+                    <div class="info-bubble"> 
+                        {entry.data.openNote && ( <a href= {entry.data.openNote} class="bold-hover"> Note</a> )}
+                        {entry.data.openNote && entry.data.project && ( <span class="bold-hover"> / </span> )}
+                        {entry.data.project && ( <a href= {entry.data.project} class="bold-hover"> Project</a> )}
+                    </div>
+                )}   
+        </div>
     ))}
 
 </div>
@@ -69,50 +65,34 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
     display: flex;
     flex-direction: column;
     width: 100%;
-    outline: 1px solid rgba(0, 0, 0, 0.1);
-    outline-offset: -1px;
+    outline: 1px solid var(--line-gray);
     border-radius: 10px;
+    gap: 2rem;
     overflow: hidden;
-    }
-
-    .compendium-info{
     display: flex;
     flex-direction: column;
-    gap: .50rem;
+    gap: 1.5rem;
     width: 100%;
-    padding: 2rem 1.5rem;
+    padding: 1.25rem;
     }
 
-    h3 {
-    font-size: 1.05rem;
-    font-weight: 400;
+
+    .above-image{
+    display: flex;
+    flex-direction: column;
+    gap: .15rem;
     }
 
-    .compendium-links{
+    .conditional-details{
     display: flex;
     flex-direction: row;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    gap: 1rem;
-    padding-top: 1rem;
-    width: 100%;
-    }
-
-    .link-details{
-    font-size: .85rem
-
-    }
-
-    .link-details:hover{
-    font-weight: 500;
-    color: #2d2d2d;
-    }
-
-    .link-details.header:hover{
-    pointer-events: none;
-    font-weight: 300;
     }
 
 
+    h3 {
+    font-size: .85rem;
+    font-weight: 400;
+    }
 
     /* MOBILE VIEWPORT */
 
