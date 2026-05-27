@@ -23,25 +23,27 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
                 height={entry.data.image.height}
                 loading={index === 0 ? "eager" : "lazy"} />
 
-            <div class="image-context">
-                <div class="date-details">
-                    <span> {entry.data.date} </span>
-                    <span> — </span>
-                    <span> No.{entry.data.id} </span>
-                </div>
-                <span class="compendium-project-title"> {entry.data.title} </span>
-                <p>{entry.data.description} </p>  
-
-            {/* CONDITIONAL LINKS (BELOW) */}
-                {(entry.data.openNote || entry.data.project) && (
-                    <div class="info-bubble add-margin"> 
-                        {entry.data.openNote && ( <a href= {entry.data.openNote} class="bold-hover"> Note</a> )}
-                        {entry.data.openNote && entry.data.project && ( <span class="bold-hover"> / </span> )}
-                        {entry.data.project && ( <a href= {entry.data.project} class="bold-hover"> Project</a> )}
+            <div class="context-and-links">
+                <div class="image-context">
+                    <div class="date-details">
+                        <span> {entry.data.date} </span>
+                        <span> — </span>
+                        <span> No.{entry.data.id} </span>
                     </div>
-                )}   
+                    <span class="compendium-project-title"> {entry.data.title} </span>
+                    <p>{entry.data.description} </p>  
+                </div>
+                {/* CONDITIONAL LINKS (BELOW) */}
+                    {(entry.data.openNote || entry.data.project) && (
+                        <div class="info-bubble"> 
+                            {entry.data.openNote && ( <a href= {entry.data.openNote} class="bold-hover"> Note</a> )}
+                            {entry.data.openNote && entry.data.project && ( <span class="bold-hover"> / </span> )}
+                            {entry.data.project && ( <a href= {entry.data.project} class="bold-hover"> Project</a> )}
+                        </div>
+                    )} 
             </div>
         </div>
+
     ))}
 
 </div>
@@ -51,40 +53,20 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
 
 <style>
 
+    {/* .context-and-links moved to global */}
+
     {/* .all-compendium-entries moved to global */}
 
     {/* .compendium-project-entry moved to global */}
 
     {/* .above-image moved to global */}
 
-    .conditional-details{
-    display: flex;
-    flex-direction: row;
-    }
 
 
-    h3 {
-    font-size: .85rem;
-    font-weight: 400;
-    }
 
     /* MOBILE VIEWPORT */
 
     @media (max-width: 768px) {
-
-
-        .compendium-header-info{
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            width: 100%;
-        }
-
-        .all-snippets{
-            display: flex;
-            gap: 25px;
-            flex-direction: column;
-        }
 
 
     }

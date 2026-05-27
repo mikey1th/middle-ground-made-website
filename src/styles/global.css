@@ -153,6 +153,7 @@ color: #2d2d2d;
 
 p{
   line-height: 1.35;
+  font-size: .90rem;
 }
 
 
@@ -176,21 +177,6 @@ p{
   text-transform: capitalize;
 }
 
-.open-note-headers {
-  display: inline-flex;
-  padding: 10px 20px;
-  align-items: center;
-  text-decoration: none;
-  width: fit-content;
-
-  border-radius: 100px;
-  border: 1px solid #E8E8E8;
-  background: #FAFAFA;
-  font-family: "Atkinson Hyperlegible Next";
-  font-weight: 400;
-  font-size: .85rem;
-  color: #2d2d2d;
-}
 
 .content-links:hover{
 background: #FFFFFF;
@@ -211,7 +197,12 @@ cursor: pointer;
   font-size: .80rem;
 }
 
+
+/* GOAT TIER CLASSES */
 .date-details{
+  display: flex;
+  flex-direction: row;
+  gap: 7.5px;
   font-family: "Atkinson Hyperlegible Mono"; 
   font-weight: 300;
   text-transform: uppercase;
@@ -228,6 +219,8 @@ font-weight: 300;
 letter-spacing: .10em;
 font-size: .65rem;
 }
+
+/* GOAT TIER CLASSES END */
 
 .content-bubble{
   display: inline-flex;
@@ -333,14 +326,11 @@ font-size: .65rem;
     color: #2d2d2d;
 }
 
-
 .all-map-list-items{
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
-
-
 
 .info-bubble {
   display: flex;
@@ -376,10 +366,6 @@ font-size: .65rem;
 }
 
 .remove-side-padding{
-  padding-left: 0px;
-}
-
-.image-context.remove-side-padding{
   padding-left: 0px;
 }
 
@@ -617,46 +603,6 @@ body {
 /* COMPENDIUM / PROJECTS */
 
 
-.compendium-project-title{
-    font-family: "Atkinson Hyperlegible Next";
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.compendium-description{
-    font-family: "Atkinson Hyperlegible Next";
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.image-context{
-    display: flex;
-    flex-direction: column;
-    gap: .15rem;
-    padding-left: 1.5rem;
-}
-
-.compendium-project-entry{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 1.5rem;
-    padding-bottom: 1.5rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-radius: 10px;
-    outline: 1px solid rgba(0, 0, 0, 0.1);
-    outline-offset: -1px;
-}
-
-  .compendium-project-image{
-      width: 100%;
-      height: auto;
-  }
-
-
 .all-compendium-project-entries{
     display: flex;
     flex-direction: column;
@@ -664,8 +610,86 @@ body {
     gap: 2.25rem
 }
 
+.compendium-project-entry{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    outline-offset: -1px;
+}
 
-/* COMPENDIUM / PROJECTS END*/
+.compendium-project-image{
+    width: 100%;
+    height: auto;
+}
+
+.context-and-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.35rem;
+    padding: 0px 1.5rem;
+    margin: 1.5rem 0px;
+}
+
+.image-context{
+    display: flex;
+    flex-direction: column;
+    gap: .20rem;
+}
+
+.compendium-project-title{
+    font-family: "Atkinson Hyperlegible Next";
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+.image-context.remove-side-padding{
+  padding-left: 0px;
+}
+
+
+/* COMPENDIUM / PROJECTS END */
+
+
+
+
+/* OPEN NOTES */
+
+  
+
+
+
+  .open-notes-title{
+    font-family: "Atkinson Hyperlegible Next";
+    font-size: .95rem;
+    font-weight: 500;
+  }
+
+  .hover-box{
+    box-sizing: border-box;
+    padding-bottom: .75rem;
+    border-bottom: 1px solid var(--line-gray);
+  }
+
+  .hover-box:hover{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+  }
+
+  .hover-box:hover .open-notes-title {
+    text-decoration: underline;
+  }
+  
+  .image-context.remove-side-padding.border-bottom:hover{
+    border-bottom: 0px;
+  }
+
+  /* date-details */
+  
+
+
+/* OPEN NOTES END */
 
 
 
@@ -724,12 +748,6 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: start;
-  }
-
-  .content-links.open-notes {
-    border-radius: 35px;
-    gap: 0px;
-    padding: 10px 25px;
   }
 
   .mobile-row{

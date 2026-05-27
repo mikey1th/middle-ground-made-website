@@ -25,19 +25,19 @@ const { frontmatter } = Astro.props;
           <PageWrapper>
                <Navigation />
                <ContextSection>
-                    <div class="content-links open-notes">
-                         <span> {frontmatter.title} </span>
-                         <div class="link-details">
-                              <span class="link-details hide-mobile"> / </span>
-                              <time> {frontmatter.date} </time>
+                    <div class="image-context remove-side-padding border-bottom"> 
+                         <span class="open-notes-title"> {frontmatter.title} </span>
+                         <div class = "date-details">
+                              <span> {frontmatter.date} </span>
                               <span> / </span>
-                              <span> {frontmatter.number}</span>
+                              <span> {frontmatter.number} </span>
                               {frontmatter.series && (
                                    <span> / </span>
                                    <span> {frontmatter.series} </span>
-                              )}
+                              )}    
                          </div>
-                    </div>
+                    </div> 
+                    <hr>
                     <slot /> 
                 <BackButton/>
                </ContextSection>

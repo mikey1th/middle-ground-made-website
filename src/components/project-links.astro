@@ -35,7 +35,8 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
                     alt={project.data.title}
                     loading={index === 0 ? "eager" : "lazy"} />    
                 </a>
-        
+
+        <div class="context-and-links">
             <div class="image-context">
                 <div class="date-details"> 
                     <span> {project.data.date} </span>
@@ -46,7 +47,7 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
                 </div>
                 <span class="compendium-project-title"> {project.data.title} </span>
             </div>
-
+        </div>
         </div>
     ))}
 </div>
