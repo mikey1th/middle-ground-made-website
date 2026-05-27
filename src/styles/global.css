@@ -207,6 +207,10 @@ cursor: pointer;
   color: #AEAEAE;
 }
 
+.link-details.large{
+  font-size: .80rem;
+}
+
 .date-details{
   font-family: "Atkinson Hyperlegible Mono"; 
   font-weight: 300;
@@ -553,12 +557,6 @@ body {
 }
 
 
-/* these are used only for compendium entries */
-.compendium-image {
-  width: 100%;
-  height: auto;
-}
-
 .image-light-border {
   width: 100%;
   height: auto;
@@ -601,13 +599,7 @@ body {
 
 
 
-/* FOR  PAGE SPECIFIC LEANING GLOBAL */
-
-.project-header-info{
-    display: inline-flex;
-    gap: 10px;
-    width: fit-content;
-}
+/* COMPENDIUM / PROJECTS */
 
 
 .compendium-project-title{
@@ -622,8 +614,35 @@ body {
     font-weight: 300;
 }
 
+.above-image{
+    display: flex;
+    flex-direction: column;
+    gap: .15rem;
+}
 
-/* FOR PAGE SPECIFIC END*/
+.compendium-project-entry{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid var(--line-gray);
+    padding-bottom: 2.5rem;
+}
+
+
+.all-compendium-project-entries{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2.5rem
+}
+
+
+/* COMPENDIUM / PROJECTS END*/
 
 
 
@@ -638,7 +657,12 @@ body {
 /* GOAT COMBO CLASS  END*/
 
 
-
+.row{
+  display: flex;
+  flex-direction: row;
+  gap: 7.5px;
+  align-items: center;
+}
 
 
 
@@ -697,14 +721,26 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: start;
-    border-radius: 10px;
     gap: 0px;
-    padding: 10px 25px;
+    padding: 10px 0px;
+    border-radius: 0px;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
   }
 
   .project-header-info{
     width: 100%;
     gap: 0px;
+  }
+
+
+  .add-bottom{
+    border-bottom: 1px solid var(--line-gray);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
   }
 
 }

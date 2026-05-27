@@ -25,22 +25,18 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
 
 <hr>
 
-<div class="all-project-additions">
+<div class="all-compendium-project-entries">
     {additions.map((project, index) => (
-        <div class="project-entry"> 
-            {/* the div below renders the unconditonal header info */}
-            <div class="project-header-info">
-                <div class="content-bubble">
-                    <span> {project.data.title} </span>
-                    <div class="link-details header"> 
-                        <span class="link-details header hide-mobile"> / </span>
-                        <span> {project.data.date} </span>
-                        <span> / </span>
-                        <span> {project.data.id} </span>
-                        <span> / </span>
-                        <span> {project.data.displayTag} </span>
-                    </div>
+        <div class="compendium-project-entry"> 
+            <div class="above-image">
+                <div class="date-details"> 
+                    <span> {project.data.date} </span>
+                    <span> / </span>
+                    <span> {project.data.id} </span>
+                    <span> / </span>
+                    <span> {project.data.displayTag} </span>
                 </div>
+                <span class="compendium-project-title"> {project.data.title} </span>
             </div>
                 <a href={`/project-archive/${project.slug}`}>
                 <Image
@@ -50,8 +46,6 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
                 </a>
         </div>
     ))}
-</div>
-
 </div>
 
 
@@ -64,36 +58,6 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
     gap: 30px;
     }
 
-
-    .all-project-additions{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 30px
-    }
-
-    .project-entry{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #E8E8E8
-    }
-
-    .project-entry img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: filter 0.3s ease;
-    outline: 1px solid rgba(0, 0, 0, 0.1);
-    outline-offset: -1px;
-    }
-
-    .project-entry img:hover {
-    filter: brightness(0.75);
-    }
-
     .project-tag-filters{
     display: flex;
     flex-direction: row;
@@ -102,6 +66,18 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
     width: fit-content;
     }
 
+    .compendium-project-entry img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: filter 0.3s ease;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    outline-offset: -1px;
+    }
+
+    .compendium-project-entry img:hover {
+    filter: brightness(0.75);
+    }
 
 
 </style>

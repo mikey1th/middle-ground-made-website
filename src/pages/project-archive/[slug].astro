@@ -38,19 +38,17 @@ const { Content } = await project.render();
           <PageWrapper>
                <Navigation />
                <ContextSection>
-                    <div class="project-header-info">
-                         <div class="content-bubble">
-                              <span> {project.data.title} </span>
-                                   <div class="link-details">
-                                        <span class="link-details header hide-mobile"> / </span>
-                                        <span> {project.data.date} </span>
-                                        <span> / </span>
-                                        <span> {project.data.id} </span>
-                                        <span> / </span>
-                                        <span> {project.data.displayTag} </span>
-                                   </div>
+                    <div class="above-image">
+                         <div class="date-details"> 
+                              <span> {project.data.date} </span>
+                              <span> / </span>
+                              <span> {project.data.id} </span>
+                              <span> / </span>
+                              <span> {project.data.displayTag} </span>
                          </div>
+                         <span class="compendium-project-title"> {project.data.title} </span>
                     </div>
+               <hr>
                 <Content/> 
                 {project.data.images.map((image) => (
                 <Image src={image} alt={project.data.title} />
