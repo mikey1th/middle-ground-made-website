@@ -16,34 +16,31 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
 
     {entries.map((entry, index) => (
         <div class="compendium-project-entry"> 
-
-            <div class="above-image">
-                <div class="date-details">
-                    <span> {entry.data.date} </span>
-                    <span> / </span>
-                    <span> {entry.data.id} </span>
-                </div>
-                <span class="compendium-project-title"> {entry.data.title} </span>
-                <p>{entry.data.description} </p>      
-            </div>
-          
-
-            <Image class="image-dark-border"
+            <Image class="compendium-project-image"
                 src={entry.data.image}
                 alt={entry.data.title}
                 width={entry.data.image.width}
                 height={entry.data.image.height}
                 loading={index === 0 ? "eager" : "lazy"} />
 
+            <div class="image-context">
+                <div class="date-details">
+                    <span> {entry.data.date} </span>
+                    <span> — </span>
+                    <span> No.{entry.data.id} </span>
+                </div>
+                <span class="compendium-project-title"> {entry.data.title} </span>
+                <p>{entry.data.description} </p>  
 
             {/* CONDITIONAL LINKS (BELOW) */}
                 {(entry.data.openNote || entry.data.project) && (
-                    <div class="info-bubble"> 
+                    <div class="info-bubble add-margin"> 
                         {entry.data.openNote && ( <a href= {entry.data.openNote} class="bold-hover"> Note</a> )}
                         {entry.data.openNote && entry.data.project && ( <span class="bold-hover"> / </span> )}
                         {entry.data.project && ( <a href= {entry.data.project} class="bold-hover"> Project</a> )}
                     </div>
                 )}   
+            </div>
         </div>
     ))}
 

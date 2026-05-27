@@ -63,24 +63,25 @@ const tagDescriptions : Record<string, string> = {
     <div class="all-compendium-project-entries">
         {projects.map((project, index) => (
             <div class="compendium-project-entry"> 
-                {/* the div below renders the unconditonal header info */}
-                <div class="above-image">
+
+                <a href={`/project-archive/${project.slug}`}>
+                    <Image
+                        src={project.data.coverImage}
+                        alt={project.data.title}
+                        loading={index === 0 ? "eager" : "lazy"} />    
+                </a>
+
+                <div class="image-context">
                     <div class="date-details"> 
                         <span> {project.data.date} </span>
                         <span> / </span>
-                        <span> {project.data.id} </span>
+                        <span> No.{project.data.id} </span>
                         <span> / </span>
                         <span> {project.data.displayTag} </span>
                     </div>
                     <span class="compendium-project-title"> {project.data.title} </span>
                 </div>
 
-                    <a href={`/project-archive/${project.slug}`}>
-                    <Image
-                        src={project.data.coverImage}
-                        alt={project.data.title}
-                        loading={index === 0 ? "eager" : "lazy"} />    
-                    </a>
             </div>
         ))}
     </div>
@@ -115,10 +116,8 @@ const tagDescriptions : Record<string, string> = {
     .compendium-project-entry img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
     transition: filter 0.3s ease;
     outline: 1px solid rgba(0, 0, 0, 0.1);
-    outline-offset: -1px;
     }
 
     .compendium-project-entry img:hover {
