@@ -338,7 +338,6 @@ font-size: .65rem;
   width: fit-content;
   gap: 7.5px;
   align-items: start;
-
   text-decoration: none;
 
   font-family: "Atkinson Hyperlegible Mono"; 
@@ -629,8 +628,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.35rem;
-    padding: 0px 1.5rem;
-    margin: 1.5rem 0px;
+    padding: 0px 1.35rem;
+    margin: 1.35rem 0px;
 }
 
 .image-context{
@@ -639,11 +638,17 @@ body {
     gap: .20rem;
 }
 
+/* date-dtails */
+
 .compendium-project-title{
     font-family: "Atkinson Hyperlegible Next";
     font-size: 1.35rem;
     font-weight: 500;
 }
+
+/* p */
+
+/* .info-bubble */
 
 .image-context.remove-side-padding{
   padding-left: 0px;
@@ -657,9 +662,11 @@ body {
 
 /* OPEN NOTES */
 
-  
-
-
+  .all-items{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }  
 
   .open-notes-title{
     font-family: "Atkinson Hyperlegible Next";
@@ -669,7 +676,7 @@ body {
 
   .hover-box{
     box-sizing: border-box;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
     border-bottom: 1px solid var(--line-gray);
   }
 
@@ -681,15 +688,27 @@ body {
     text-decoration: underline;
   }
   
-  .image-context.remove-side-padding.border-bottom:hover{
-    border-bottom: 0px;
-  }
+  /*.image-context.remove-side-padding*/ 
 
   /* date-details */
-  
 
 
 /* OPEN NOTES END */
+
+
+/* SNIPPETS */
+
+
+.image-context.remove-side-padding.border-bottom.gap{
+  padding-left: 0px;
+  border-bottom: 1px solid var(--line-gray);
+  padding-bottom: 1.25rem;
+}
+
+
+
+/* SNIPPETS */
+
 
 
 
@@ -699,6 +718,10 @@ body {
   color: inherit;
   text-decoration: inherit; 
   cursor: default;
+}
+
+.gap{
+  gap:.35rem;
 }
 
 /* GOAT COMBO CLASS  END*/

@@ -8,12 +8,12 @@ const posts2026 = sorted.filter((post: any) => post.frontmatter.year === 2026);
 
 ---
 
-<div class="all-links">
+<div class="all-items">
 
     <div class="link-year">
         {posts2026.map((post: any) =>
             <div class="hover-box">
-                <a href={post.url} class="image-context remove-side-padding border-bottom">  
+                <a href={post.url} class="image-context remove-side-padding">  
                     <span class="open-notes-title"> {post.frontmatter.title} </span>
                     <div class = "date-details">
                         <span> {post.frontmatter.date} </span>
@@ -29,10 +29,11 @@ const posts2026 = sorted.filter((post: any) => post.frontmatter.year === 2026);
         )}  
     </div>
 
+
     <div class = "link-year">
         {posts2025.map((post: any) =>
             <div class="hover-box">
-                <a href={post.url} class="image-context remove-side-padding border-bottom">  
+                <a href={post.url} class="image-context remove-side-padding">  
                     <span class="open-notes-title"> {post.frontmatter.title} </span>
                     <div class = "date-details">
                         <span> {post.frontmatter.date} </span>
@@ -54,13 +55,6 @@ const posts2026 = sorted.filter((post: any) => post.frontmatter.year === 2026);
 
 <style>
 
-
-
-.all-links{
-display: flex;
-gap: 20px;
-flex-direction: column;
-}
 
 .link-year{
 display: flex;

@@ -6,9 +6,9 @@ import rephrases from '../data/rephrases-data.js';
 
 ---
 
-<div class="all-rephrases">
+<div class="all-items">
     {rephrases.map((rephrase) => (
-        <div class="individual-rephrase"> 
+        <div class="image-context remove-side-padding border-bottom gap"> 
             <p class="rephrase-original" set:html={rephrase.original} />
             <p class="rephrase-improved" set:html={rephrase.improved} />
         </div>       
@@ -18,25 +18,9 @@ import rephrases from '../data/rephrases-data.js';
   
 <style>
 
-    .all-rephrases{
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    }
-
     .rephrase-improved{
     font-weight: 500;
     color: #2d2d2d;
     }
-
-    .individual-rephrase{
-    display: flex;
-    gap: 2.5px;
-    flex-direction: column;
-    width: 100%;
-    border-bottom: 1px solid #E8E8E8;
-    padding-bottom: 20px;
-    }
-
 
 </style>

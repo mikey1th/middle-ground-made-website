@@ -7,21 +7,21 @@ import snippets from '../data/snippet-data.js';
 
 {/* style similar to resources page */}
 
-<div class="all-snippets">
+<div class="all-items">
     {snippets.map((snippet) => (
-    <div class="snippet-row">
-        <span class="content-bubble"> {snippet.text} </span>
+    <div class="image-context remove-side-padding border-bottom gap">
+        <span class="open-notes-title"> {snippet.text} </span>
             {(snippet.openNote || snippet.design) && (
             /* this stuff is conditionally rendered appears to the right of the link*/
-            <div class="content-links mobile-row"> 
+            <div class="info-bubble"> 
                 {snippet.openNote && (
-                <a href= {snippet.openNote} class="link-details"> Note</a>
+                <a href= {snippet.openNote} class="bold-hover"> Note</a>
                 )}
                 {snippet.openNote && snippet.design && (
-                <span class="link-details"> / </span>
+                <span class="bold-hover"> / </span>
                 )}
                 {snippet.design && (
-                <a href= {snippet.design} class="link-details"> Design</a>
+                <a href= {snippet.design} class="bold-hover"> Design</a>
                 )}
              </div>
             )}
@@ -32,43 +32,9 @@ import snippets from '../data/snippet-data.js';
 <style>
 
 
-    .all-snippets{
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    }
-
-    .link-details{
-    color: #2d2d2d;
-    }
-
-    .link-details:hover{
-    font-weight: 500;
-    color: #2d2d2d;
-    }
-
-    .snippet-row{
-    display: inline-flex;
-    gap: 10px;
-    width: fit-content;
-    align-items: center;
-    }
-
-
 /* MOBILE VIEWPORT */
 
     @media (max-width: 768px) {
-        .snippet-row{
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-        }
-
-        .all-snippets{
-            display: flex;
-            gap: 25px;
-            flex-direction: column;
-        }
 
 
     }
