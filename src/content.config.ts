@@ -1,7 +1,11 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'zod';
+
+
 
 const compendium = defineCollection({
-    type: 'data',
+    loader: glob({ pattern: '**/*.json', base: './src/content/compendium' }),
     schema: ({ image }) => z.object({
     id: z.number(),
     title: z.string(),
@@ -15,8 +19,9 @@ const compendium = defineCollection({
 });
 
 
+
 const projects = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
   schema: ({ image }) => z.object({
     title: z.string(),
     date: z.string(),
@@ -25,15 +30,15 @@ const projects = defineCollection({
     coverImage: image(),
     sortDate: z.string(),
     displayTag: z.string(),
-    /* array fields to pass however many you need */
     images: z.array(image()),
     tags: z.array(z.string()),
   })
 });
 
 
+
 const gallery = defineCollection({
-    type: 'data',
+    loader: glob({ pattern: '**/*.json', base: './src/content/gallery' }),
     schema: ({ image }) => z.object({
     id: z.number(),
     date: z.string(),
@@ -41,8 +46,10 @@ const gallery = defineCollection({
   })
 });
 
+
+
 const oldGold = defineCollection({
-    type: 'data',
+    loader: glob({ pattern: '**/*.json', base: './src/content/oldGold' }),
     schema: ({ image }) => z.object({
     id: z.number(),
     type: z.string(),

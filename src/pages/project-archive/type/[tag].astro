@@ -64,13 +64,13 @@ const tagDescriptions : Record<string, string> = {
         {projects.map((project, index) => (
             <div class="compendium-project-entry"> 
 
-                <a href={`/project-archive/${project.slug}`}>
+                <a href={`/project-archive/${project.id}`}>
                     <Image
                         src={project.data.coverImage}
                         alt={project.data.title}
                         loading={index === 0 ? "eager" : "lazy"} />    
                 </a>
-
+                <div class="context-and-links">
                 <div class="image-context">
                     <div class="date-details"> 
                         <span> {project.data.date} </span>
@@ -81,7 +81,7 @@ const tagDescriptions : Record<string, string> = {
                     </div>
                     <span class="compendium-project-title"> {project.data.title} </span>
                 </div>
-
+                </div>
             </div>
         ))}
     </div>
