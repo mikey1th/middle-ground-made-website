@@ -668,29 +668,55 @@ body {
     flex-direction: column;
   }  
 
-  .open-notes-title{
-    font-family: "Atkinson Hyperlegible Next";
-    font-size: 1.125rem;
-    font-weight: 500;
+  .link-year{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    outline: 1px solid var(--line-gray);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 1005;
   }
 
   .hover-box{
     box-sizing: border-box;
-    padding-bottom: 1.25rem;
-    border-bottom: 1px solid var(--line-gray);
+    display: flex;
+    flex-direction: column;
   }
 
   .hover-box:hover{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    background: var(--fill-gray);
   }
 
-  .hover-box:hover .open-notes-title {
-    text-decoration: underline;
+  .open-notes-context{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: .20rem;
+    padding: 0.625rem 1.25rem;
+  }
+
+  .hover-box:first-child .open-notes-context {
+    padding-top: 1.25rem;
+  }
+
+    .hover-box:last-child .open-notes-context {
+    padding-bottom: 1.25rem;
+  }
+
+
+  .open-notes-title{
+    font-family: "Atkinson Hyperlegible Next";
+    font-size: 1rem;
+    font-weight: 500;
   }
   
-  /*.image-context.remove-side-padding*/ 
-
   /* date-details */
+
+  .read-more{
+    font-weight: 500;
+  }
 
 
 /* OPEN NOTES END */
