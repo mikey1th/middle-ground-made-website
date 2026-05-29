@@ -712,7 +712,10 @@ body {
   /* date-details */
 
   .open-notes-context.md-title{
-    padding: 0px
+    border-bottom: 1px solid var(--line-gray);
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
   }
 
 
