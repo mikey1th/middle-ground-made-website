@@ -10,11 +10,12 @@ layout: ../../components/open-notes-layouts.astro
 
 ---
 
-My curiosity about words and phrases has caused me to write numerous language-based Open Notes. I’ve coined terms like “Silispeak,” pointed out false synonyms like “growing” and “changing,” and created a running list of snippets like “Follow the spark.” Suffice it to say, I’ve become a full on etymology-guy. 
+Over the years I’ve become a full on etymology guy and the most recent destination my word-based journey has arrived at has to do with the violent undertone of common day-to-day phrases. 
 
-The most recent destination my etymological journey has arrived at has to do with the violent undertone of common day-to-day phrases. And while the militaristic nature of cultural slang may not initially sound like a cause for concern, what could be more conducive to perceiving harm intentionally done unto others as normal or “run of the mill” than our language softening the blow of violent acts?
+Which is worth exploring, not because these terms are ineffective in communicating thier intent, but because of how good they are at convincing us to  perceive harm intentionally done unto others as normal or “run of the mill."
 
 If we are to truly become people of peace, if we are to actually care for those around us, then we should abandon the sort of phrases that inevitably make us dull to or, in some cases completely unaware of violence as a strange, and avoidable phenomenon. 
+
 In order to clear the air and provide a solution to our polemic problem I’ve supplied a small list of bellicose phrases, and a corresponding peaceful alternative:
 
 “There are multiple ways to skin this cat.” — **“There are many ways to sew this hat.”**
@@ -27,4 +28,4 @@ In order to clear the air and provide a solution to our polemic problem I’ve s
 
 “Deadline” — **“Due date”**
 
-As with any list I’ve created this collection is not complete. If you have a phrase you’ve turned peaceful that you’d like to share  please send an email to  mikey@middlegroundmade.com
+As with any list I’ve created this collection is not complete. If you have a phrase you’ve turned peaceful that you’d like to share please send me an email (email on about page).

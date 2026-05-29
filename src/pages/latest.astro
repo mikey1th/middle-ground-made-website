@@ -1,0 +1,59 @@
+---
+
+import '../styles/global.css';
+import Navigation from '../components/navigation.astro';
+import PageWrapper from '../components/page-wrapper.astro';
+import ContextSection from '../components/context-section.astro';
+import ContextSectionFooter from '../components/context-section-footer.astro';
+import HomePageContent from '../components/home-page-content.astro';
+import BackButton from '../components/back-button.astro';
+
+const pageTitle = "Middle Ground Made";
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+		<link rel="icon" href="/favicon.ico?v=2" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	</head>
+	<body>
+		<PageWrapper>
+		<Navigation/>	
+		<ContextSection>
+		<h2> The Lastest from Me </h2>
+		<hr>
+		<p> I follow the spark by creating herilooms. Here's a collection of work that I am particularly proud of. These selections could be recently finished, or they could be recently re-discovered.HIS IS A TEST COMMIT I hope you enjoy them as much as I do! </p>
+		<p class="note">
+    	* Featured work incoming
+    	</p>
+		</ContextSection>
+
+		<ContextSection>
+        <p> Latest: Note, Snippet, Rephrase, Compendium, Project, Resource, CV Item, Book Reccomendation, Gallery Image, Old Gold Entry, Merch item</p>
+		<HomePageContent/>
+		</ContextSection>
+		
+		<ContextSectionFooter/>
+
+		</PageWrapper>
+	</body>
+</html>
+
+
+<style>
+
+	.more-space{
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	}
+
+
+	
+</style>

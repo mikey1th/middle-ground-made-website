@@ -5,6 +5,7 @@ import Navigation from '../components/navigation.astro'
 import ContextSectionFooter from '../components/context-section-footer.astro';
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
+import ContextSectionNoPadding from '../components/context-section-no-padding.astro';
 import OpenNotesVolumeOneLinks from '../components/open-notes-volume-one-links.astro';
 import BackButton from '../components/back-button.astro';
 
@@ -41,10 +42,15 @@ const pageTitle = "Open Notes"
             [{count}] Notes sorted by year
             </p>
             </ContextSection>
+
             <ContextSection>
             <OpenNotesVolumeOneLinks/>  
-            <BackButton/>  
+
+            <hr>
+            <BackButton/>
+
             </ContextSection>
+
             <ContextSectionFooter/>
         </PageWrapper>
         
@@ -52,6 +58,22 @@ const pageTitle = "Open Notes"
 <html/>
 
 
+
+
+
 <style>
 
+
+  .section-divider {
+    margin: 0px 1.25rem;
+    width: auto;
+  }
+
+  .margin{
+    margin: 1.25rem 1.25rem;
+  }
+
+
+
 </style>
+

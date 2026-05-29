@@ -673,19 +673,24 @@ body {
     flex-direction: column;
     gap: 0px;
     outline: 1px solid var(--line-gray);
-    border-radius: 10px;
-    overflow: hidden;
-    width: 1005;
+    outline-offset: -1px; 
+    border-radius: .625rem
   }
+
 
   .hover-box{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid var(--line-gray);
   }
 
   .hover-box:hover{
     background: var(--fill-gray);
+  }
+  
+  .hover-box:last-child{
+  border-bottom: none;
   }
 
   .open-notes-context{
@@ -694,15 +699,7 @@ body {
     width: 100%;
     height: fit-content;
     gap: .20rem;
-    padding: 0.625rem 1.25rem;
-  }
-
-  .hover-box:first-child .open-notes-context {
-    padding-top: 1.25rem;
-  }
-
-    .hover-box:last-child .open-notes-context {
-    padding-bottom: 1.25rem;
+    padding: .75rem 1.25rem;
   }
 
 
@@ -714,8 +711,8 @@ body {
   
   /* date-details */
 
-  .read-more{
-    font-weight: 500;
+  .open-notes-context.md-title{
+    padding: 0px
   }
 
 

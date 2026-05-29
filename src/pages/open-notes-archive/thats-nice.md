@@ -2,8 +2,8 @@
 
 title: '"That''s Nice"'
 date: "05-26"
-number: "69"
-entry: 69
+number: "70"
+entry: 70
 year: 2026
 volume: 2
 layout: ../../components/open-notes-layouts.astro
