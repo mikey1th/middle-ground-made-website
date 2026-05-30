@@ -1,7 +1,7 @@
 ---
 
 title: "More Pages, Less Feeds"
-date: 10-25"
+date: 10.25"
 number: "35"
 entry: 35
 year: 2025

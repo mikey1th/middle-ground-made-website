@@ -1,7 +1,7 @@
 ---
 
 title: "Log Out"
-date: "01-26"
+date: "01.25"
 id: 35
 merch: "March Coming Soon"
 coverImage: ../../assets/website-images/project-images/logout-01.jpg

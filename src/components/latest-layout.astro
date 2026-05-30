@@ -1,0 +1,284 @@
+---
+
+import '../styles/global.css';
+
+
+
+import {Image} from 'astro:assets';
+
+import { getCollection } from 'astro:content';
+
+import snippets from '../data/snippet-data.js';
+import rephrases from '../data/rephrases-data';
+import resources from '../data/resources-data';
+import books from '../data/bookshelf-data';
+
+
+
+
+
+const projects = await getCollection('projects');
+const compendiums = await getCollection('compendium');
+const galleries = await getCollection('gallery');
+const olds = await getCollection('oldGold');
+const allPosts = Object.values(import.meta.glob('../pages/open-notes-archive/*.md', { eager: true }));
+
+
+const latestProject = projects.sort((a, b) => b.data.id - a.data.id)[0];
+const latestCompendium = compendiums.sort((a, b) => b.data.id - a.data.id)[0];
+const latestGallery = galleries.sort((a, b) => b.data.id - a.data.id)[0];
+const latestOldGold = olds.sort((a, b) => b.data.id - a.data.id)[0];
+const latestOpenNotes = [...allPosts].sort((a: any, b: any) => b.frontmatter.entry - a.frontmatter.entry)[0] as any;
+
+const latestSnippets = snippets.sort((a,b) => b.id - a.id)[0]
+const latestRephrase = rephrases.sort((a,b) => b.id - a.id)[0]
+const latestResource = resources.sort((a,b) => b.number - a.number)[0]
+const latestBook = books.sort((a,b) => b.id - a.id)[0]
+
+
+
+---
+
+
+<div class="all-content">
+
+    {/* Compendium */}
+    <a href="/compendium/" class="latest-div"> 
+        <Image 
+            src={latestCompendium.data.image}
+            alt={latestCompendium.data.title}
+            width={latestCompendium.data.image.width}
+            height={latestCompendium.data.image.height}
+            loading= "eager"
+            class="latest-image"
+        />    
+
+        <div class="latest-context">
+            <p class="latest-large">No. {latestCompendium.data.id}</p>
+            <p class="latest-medium"> {latestCompendium.data.title}</p>
+            <p class="latest-small">Compendium</p>            
+        </div>   
+    </a>
+
+
+    {/* Projects */}
+    <a href={`/project-archive/${latestProject.id}`} class="latest-div">
+        <Image 
+            src={latestProject.data.coverImage}
+            alt={latestProject.data.title}
+            width={latestProject.data.coverImage.width}
+            height={latestProject.data.coverImage.height}
+            loading= "eager"
+            class="latest-image"
+        />    
+
+        <div class="latest-context">
+            <p class="latest-large">No. {latestProject.data.id}</p>
+            <p class="latest-medium"> {latestProject.data.title}</p>
+            <p class="latest-small">Projects</p>            
+        </div>   
+    </a>
+
+
+    {/* Gallery */}
+    <a href="/compendium/" class="latest-div">
+        <Image 
+            src={latestGallery.data.image}
+            alt={latestGallery.data.date}
+            width={latestGallery.data.image.width}
+            height={latestGallery.data.image.height}
+            loading= "eager"
+            class="latest-image"
+        />    
+
+        <div class="latest-context">
+            <p class="latest-large">No. 0{latestGallery.data.id}</p>
+            <p class="latest-medium"> {latestGallery.data.date}</p>
+            <p class="latest-small"> Gallery </p>            
+        </div>   
+    </a>
+
+
+    {/* Old Gold */}
+    <a href="/compendium/" class="latest-div">
+        <Image 
+            src={latestOldGold.data.image}
+            alt={latestOldGold.data.type}
+            width={latestOldGold.data.image.width}
+            height={latestOldGold.data.image.height}
+            loading= "eager"
+            class="latest-image"
+        />    
+
+        <div class="latest-context">
+            <p class="latest-large">No. 0{latestOldGold.data.id}</p>
+            <p class="latest-medium"> {latestOldGold.data.type}</p>
+            <p class="latest-small"> Gallery </p>            
+        </div>   
+    </a>
+
+
+    {/* Open Notes */}
+    <a href={latestOpenNotes.url} class="latest-div">
+        <div class="latest-context-no-image">
+            <p class="latest-large"> No. {latestOpenNotes.frontmatter.entry} </p>
+            <p class="latest-medium"> {latestOpenNotes.frontmatter.title} </p>
+            <p class="latest-small"> Open Notes </p>            
+        </div>   
+    </a>
+
+    {/* Snippets */}
+    <a href="/snippets/" class="latest-div">
+        <div class="latest-context-no-image">
+            <p class="latest-large"> No. {latestSnippets.id} </p>
+            <p class="latest-medium"> {latestSnippets.text} </p>
+            <p class="latest-small"> Snippets </p>            
+        </div>   
+    </a>
+
+
+    {/* Rephrases */}
+    <a href="/rephrases/" class="latest-div">
+        <div class="latest-context-no-image">
+            <p class="latest-large"> No. 0{latestRephrase.id} </p>
+            <p class="latest-medium"> {latestRephrase.original} </p>
+            <p class="latest-medium bold"> {latestRephrase.improved} </p>
+            <p class="latest-small"> Rephrase </p>            
+        </div>   
+
+    </a>
+
+
+    {/* Resources */}
+    <a href={latestResource.link} class="latest-div" target="_blank" rel="noopener noreferrer">
+        <div class="latest-context-no-image">
+            <p class="latest-large"> Issue {latestResource.number} </p>
+            <p class="latest-medium"> {latestResource.text} </p>
+            <p class="latest-small"> Resource </p>            
+        </div>   
+
+    </a>
+
+    {/* Bookshelf */}
+    <a href={latestBook.link} class="latest-div" target="_blank" rel="noopener noreferrer">
+        <div class="latest-context-no-image">
+            <p class="latest-large"> No. {latestBook.id} </p>
+            <p class="latest-medium"> {latestBook.titleAuthor} </p>
+            <p class="latest-small"> Bookshelf </p>            
+        </div>   
+
+    </a>
+
+
+</div>
+
+
+<style>
+
+    .all-content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .latest-div{
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        outline: 1px solid rgba(0, 0, 0, 0.1);
+        outline-offset: -1px;
+        gap: 2rem;
+        width: 100%;
+        overflow: hidden;
+        padding: 1.25rem;
+    }
+
+
+    .latest-div:hover{
+        background: var(--fill-gray);
+    }
+
+    .latest-context{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: #000;
+        overflow: hidden;
+        flex: 1;
+        min-width: 0;
+        justify-content: center;
+        gap: 2rem
+    }
+
+    .latest-image{
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex: 1;
+        min-width: 0;
+        border-radius: 10px;
+        outline: 1px solid rgba(0, 0, 0, 0.1);
+        outline-offset: -1px;
+        object-fit: cover;
+    }
+
+    .latest-context-no-image{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: #000;
+        overflow: hidden;
+        justify-content: center;
+        gap: 2rem
+    }
+
+
+    .latest-large{
+        font-size: 1.35rem;
+        font-weight: 600;
+        font-family: "Atkinson Hyperlegible Next";
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--line-gray);
+    }
+
+    .latest-medium{
+        font-size: 1.05rem;
+        font-weight: 400;
+        font-family: "Atkinson Hyperlegible Next";
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--line-gray);
+        text-transform: capitalize;
+    }
+
+    .latest-medium.bold{
+        font-weight: 600;
+    }
+
+    .latest-small{
+        font-family: "Atkinson Hyperlegible Mono";
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: .90rem;
+        letter-spacing: 0.15rem;
+        align-self: stretch;
+    }
+
+
+
+
+    @media (max-width: 768px) {
+    
+  
+    .latest-div{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
+
+
+
+
+</style>

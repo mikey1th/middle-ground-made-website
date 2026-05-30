@@ -1,7 +1,7 @@
 ---
 
 title: "Logo Sign"
-date: "04-26"
+date: "04.26"
 id: 85
 coverImage: ../../assets/website-images/project-images/logo-sign-01.webp
 sortDate: "2025-01-26"

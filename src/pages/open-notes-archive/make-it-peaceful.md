@@ -1,7 +1,7 @@
 ---
 
 title: "Make it Peaceful"
-date: "05-26"
+date: "05.26"
 number: "71"
 entry: 71
 year: 2026

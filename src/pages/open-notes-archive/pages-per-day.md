@@ -1,7 +1,7 @@
 ---
 
 title: "Pages Per Day"
-date: "02-26"
+date: "02.26"
 number: "50"
 entry: 50
 year: 2026

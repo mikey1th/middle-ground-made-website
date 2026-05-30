@@ -1,7 +1,7 @@
 ---
 
 title: "Stepless"
-date: "01-24"
+date: "01.24"
 id: 47
 merch: "March Coming Soon"
 coverImage: ../../assets/website-images/project-images/stepless-01.jpg

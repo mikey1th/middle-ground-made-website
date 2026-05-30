@@ -1,7 +1,7 @@
 ---
 
 title: "All Solutions Are Temporary"
-date: "05-26"
+date: "05.26"
 number: "69"
 entry: 69
 year: 2026

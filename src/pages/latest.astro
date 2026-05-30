@@ -5,7 +5,7 @@ import Navigation from '../components/navigation.astro';
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
 import ContextSectionFooter from '../components/context-section-footer.astro';
-import HomePageContent from '../components/home-page-content.astro';
+import LatestLayout from '../components/latest-layout.astro';
 import BackButton from '../components/back-button.astro';
 
 const pageTitle = "Middle Ground Made";
@@ -35,8 +35,8 @@ const pageTitle = "Middle Ground Made";
 		</ContextSection>
 
 		<ContextSection>
-        <p> Latest: Note, Snippet, Rephrase, Compendium, Project, Resource, CV Item, Book Reccomendation, Gallery Image, Old Gold Entry, Merch item</p>
-		<HomePageContent/>
+		<LatestLayout/>
+		<BackButton/>
 		</ContextSection>
 		
 		<ContextSectionFooter/>

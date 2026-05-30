@@ -5,7 +5,7 @@ const items = [
         link: "../pages/open-notes",
         novelNonFitcion: "non-fiction",
         genre: "philosphy",
-        description: "Huge book for me, something about those transcendntalists, ami right??"
+        id: 1
     },
 
     {
@@ -13,7 +13,7 @@ const items = [
         link: "../pages/open-notes",
         novelNonFitcion: "non-fiction",
         genre: "craft",
-        description: "Huge book for me, something about those transcendntalists, ami right??"
+        id:2
     },
 
     {
@@ -21,7 +21,7 @@ const items = [
         link: "../pages/open-notes",
         novelNonFitcion: "novel",
         genre: "Sci-Fi",
-        description: "Huge book for me, something about those transcendntalists, ami right??"
+        id: 3
     },
 
 

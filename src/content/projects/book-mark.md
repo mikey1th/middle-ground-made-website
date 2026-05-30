@@ -1,7 +1,7 @@
 ---
 
 title: "Book Mark"
-date: "03-25"
+date: "03.25"
 id: 63
 merch: "Merch Coming Soon"
 coverImage: ../../assets/website-images/project-images/book-mark-01.jpg

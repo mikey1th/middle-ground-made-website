@@ -1,7 +1,7 @@
 ---
 
 title: "Self Supported"
-date: "03-25"
+date: "03.25"
 number: "04"
 entry: 04
 year: 2025

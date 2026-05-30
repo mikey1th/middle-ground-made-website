@@ -1,7 +1,7 @@
 ---
 
 title: "Greenville Ultimate Sun Hoodie"
-date: "03-25"
+date: "03.24"
 id: 60
 merch: "Merch Coming Soon"
 coverImage: ../../assets/website-images/project-images/gu-sun-hoodie-01.webp

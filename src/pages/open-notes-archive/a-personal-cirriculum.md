@@ -1,7 +1,7 @@
 ---
 
 title: "A Personal Cirriculum"
-date: "02-25"
+date: "02.25"
 number: "01"
 entry: 01
 year: 2025

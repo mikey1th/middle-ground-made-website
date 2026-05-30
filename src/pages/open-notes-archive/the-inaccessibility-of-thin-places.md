@@ -1,7 +1,7 @@
 ---
 
 title: "The Inaccessibility of Thin Places"
-date: "04-26"
+date: "04.26"
 number: "65"
 entry: 65
 year: 2026

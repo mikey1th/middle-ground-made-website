@@ -2,68 +2,158 @@
 
 
 const snippets =[
-    {
-        text: "Follow the spark",
-        design: "../design/",
-        openNote: "../open-notes"
-    },
+
 
     {
         text: "Sketch more, scroll less",
-        design: "../design/"
+        design: "../design/",
+        id: 1
     },
 
-    {text: "In but not of" },
 
     {
-        text: "Never lost among the trees",
-        design: "../design/"
+        text: "Brick by brick",
+        id: 2
     },
 
-    {text: "Build things elsehere"},
 
     {
         text: "You're not weird, you're wired",
-        openNote: "../open-notes"
+        openNote: "../open-notes",
+        id: 3 
     },
 
-    {text: "Optimal is optional"},
 
-    {text: "Everything is made up"},
+    {
+        text: "Haud perditus inter arbores",
+        design: "../design/",
+        id: 4
+    },
 
-    {text: "Refuse to be a roma"},
 
-    {text: "Subvert the system"},
-
-    {text: "Brick by brick"},
+    {
+        text: "Build things elsehere",
+        id: 5
+    },
 
     {
         text: "Zone two is my third place",
-        design: "../design/"
+        design: "../design/",
+        id: 6
     },
 
-    {text: "Minimize shareholder value"},
+    {
+        text: "Run the mut",
+        id: 7
+    },
+
+
+   {
+        text: "Everything is made up",
+        id: 8
+    },
+
+
+    {
+        text: "Optimal is optional",
+        id: 9
+
+    },
+
+
+    {
+        text: "Follow the spark",
+        design: "../design/",
+        openNote: "../open-notes",
+        id: 10
+    },
+
+
+    {
+        text: "Refuse to be a roma",
+        id: 11
+    },
+
+
+    {  
+        text: "In but not of",
+         id: 12
+    },
+
+
+    {
+        text: "Subvert the system",
+        id: 13
+    },
+
+
+    {
+        text: "Minimize shareholder value",
+        id: 14
+    },
+
 
     {
         text: "Guard your heart",
-        design: "../design/"
+        design: "../design/",
+        id: 15
+    },
+  
+    {
+        
+        text: "Amor vincint omnia",
+        id: 16
+    
     },
 
-    {text: "Run the mut"},
 
-    {text: "Love conquers all"},
+   {
+        text: "Consumerism is a psyop",
+        id: 17
+    },        
 
-    {text: "Acre sized ambitions"},
 
-    {text: "Consumerism is a psyop"},
+    {
+        text: "Acre sized ambitions",
+        id: 18
+    },
 
-    {text: "There is enough time in the day"},
 
-    {text: "Life is laundry"},
+    {
+        text: "There is enough time in the day",
+        id: 19
+    },
 
-    {text: "Shipping is better than sharing"},
+    
+    {
+        
+        text: "Life is laundry",
+        id: 20
+    
+    },
+    
 
-    {text: "Joy is found in the journey"},
+    {
+        
+        text: "Shipping is better than sharing",
+        id: 21
+    
+    },
+
+
+    {
+        
+        text: "Joy is found in the journey",
+        id: 22
+    
+    },
 ]
+
+
+ 
+
+
+
+
 
 export default snippets

@@ -1,7 +1,7 @@
 ---
 
 title: "The Tree Spirit"
-date: "02-26"
+date: "02.26"
 number: "51"
 entry: 51
 year: 2026

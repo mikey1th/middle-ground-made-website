@@ -1,7 +1,7 @@
 ---
 
 title: "Analog Hour"
-date: "01-26"
+date: "01.26"
 id: 90
 merch: "March Coming Soon"
 coverImage: ../../assets/website-images/project-images/analog-hour-01.webp

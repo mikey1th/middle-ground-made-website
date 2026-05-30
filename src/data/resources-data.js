@@ -79,7 +79,7 @@ const resources =[
     },
 
     {
-        number: 84,
+        number: 95,
         textNoLink: "A quote from Lester Beal",
         issue: "Issue 95",
         quote: `"The way a man lives is essential to the work he produces. The two cannot be separated."`

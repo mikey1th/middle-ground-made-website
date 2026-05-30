@@ -1,7 +1,7 @@
 ---
 
 title: '"That''s Nice"'
-date: "05-26"
+date: "05.26"
 number: "70"
 entry: 70
 year: 2026

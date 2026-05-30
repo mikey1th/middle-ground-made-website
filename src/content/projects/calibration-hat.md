@@ -1,7 +1,7 @@
 ---
 
 title: "Calibration Coffee Logo Hat"
-date: "05-26"
+date: "04.24"
 id: 86
 merch: "Merch Coming Soon"
 coverImage: ../../assets/website-images/project-images/calibration-hat-01.webp
