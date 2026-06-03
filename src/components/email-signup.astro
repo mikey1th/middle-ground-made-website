@@ -2,17 +2,68 @@
 
 import '../styles/global.css'
 
+
+
 ---
 
 
-<form id="middle-ground-newsletter-signup-Form">
+<form id="middle-ground-newsletter-signup-form">
   <input id="first-name" type="text" placeholder="First Name " />
   <input id="email" type="email" placeholder="Email " required />
   <button type="submit">Subscribe</button>
 </form>
 
 
-<style>
+
+
+
+<script>
+  const form = document.getElementById('middle-ground-newsletter-signup-form');
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const firstName = (document.getElementById('first-name') as HTMLInputElement).value;
+      const email = (document.getElementById('email') as HTMLInputElement).value;
+
+      const FORM_ID = '6042195';
+      const API_KEY = 'kit_659b2a1f68568f75a1f711e034e556f8';
+
+      try {
+        const response = await fetch(`https://api.convertkit.com/v3/forms/${FORM_ID}/subscribe`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            api_key: API_KEY,
+            first_name: firstName,
+            email: email,
+          }),
+        });
+
+        const data = await response.json();
+
+        if (data.subscription) {
+          form.innerHTML = '<p>Thanks for subscribing!</p>';
+        } else {
+          form.innerHTML = '<p>Something went wrong — please try again.</p>';
+        }
+      } catch (err) {
+        form.innerHTML = '<p>Something went wrong — please try again.</p>';
+      }
+    });
+  }
+</script>
+
+    
+
+
+
+
+
+
+
+<style is:global>
 
     form {
         display: flex;
@@ -23,6 +74,16 @@ import '../styles/global.css'
         font-weight: 400;
         text-transform: uppercase;
         width: 100%
+    }
+
+    form p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Atkinson Hyperlegible Next";
+        font-weight: 400;
+        font-size: .90rem;
+        text-transform: none;
     }
 
 

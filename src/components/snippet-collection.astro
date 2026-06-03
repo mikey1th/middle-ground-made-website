@@ -8,7 +8,7 @@ import snippets from '../data/snippet-data.js';
 {/* style similar to resources page */}
 
 <div class="all-items extra">
-    {snippets.map((snippet) => (
+    {[...snippets].sort((a, b) => b.id - a.id).map((snippet) => (
     <div class="image-context remove-side-padding border-bottom gap">
         <span class="open-notes-title"> {snippet.text} </span>
             {(snippet.openNote || snippet.design) && (

@@ -147,6 +147,21 @@ const snippets =[
         id: 22
     
     },
+
+    {
+        
+        text: "There are always two things",
+        id: 23
+    
+    },
+
+
+    {
+        
+        text: "Take your time",
+        id: 24
+    
+    },
 ]
 
 
