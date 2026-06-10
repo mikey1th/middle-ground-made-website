@@ -6,12 +6,10 @@ import ContextSectionFooter from '../components/context-section-footer.astro';
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
 import BackButton from '../components/back-button.astro';
-import CompendiumCollection from '../components/compendium-collection.astro';
-import { getCollection } from 'astro:content';
-const additions = await getCollection('compendium');
+import SaturdayTypeClubLayout from '../components/saturday-type-club-layout.astro';
 
 
-const pageTitle = "Compendium";
+const pageTitle = "Saturday Type Club";
 
 
 ---
@@ -41,18 +39,10 @@ const pageTitle = "Compendium";
 	<p>
 		The Middle Ground Compendium has had many permutations over the years, but is currently a thriving collection that I update at least a few times a month. I love making things that exist regardless of thier ability to ear a ROI or become a product. This is my collection of thinsg I've mad ebecause I thought they were cool.
 	</p>
-    <p class="note">
-    [{additions.length}] entries, newest to oldest 
-    </p>
 	</ContextSection>
 
 	<ContextSection>
-	<CompendiumCollection/>
-		<p> 
-			Seems like you've made it ti the end of the list...SIKE! There's more! Before the Middle GRound Compendium was a thing there was 
-			Saturday Type Clue. The true starting point of my creative journey, to check out this secret collection <a class="stc-link" href="/saturday-type-club/"> click here </a> 
-		</p>
-	
+	    <SaturdayTypeClubLayout/>
 		<BackButton/>
 	</ContextSection>
 	
@@ -60,10 +50,3 @@ const pageTitle = "Compendium";
 	<PageWrapper/>
 	</body>
 </html>
-
-
-<style>
-	.stc-link{
-		font-weight: 500;
-	}
-</style>
