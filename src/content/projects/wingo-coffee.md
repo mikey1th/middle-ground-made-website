@@ -5,7 +5,7 @@ date: "04.26"
 id: 85
 coverImage: ../../assets/website-images/project-images/wingo-coffee-01.webp
 sortDate: "2025-01-26"
-displayTag: "branding
+displayTag: "branding"
 images: 
     - ../../assets/website-images/project-images/wingo-coffee-01.webp
     - ../../assets/website-images/project-images/wingo-coffee-02.webp
