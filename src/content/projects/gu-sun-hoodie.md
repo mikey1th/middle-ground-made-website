@@ -14,4 +14,4 @@ tags:
     - "apparel" 
 ---
 
-I made this to help me keep track of my reading. It has a few info spaces to allow of necessary details but no bloating. Te 1-4 rating system is essential here!
+Sun hoodie for the folks at Greenville Ultimate, again, while I did not design the sun hoodie I made the freakin' logo, give me some credit!!

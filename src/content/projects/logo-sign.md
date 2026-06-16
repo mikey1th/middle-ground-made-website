@@ -17,4 +17,4 @@ tags:
 ---
 
 
-So yea this is kinda just a test! going to add a few images here 
+A hand painted sign of THE Middle Ground Made Logo, bask in its green glory!!

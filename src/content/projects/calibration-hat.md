@@ -3,7 +3,6 @@
 title: "Calibration Coffee Logo Hat"
 date: "04.24"
 id: 86
-merch: "Merch Coming Soon"
 coverImage: ../../assets/website-images/project-images/calibration-hat-01.webp
 sortDate: "2026-05-15"
 displayTag: "Apparel"
@@ -16,4 +15,4 @@ tags:
     - "apparel" 
 ---
 
-I made this to help me keep track of my reading. It has a few info spaces to allow of necessary details but no bloating. Te 1-4 rating system is essential here!
+Okay, to be honest, I did not design this hat. But I did design the logo, which is a pretty big component of this hat...

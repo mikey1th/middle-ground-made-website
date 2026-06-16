@@ -18,4 +18,4 @@ tags:
 ---
 
 
-So yea this is kinda just a test! going to add a few images here 
+This is my most recent book release, eventually you'll be able to buy a copy, but for now its in pre-release mode. Meaning I'm swamped and can't fully foll it out yet, but stay tuned, because it will be releasing!!

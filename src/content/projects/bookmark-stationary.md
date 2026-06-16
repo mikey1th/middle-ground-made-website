@@ -1,0 +1,17 @@
+---
+
+title: "Bookmarks and Stationary"
+date: "04.26"
+id: 90
+coverImage: ../../assets/website-images/project-images/bookmark-stationary-01.webp
+sortDate: "2024-07-20"
+displayTag: "Object"
+images: 
+    - ../../assets/website-images/project-images/bookmark-stationary-01.webp
+    - ../../assets/website-images/project-images/bookmark-stationary-02.webp
+tags:
+    - "objects"
+
+---
+
+Just a few bookmarks and stationary items, nothing too crazy to see here. I'm an offline guy, so I need my offline things.

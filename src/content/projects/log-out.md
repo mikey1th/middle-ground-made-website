@@ -4,17 +4,19 @@ title: "Log Out"
 date: "01.25"
 id: 35
 merch: "March Coming Soon"
-coverImage: ../../assets/website-images/project-images/logout-01.jpg
+coverImage: ../../assets/website-images/project-images/log-out-01.webp
 sortDate: "2025-01-26"
 displayTag: "Book"
 images: 
-    - ../../assets/website-images/project-images/logout-01.jpg
-    - ../../assets/website-images/project-images/logout-02.jpg
-    - ../../assets/website-images/project-images/logout-02.jpg
+    - ../../assets/website-images/project-images/log-out-01.webp
+    - ../../assets/website-images/project-images/log-out-02.webp
+    - ../../assets/website-images/project-images/log-out-03.webp
+    - ../../assets/website-images/project-images/log-out-04.webp
+
 tags:
     - "books"
 
 ---
 
 
-So yea this is kinda just a test! going to add a few images here 
+Log out is a book about our questionable relationship with modern media. You can read about it if you buy a copy on my bookstore website that doesn't exist! YET!!
