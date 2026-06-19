@@ -6,7 +6,7 @@ const snippets =[
 
     {
         text: "Sketch more, scroll less",
-        design: "../design/",
+        design: "/compendium/#entry-190",
         id: 1
     },
 
@@ -19,31 +19,30 @@ const snippets =[
 
     {
         text: "You're not weird, you're wired",
-        openNote: "../open-notes",
         id: 3 
     },
 
 
     {
         text: "Haud perditus inter arbores",
-        design: "../design/",
+        design: "/compendium/#entry-189",
         id: 4
     },
 
 
     {
-        text: "Build things elsehere",
+        text: "Build things elsewhere",
         id: 5
     },
 
     {
         text: "Zone two is my third place",
-        design: "../design/",
         id: 6
     },
 
     {
         text: "Run the mut",
+        openNote: "/open-notes-archive/run-the-mutt/",
         id: 7
     },
 
@@ -56,6 +55,7 @@ const snippets =[
 
     {
         text: "Optimal is optional",
+        openNote: "/open-notes-archive/optimal-is-optional/",
         id: 9
 
     },
@@ -63,8 +63,7 @@ const snippets =[
 
     {
         text: "Follow the spark",
-        design: "../design/",
-        openNote: "../open-notes",
+        design: "/compendium/",
         id: 10
     },
 
@@ -95,7 +94,7 @@ const snippets =[
 
     {
         text: "Guard your heart",
-        design: "../design/",
+        design: "/compendium/#entry-212",
         id: 15
     },
   
@@ -109,7 +108,8 @@ const snippets =[
 
    {
         text: "Consumerism is a psyop",
-        id: 17
+        id: 17,
+        openNote: "/open-notes-archive/consumerism-is-a-psyop/"
     },        
 
 
@@ -118,25 +118,18 @@ const snippets =[
         id: 18
     },
 
-
-    {
-        text: "There is enough time in the day",
-        id: 19
-    },
-
-    
     {
         
         text: "Life is laundry",
-        id: 20
+        id: 19,
+        openNote: "/open-notes-archive/life-is-laundry/"
     
     },
-    
 
     {
         
         text: "Shipping is better than sharing",
-        id: 21
+        id: 20
     
     },
 
@@ -144,14 +137,14 @@ const snippets =[
     {
         
         text: "Joy is found in the journey",
-        id: 22
+        id: 21
     
     },
 
     {
         
         text: "There are always two things",
-        id: 23
+        id: 22
     
     },
 
@@ -159,9 +152,43 @@ const snippets =[
     {
         
         text: "Take your time",
+        id: 23
+    
+    },
+    
+    {
+        
+        text: "Become the portal man",
         id: 24
     
     },
+
+    {
+        
+        text: "New shit same smell",
+        id: 25
+    
+    },
+
+    {
+        
+        text: "Don't be a freak about it",
+        id: 26
+    
+    },
+
+    {
+        
+        text: "Man shall not live on tech alone",
+        id: 27
+    
+    },
+
+
+
+
+
+
 ]
 
 

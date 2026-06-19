@@ -1,12 +1,13 @@
 ---
 
 title: "Democratization vs Decentralization"
-date: "03.26"
+date: "02.26"
 number: "53"
 entry: 53
 year: 2026
 volume: 1
 layout: ../../components/open-notes-layouts.astro
+series: 3-3
 
 ---
 

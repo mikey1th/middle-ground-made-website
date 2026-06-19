@@ -7,6 +7,7 @@ const rephrases =[
         id: 1
     },
 
+
     {
         original: "Once I figure out what I want to say then I’ll start to write?",
         improved: "No, you have to write in order to figure out what you want to say.",
@@ -44,9 +45,15 @@ const rephrases =[
     },
 
     {
-        original: "Question and Response",
+        original: "Question and Response.",
         improved: "Question the Response.",
         id: 8
+    },
+
+    {
+        original: "I don’t have enough time for anything I want to do.",
+        improved: "I don’t have enough time for everything I want to do.",
+        id: 9
     },
 
 ]

@@ -1,0 +1,34 @@
+---
+
+title: "A Spectrum of Making"
+date: "02.26"
+number: "48"
+entry: 48
+year: 2026
+volume: 1
+layout: ../../components/open-notes-layouts.astro
+
+---
+
+The Spectrum of Making exists to explain the differences and similarities shared between art, projects, artifacts, and slop. As is the case with all spectrum based categorical systems—if there such a thing, the goal is not to create a massive archive of everything that could, in theory, be organized. But to define and understand the categories themselves so that each thing we might encounter could hypothetically, find its place.
+
+On the far right of the Spectrum of Making is “art”—which for our purposes is defined as an expression of feelings or concepts, minus ulterior motives. Art is pure expression. It seeks nothing other than its own existence. Which is why it’s so hard to consume, and even more rare to make. While this categorical title seems to get thrown around, I’m not sure many things we interact with or produce could legitimate be called art. Ensuring the thing you’re making has no ulterior motives is, at the very least, very difficult, and might actually be an impossible quixotic venture. And, in a paradoxical way, attempting to make sure the thing being made has no ulterior motive is, itself, an ulterior motive. The tenants of art making being pseudo mythological and seemingly impossible is why most things we make when no-one is asking, or because we want to, or because we feel we have to are more than likely not art but “projects.”
+
+Projects are an expression of feelings or concepts, plus ulterior motives. And before we explain more, it’s important to realize that ulterior motives are neither good nor bad. In this context, they do not make a judgement call. They simply represent motives that may or may not be known to the maker. Maybe you want to solve a problem with the thing you’ve made, or update your portfolio, or learn a new technique, or bring something to the bake sale. It’s not the point of this article to label any of those motives “good” or “bad” they are, in this case, simply ulterior. The presence of motives shifts the thing being made away from artistry and towards “projectdom.” And notably, the more motives that get added the more the project shifts towards becoming an “artifact.”
+
+Artifacts are products or content created to achieve stated or unstated goals,  plus quality. After contemplating this definition, I realized that most things we encounter are artifacts. Just think about it. How many people or organizations green light a development cycle that does not aim to return on investment, grow their audience, or achieve similar ends? Products and content are the most abundant things there are because they are the safest and easiest things to make. Most often they are thought up as a reaction, as opposed to an expression. And while I think it sad and uninspiring we could and some of us do, get through life just fine only consuming and making artifacts. Things that have just enough quality to entice others, but not enough detritus to really harm those who interact with them. But as the formula changes and the quality decreases we’re left with the final and honestly, the most recognizable category in the spectrum, “slop.”
+
+Slop is content or products generated to achieve stated or unstated goals, minus quality. We all know slop when we see it. Humans, I think have a radar for detecting the stuff but curiously, an undeveloped ability to abate its consumption. We know what slop is, we just don’t care. Slop is made when something wants to achieve a certain end, but completely abandons quality on its way to do so. Slop is what you get when a chain restaurant offers lower quality food at higher prices to satisfy shareholders. Slop is what you get when your go-to media personality sells out, and their library of content becomes little more than a basecamp for their litany of sponsors. What’s more, consuming slop in high amounts is dangerous. Limiting our diet to things that exist only to achieve its shareholder approved list of predetermined goals with no concern for quality is how we get products that break, media that distracts, food that poisons—and similarly terrible outcomes. We should all listen to our slop detector and ignore the stuff whenever we encounter it.
+
+We can now see that art and projects are concerned with ulterior motives, not quality. Whereas artifacts and slop are concerned with quality not ulterior motives. This is worth noting because many assume the more technically impressive something is the more proximate its place in the spectrum is to art. Which is bullshit. In regard to art and projects, quality doesn’t matter because if the thing being appraised has ulterior motives, it’s not art. I think a crude drawing belonging to a child is closer to art than whatever is currently filling the walls of  modern galleries and bursting the seems of digital platforms.
+
+Whereas with artifacts and slop, quality has to be the difference maker because both seek to achieve stated or unstated goals. The content or products made by creators or corporations exists because it is their line of work. So determining the probability of an artifact achieving stated or unstated goals is the first step in its creation. For some, quality being the where the line is drawn, will cause pushback—“how can something so subjective as “quality” be such an objective difference maker.” Because that’s how the world works. Artifacts descend into slop when quality is abandoned. 
+
+Just reflect and see if it’s true I think contemplating this phenomenon will prove that even though quality is subjective—it becomes an objective differentiator. As an imperfectionist, I am oaky with this. The world is filled with many more mysteries and things that seem to don’t come out clean in the wash. We live in a world that allows me to type essays  on what is essentially, an enchanted piece of silicon. And you are reading it thanks to cables buried in the ocean that span the length of the globe. And somehow all of this seems normal.
+
+While I think the logic of this spectrum good, and solid enough serve as a durable foundation, it’s not perfect—nor was perfection the goal. I’d rather a thing exist and be observed and considered rather than it to be held in revisionist purgatory because it has to, without a shadow of a doubt “be the best it can be.” That being said, serious thought did go into creating this tool, and I legitimately hope you find it useful. As a final point of clarification here is each category represented as neatly as I could think of.
+
+Art: An expression of feelings or concepts, minus ulterior motives\
+Projects: An expression of feelings or concepts, plus ulterior motives.\
+Artifacts: Products or content  created to achieve stated or unstated goals, plus quality.\
+Slop: Content or products generated to achieve stated or unstated  goals, minus  quality.

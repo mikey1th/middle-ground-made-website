@@ -8,6 +8,7 @@ year: 2025
 volume: 1
 layout: ../../components/open-notes-layouts.astro
 
+
 ---
 
 There are many ways to approach running, but the self supported genre has always managed to hold my focus and spark my imagination. Besides their ability to help participants discover whether or not they find intrinsic joy from running itself, self supported runs allow our lone-pine tendencies to be safely exercised. While there are inherent risks associated with solo trail runs, or single-participant marathons, restricting our desire to go alone to our hobbies is, in the long run, much safer.

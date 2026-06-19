@@ -15,7 +15,7 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
 <div class="all-compendium-project-entries">
 
     {entries.map((entry, index) => (
-        <div class="compendium-project-entry"> 
+        <div class="compendium-project-entry" id={`entry-${entry.data.id}`}> 
             <Image class="compendium-project-image"
                 src={entry.data.image}
                 alt={entry.data.title}
