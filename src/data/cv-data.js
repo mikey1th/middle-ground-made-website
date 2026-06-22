@@ -72,7 +72,7 @@ const items = [
     {
         year: "2024",
         title: "Calibration Coffee Bag Design",
-        link: "/project-archive/balibration-bag",
+        link: "/project-archive/calibration-bag/",
         description: "A new bag design for Calibration Coffee",
         sortYear: 2024,
         type: "project",
@@ -81,7 +81,7 @@ const items = [
     {
         year: "2024",
         title: "ICONS",
-        link: "/project-archive/icons",
+        link: "/project-archive/icons/",
         description: "Innocuous Concepts Offering Novel Solutions",
         sortYear: 2024,
         type: "project",
@@ -110,7 +110,7 @@ const items = [
     {
         year: "2023",
         title: "Stepless",
-        link: "/stepless/",
+        link: "/project-archive/stepless/",
         description: "A book about using creative hurdles as fuel for the journey.",
         sortYear: 2023,
         type: "project",
@@ -121,7 +121,7 @@ const items = [
     {
         year: "2023",
         title: "Tid-Bits From the Journey",
-        link: "/tid-bits/",
+        link: "/project-archive/tid-bits/",
         description: "My first ever attempt at combining design and writing.",
         sortYear: 2023,
         type: "project",
