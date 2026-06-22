@@ -1,10 +1,10 @@
 ---
 
 title: "Harbor Coworking Sign"
-date: "04.26"
-id: 85
+date: "04.25"
+id: 35
 coverImage: ../../assets/website-images/project-images/harbor-sign-01.webp
-sortDate: "2025-01-26"
+sortDate: "2025-04-01"
 displayTag: "branding"
 images: 
     - ../../assets/website-images/project-images/harbor-sign-01.webp

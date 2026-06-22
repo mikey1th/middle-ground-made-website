@@ -6,7 +6,7 @@ import {Image} from 'astro:assets';
 
 
 import type { CollectionEntry } from 'astro:content';
-const pics: CollectionEntry<'gallery'>[] = (await getCollection('gallery')).sort((a, b) => b.data.id - a.data.id);
+const pics: CollectionEntry<'gallery'>[] = (await getCollection('gallery')).sort((a, b) => b.data.sortDate.getTime() - a.data.sortDate.getTime());
 
 ---
 
@@ -25,9 +25,6 @@ const pics: CollectionEntry<'gallery'>[] = (await getCollection('gallery')).sort
         </div>       
     ))}
 </div>
-
-<p>{pics.length}</p>
-
 
 
 <style>

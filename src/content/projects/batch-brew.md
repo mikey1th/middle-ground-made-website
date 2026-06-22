@@ -2,9 +2,9 @@
 
 title: "Batch Brew Method"
 date: "01.25"
-id: 90
+id: 15
 coverImage: ../../assets/website-images/project-images/batch-brew-01.webp
-sortDate: "2025-01-26"
+sortDate: "2025-01-01"
 displayTag: "Object"
 images: 
     - ../../assets/website-images/project-images/batch-brew-01.webp

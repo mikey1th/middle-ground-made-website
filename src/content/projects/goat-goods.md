@@ -1,10 +1,10 @@
 ---
 
 title: "Goat Goods"
-date: "04.26"
-id: 85
+date: "05.25"
+id: 33
 coverImage: ../../assets/website-images/project-images/goat-goods.webp
-sortDate: "2025-01-26"
+sortDate: "2025-05-01"
 displayTag: "object"
 images: 
     - ../../assets/website-images/project-images/goat-goods.webp

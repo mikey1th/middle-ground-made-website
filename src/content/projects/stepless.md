@@ -1,11 +1,11 @@
 ---
 
 title: "Stepless"
-date: "01.24"
-id: 47
+date: "01.23"
+id: 01
 merch: "March Coming Soon"
 coverImage: ../../assets/website-images/project-images/stepless-01.webp
-sortDate: "2025-01-24"
+sortDate: "2023-01-01"
 displayTag: "Book"
 images: 
     - ../../assets/website-images/project-images/stepless-01.webp

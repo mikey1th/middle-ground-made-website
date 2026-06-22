@@ -1,10 +1,10 @@
 ---
 
 title: "Logo Sign"
-date: "04.26"
-id: 85
+date: "05.26"
+id: 45
 coverImage: ../../assets/website-images/project-images/logo-sign-01.webp
-sortDate: "2025-01-26"
+sortDate: "2026-05-03"
 displayTag: "painting"
 images: 
     - ../../assets/website-images/project-images/logo-sign-01.webp

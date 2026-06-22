@@ -1,10 +1,10 @@
 ---
 
 title: "Bridge City Zine"
-date: "07.24"
-id: 90
+date: "07.23"
+id: 08
 coverImage: ../../assets/website-images/project-images/bridge-city-01.webp
-sortDate: "2024-07-20"
+sortDate: "2023-07-01"
 displayTag: "Print"
 images: 
     - ../../assets/website-images/project-images/bridge-city-01.webp

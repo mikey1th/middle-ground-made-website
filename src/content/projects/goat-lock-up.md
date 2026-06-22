@@ -1,10 +1,10 @@
 ---
 
 title: "Goat Lock Up Shirt"
-date: "04.26"
-id: 85
+date: "10.23"
+id: 05
 coverImage: ../../assets/website-images/project-images/goat-shirt-lock-up-01.webp
-sortDate: "2025-01-26"
+sortDate: "2023-10-01"
 displayTag: "apparel"
 images: 
     - ../../assets/website-images/project-images/goat-shirt-lock-up-01.webp

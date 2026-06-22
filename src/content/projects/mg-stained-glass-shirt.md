@@ -1,10 +1,10 @@
 ---
 
 title: "Middle Ground Made Stained Glass Shirt"
-date: "04.26"
-id: 85
+date: "05.26"
+id: 46
 coverImage: ../../assets/website-images/project-images/mg-stained-glass-shirt-01.webp
-sortDate: "2025-01-26"
+sortDate: "2026-05-01"
 displayTag: "apparel"
 images: 
     - ../../assets/website-images/project-images/mg-stained-glass-shirt-01.webp

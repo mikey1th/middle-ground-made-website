@@ -1,10 +1,10 @@
 ---
 
 title: "Wingo Coffee"
-date: "04.26"
-id: 85
+date: "06.25"
+id: 42
 coverImage: ../../assets/website-images/project-images/wingo-coffee-01.webp
-sortDate: "2025-01-26"
+sortDate: "2025-06-01"
 displayTag: "branding"
 images: 
     - ../../assets/website-images/project-images/wingo-coffee-01.webp

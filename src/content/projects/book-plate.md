@@ -2,10 +2,10 @@
 
 title: "Ex-Libris Bookplate"
 date: "07.24"
-id: 90
+id: 17
 merch: "March Coming Soon"
 coverImage: ../../assets/website-images/project-images/book-plate-01.webp
-sortDate: "2024-07-20"
+sortDate: "2024-07-01"
 displayTag: "Object"
 images: 
     - ../../assets/website-images/project-images/book-plate-01.webp

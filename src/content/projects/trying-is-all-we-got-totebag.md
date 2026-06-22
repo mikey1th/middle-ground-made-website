@@ -1,18 +1,18 @@
 ---
 
 title: "Trying is All We Got Totebag"
-date: "04.26"
-id: 85
+date: "08.23"
+id: 05
 coverImage: ../../assets/website-images/project-images/totebag-01.webp
-sortDate: "2025-01-26"
-displayTag: "apparel"
+sortDate: "2023-08-01"
+displayTag: "object"
 images: 
     - ../../assets/website-images/project-images/totebag-01.webp
     - ../../assets/website-images/project-images/totebag-02.webp
     - ../../assets/website-images/project-images/totebag-03.webp
     - ../../assets/website-images/project-images/totebag-04.webp
 tags:
-    - "apparel"
+    - "objects"
 
 
 ---

@@ -1,10 +1,10 @@
 ---
 
 title: "Calibration Coffee Logo Hat"
-date: "04.24"
-id: 86
+date: "09.24"
+id: 22
 coverImage: ../../assets/website-images/project-images/calibration-hat-01.webp
-sortDate: "2026-05-15"
+sortDate: "2024-09-01"
 displayTag: "Apparel"
 images: 
     - ../../assets/website-images/project-images/calibration-hat-01.webp

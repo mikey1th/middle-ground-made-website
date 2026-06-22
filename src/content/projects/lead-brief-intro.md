@@ -1,10 +1,10 @@
 ---
 
 title: "Lead Collective Brief Introduction"
-date: "04.26"
-id: 85
+date: "05.25"
+id: 31
 coverImage: ../../assets/website-images/project-images/lead-brief-intro-01.webp
-sortDate: "2025-01-26"
+sortDate: "2025-05-01"
 displayTag: "print"
 images: 
     - ../../assets/website-images/project-images/lead-brief-intro-01.webp

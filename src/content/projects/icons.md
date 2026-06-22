@@ -1,10 +1,10 @@
 ---
 
 title: "ICONS"
-date: "04.26"
-id: 85
+date: "07.24"
+id: 3
 coverImage: ../../assets/website-images/project-images/icons-edition-01-01.webp
-sortDate: "2025-01-26"
+sortDate: "2024-07-01"
 displayTag: "one-off"
 images: 
     - ../../assets/website-images/project-images/icons-edition-01-01.webp

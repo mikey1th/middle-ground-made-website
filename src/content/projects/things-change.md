@@ -1,10 +1,10 @@
 ---
 
 title: "Things Change Hat"
-date: "04.26"
-id: 85
+date: "06.22"
+id: 01
 coverImage: ../../assets/website-images/project-images/things-change-01.webp
-sortDate: "2025-01-26"
+sortDate: "2022-06-01"
 displayTag: "apparel"
 images: 
     - ../../assets/website-images/project-images/things-change-01.webp

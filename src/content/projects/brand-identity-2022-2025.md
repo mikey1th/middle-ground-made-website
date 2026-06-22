@@ -1,10 +1,10 @@
 ---
 
 title: "Brand Identites 2022-2025"
-date: "04.26"
-id: 85
+date: "05.25"
+id: 12
 coverImage: ../../assets/website-images/project-images/brand-identity-01.webp
-sortDate: "2025-01-26"
+sortDate: "2025-01-25"
 displayTag: "branding"
 images: 
     - ../../assets/website-images/project-images/brand-identity-01.webp

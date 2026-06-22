@@ -1,10 +1,10 @@
 ---
 
 title: "Mountains Cabin Sunshine"
-date: "04.26"
-id: 85
+date: "07.24"
+id: 18
 coverImage: ../../assets/website-images/project-images/mountains-cabin-sunshine-05.webp
-sortDate: "2025-01-26"
+sortDate: "2024-07-01"
 displayTag: "one-off"
 images: 
     - ../../assets/website-images/project-images/mountains-cabin-sunshine-01.webp

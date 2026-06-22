@@ -1,10 +1,10 @@
 ---
 
 title: "Middle Ground Made Do No Harm Mug"
-date: "04.26"
-id: 85
+date: "07.23"
+id: 02
 coverImage: ../../assets/website-images/project-images/mug-01.webp
-sortDate: "2025-01-26"
+sortDate: "2023-07-01"
 displayTag: "object"
 images: 
     - ../../assets/website-images/project-images/mug-01.webp

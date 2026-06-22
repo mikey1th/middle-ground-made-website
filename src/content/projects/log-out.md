@@ -2,10 +2,10 @@
 
 title: "Log Out"
 date: "01.25"
-id: 35
+id: 13
 merch: "March Coming Soon"
 coverImage: ../../assets/website-images/project-images/log-out-01.webp
-sortDate: "2025-01-26"
+sortDate: "2025-01-01"
 displayTag: "Book"
 images: 
     - ../../assets/website-images/project-images/log-out-01.webp

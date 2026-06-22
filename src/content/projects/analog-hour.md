@@ -1,11 +1,11 @@
 ---
 
 title: "Analog Hour"
-date: "01.26"
-id: 90
+date: "12.25"
+id: 41
 merch: "March Coming Soon"
 coverImage: ../../assets/website-images/project-images/analog-hour-01.webp
-sortDate: "2025-01-26"
+sortDate: "2025-12-01"
 displayTag: "Book"
 images: 
     - ../../assets/website-images/project-images/analog-hour-01.webp

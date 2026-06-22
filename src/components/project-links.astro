@@ -6,8 +6,9 @@ import {Image} from 'astro:assets';
 
 
 import type { CollectionEntry } from 'astro:content';
-const additions: CollectionEntry<'projects'>[] = (await getCollection('projects')).sort((a, b) => b.data.id - a.data.id);
-
+import type { any } from 'astro:schema';
+const additions: CollectionEntry<'projects'>[] = (await getCollection('projects'))
+  .sort((a, b) => b.data.sortDate.getTime() - a.data.sortDate.getTime());
 
 const allProjects = await getCollection('projects');
 const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
@@ -40,8 +41,6 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
             <div class="image-context">
                 <div class="date-details"> 
                     <span> {project.data.date} </span>
-                    <span> / </span>
-                    <span> No.{project.data.id} </span>
                     <span> / </span>
                     <span> {project.data.displayTag} </span>
                 </div>

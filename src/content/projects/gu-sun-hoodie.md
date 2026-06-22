@@ -2,10 +2,10 @@
 
 title: "Greenville Ultimate Sun Hoodie"
 date: "03.24"
-id: 60
+id: 11
 merch: "Merch Coming Soon"
 coverImage: ../../assets/website-images/project-images/gu-sun-hoodie-01.webp
-sortDate: "2025-03-25"
+sortDate: "2024-03-01"
 displayTag: "Apparel"
 images: 
     - ../../assets/website-images/project-images/gu-sun-hoodie-01.webp

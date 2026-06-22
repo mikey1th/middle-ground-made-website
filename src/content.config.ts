@@ -28,7 +28,7 @@ const projects = defineCollection({
     id: z.number(),
     merch: z.string().optional(),
     coverImage: image(),
-    sortDate: z.string(),
+    sortDate: z.coerce.date(),
     displayTag: z.string(),
     images: z.array(image()),
     tags: z.array(z.string()),
@@ -43,6 +43,7 @@ const gallery = defineCollection({
     id: z.number(),
     date: z.string(),
     image: image(),
+    sortDate: z.coerce.date(),
   })
 });
 

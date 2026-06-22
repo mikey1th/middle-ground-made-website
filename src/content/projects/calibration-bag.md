@@ -1,10 +1,10 @@
 ---
 
 title: "Calibration Coffee Bag Design"
-date: "04.24"
-id: 84
+date: "09.24"
+id: 25
 coverImage: ../../assets/website-images/project-images/calibration-bag-01.webp
-sortDate: "2025-01-15"
+sortDate: "2024-09-01"
 displayTag: "Object"
 images: 
     - ../../assets/website-images/project-images/calibration-bag-01.webp

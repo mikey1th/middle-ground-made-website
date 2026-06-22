@@ -1,10 +1,10 @@
 ---
 
-title: "Middleverse Icons"
+title: "MiddleVerse Icons"
 date: "04.26"
-id: 85
+id: 43
 coverImage: ../../assets/website-images/project-images/middleverse-icons.webp
-sortDate: "2025-01-26"
+sortDate: "2026-05-01"
 displayTag: "one-off"
 images: 
     - ../../assets/website-images/project-images/middleverse-icons.webp

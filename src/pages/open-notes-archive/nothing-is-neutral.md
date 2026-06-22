@@ -16,10 +16,13 @@ The media we consume is not neutral. The hobbies we pursue are not neutral. The 
 
 But the less obvious meaning is that the concept of “nothing” is, itself, neutral. That “nothing” is literally neutrality incarnate.
 
-“Did you vote for this or that politician?”
+“Did you vote for this or that politician?”\
 “I voted for nothing.”
-“Did you watch this movie?” 
-“I watched nothing.”
-“Did you eat this for lunch? I ate nothing”
 
-So while it’s true that in practice, we often mean to use the former, we should learn to occasionally use the latter. Sometimes the answer is not this or that, but the neutrality made possible when we instead choose nothing. Sometimes when we say “nothing is neutral”  we might actually mean “nothing is neutral.” 
+“Did you watch this movie?”\
+“I watched nothing.”
+
+“Did you eat this for lunch?\
+I ate nothing”
+
+So while it’s true that in practice, we often mean to use the former, we should learn to occasionally use the latter. Sometimes the answer is not this or that, but the neutrality made possible when we instead choose nothing. 

@@ -36,9 +36,9 @@ const entries: CollectionEntry<'compendium'>[] = (await getCollection('compendiu
                 {/* CONDITIONAL LINKS (BELOW) */}
                     {(entry.data.openNote || entry.data.project) && (
                         <div class="info-bubble"> 
-                            {entry.data.openNote && ( <a href= {entry.data.openNote} class="bold-hover"> Note</a> )}
+                            {entry.data.openNote && ( <a href= {entry.data.openNote} class="bold-hover" target="_blank" rel="noopener noreferrer"> Note</a> )}
                             {entry.data.openNote && entry.data.project && ( <span class="bold-hover"> / </span> )}
-                            {entry.data.project && ( <a href= {entry.data.project} class="bold-hover"> Project</a> )}
+                            {entry.data.project && ( <a href= {entry.data.project} class="bold-hover" target="_blank" rel="noopener noreferrer"> Project</a> )}
                         </div>
                     )} 
             </div>
