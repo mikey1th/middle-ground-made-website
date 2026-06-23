@@ -10,7 +10,7 @@ displayTag: "object"
 images: 
     - ../../assets/website-images/project-images/gu-frisbee.webp
 tags:
-    - "object" 
+    - "objects" 
 ---
 
 Heat stamped frisbee for the folks over at Greenville Ultimate. Love seeing people toss this thing around!
