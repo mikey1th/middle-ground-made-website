@@ -2,10 +2,10 @@
 
 title: "Trying is All We Got Totebag"
 date: "08.23"
-id: 05
+id: 09
 coverImage: ../../assets/website-images/project-images/totebag-01.webp
 sortDate: "2023-08-01"
-displayTag: "object"
+displayTag: "Object"
 images: 
     - ../../assets/website-images/project-images/totebag-01.webp
     - ../../assets/website-images/project-images/totebag-02.webp

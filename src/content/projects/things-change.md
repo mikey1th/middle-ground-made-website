@@ -5,7 +5,7 @@ date: "06.22"
 id: 01
 coverImage: ../../assets/website-images/project-images/things-change-01.webp
 sortDate: "2022-06-01"
-displayTag: "apparel"
+displayTag: "Apparel"
 images: 
     - ../../assets/website-images/project-images/things-change-01.webp
     - ../../assets/website-images/project-images/things-change-02.webp

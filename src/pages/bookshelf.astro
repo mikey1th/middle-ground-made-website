@@ -8,6 +8,9 @@ import ContextSection from '../components/context-section.astro';
 import BackButton from '../components/back-button.astro';
 import BookshelfLayout from '../components/bookshelf-layout.astro';
 
+import bookshelf from "../data/bookshelf-data.js";
+const count = bookshelf.length;
+
 
 const pageTitle = "Bookshelf";
 
@@ -35,7 +38,7 @@ const pageTitle = "Bookshelf";
 		This is a perpetually incomplete collection of the books I've read and can full-heartedly reccomend. This is also living archive, so come back for updates / additions.
     </p>
 	<p class="note">
-    * Contradictions incoming
+    [{count}] Recommendations below 
     </p>
 	</ContextSection>
 

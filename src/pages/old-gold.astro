@@ -7,6 +7,8 @@ import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
 import BackButton from '../components/back-button.astro';
 import OldGoldLayout from '../components/old-gold-layout.astro';
+import { getCollection } from 'astro:content';
+const additions = await getCollection('oldGold');
 
 
 const pageTitle = "Old Gold";
@@ -35,7 +37,7 @@ const pageTitle = "Old Gold";
 	<p> Every good designer has a cache of old deisgn specimens. Some limit thier collection to shirts, or hats, or books. 
 		I'm less picky, anything that's old and but well-designed gets added to the collection. </p>
     <p class="note">
-    * In no apparent order
+    [{additions.length}] Entries In no apparent order
     </p>
 	</ContextSection>
 

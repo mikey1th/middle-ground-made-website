@@ -26,7 +26,7 @@ export async function getStaticPaths () {
 const { tag }= Astro.params;
 const { projects } = Astro.props;
 
-const pageTitle = tag;
+const pageTitle = tag.charAt(0).toUpperCase() + tag.slice(1);
 
 const tagDescriptions : Record<string, string> = {
   "books": "Every book in this category has been painstakingly writted, editd, designed, and published by me",
@@ -34,6 +34,11 @@ const tagDescriptions : Record<string, string> = {
   "paintings": "I didn't plan on liking painting as much as I do, it just kinda...happened. Either way, I love this shit. And I plan onpainting as many things as I can",
 
 }
+
+
+
+
+
 
 ---
 

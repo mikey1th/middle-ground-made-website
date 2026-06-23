@@ -5,7 +5,7 @@ date: "01.23"
 id: 02
 coverImage: ../../assets/website-images/project-images/tid-bits-from-the-journey-01.webp
 sortDate: "2023-01-01"
-displayTag: "one-off"
+displayTag: "One-off"
 images: 
     - ../../assets/website-images/project-images/tid-bits-from-the-journey-01.webp
     - ../../assets/website-images/project-images/tid-bits-from-the-journey-02.webp

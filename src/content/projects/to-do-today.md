@@ -2,10 +2,10 @@
 
 title: "To Do To Day"
 date: "04.24"
-id: 14
+id: 15
 coverImage: ../../assets/website-images/project-images/to-do-today-01.webp
 sortDate: "2024-04-01"
-displayTag: "object"
+displayTag: "Object"
 images: 
     - ../../assets/website-images/project-images/to-do-today-01.webp
     - ../../assets/website-images/project-images/to-do-today-02.webp

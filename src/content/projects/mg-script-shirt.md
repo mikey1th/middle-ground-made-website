@@ -2,10 +2,10 @@
 
 title: "Middle Ground Made Script Shirt"
 date: "03.23"
-id: 02
+id: 04
 coverImage: ../../assets/website-images/project-images/mg-script-shirt-01.webp
 sortDate: "2023-03-01"
-displayTag: "apparel"
+displayTag: "Apparel"
 images: 
     - ../../assets/website-images/project-images/mg-script-shirt-01.webp
     - ../../assets/website-images/project-images/mg-script-shirt-02.webp

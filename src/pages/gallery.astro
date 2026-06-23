@@ -7,6 +7,8 @@ import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
 import BackButton from '../components/back-button.astro';
 import GalleryLayout from '../components/gallery-layout.astro';
+import { getCollection } from 'astro:content';
+const additions = await getCollection('gallery');
 
 
 const pageTitle = "Gallery";
@@ -34,7 +36,7 @@ const pageTitle = "Gallery";
 	<hr>
 	<p> Here's a collection of images that are too good not to share, most were captured by me, others are too sentimental to not out on display. </p>
     <p class="note">
-    * In order from newest to oldest
+    [{additions.length}] Pics In order from newest to oldest
     </p>
 	</ContextSection>
 

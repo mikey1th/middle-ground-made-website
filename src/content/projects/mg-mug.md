@@ -2,10 +2,10 @@
 
 title: "Middle Ground Made Do No Harm Mug"
 date: "07.23"
-id: 02
+id: 07
 coverImage: ../../assets/website-images/project-images/mug-01.webp
 sortDate: "2023-07-01"
-displayTag: "object"
+displayTag: "Object"
 images: 
     - ../../assets/website-images/project-images/mug-01.webp
 tags:

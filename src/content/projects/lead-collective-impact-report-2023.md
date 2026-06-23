@@ -2,10 +2,10 @@
 
 title: "Lead Collective Impact Report 2023"
 date: "01.24"
-id: 03
+id: 12
 coverImage: ../../assets/website-images/project-images/lc-impact-report-2023-01.webp
 sortDate: "2024-01-01"
-displayTag: "print"
+displayTag: "Print"
 images: 
     - ../../assets/website-images/project-images/lc-impact-report-2023-01.webp
     - ../../assets/website-images/project-images/lc-impact-report-2023-02.webp

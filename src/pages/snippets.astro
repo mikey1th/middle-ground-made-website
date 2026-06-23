@@ -8,6 +8,9 @@ import ContextSection from '../components/context-section.astro';
 import SnippetCollection from '../components/snippet-collection.astro';
 import BackButton from '../components/back-button.astro';
 
+import snippets from "../data/snippet-data.js";
+const count = snippets.length;
+
 const pageTitle= "Snippets"
 
 
@@ -38,7 +41,7 @@ const pageTitle= "Snippets"
             It's also worth noting that while I did coin the majority of these Snippets, some were discovered and were just too good to not jot down. Finally, I actually do try to live by these Snippets. I allow them to inflitrate mys thoughts and deeds, and I belive I'm better for it.
             </p>
              <p class="note">
-            * In no particular order
+            [{count}] entries In no particular order
             </p>
             </ContextSection>
 

@@ -2,10 +2,10 @@
 
 title: "Hill Killer Run Club"
 date: "03.25"
-id: 36
+id: 32
 coverImage: ../../assets/website-images/project-images/hill-killer-01.webp
 sortDate: "2025-03-01"
-displayTag: "one-off"
+displayTag: "One-off"
 images: 
     - ../../assets/website-images/project-images/hill-killer-01.webp
     - ../../assets/website-images/project-images/hill-killer-02.webp

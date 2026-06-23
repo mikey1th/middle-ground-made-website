@@ -2,10 +2,10 @@
 
 title: "Headqtrs"
 date: "11.24"
-id: 19
+id: 25
 coverImage: ../../assets/website-images/project-images/headqtrs-01.webp
 sortDate: "2024-11-01"
-displayTag: "one-off"
+displayTag: "One-off"
 images: 
     - ../../assets/website-images/project-images/headqtrs-01.webp
     - ../../assets/website-images/project-images/headqtrs-02.webp

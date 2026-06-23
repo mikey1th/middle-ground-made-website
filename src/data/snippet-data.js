@@ -184,6 +184,13 @@ const snippets =[
     
     },
 
+    {
+        
+        text: "It's the heat that gets ya'",
+        id: 28
+    
+    },
+
 
 
 

@@ -2,10 +2,10 @@
 
 title: "Morning Brain"
 date: "11.24"
-id: 16
+id: 24
 coverImage: ../../assets/website-images/project-images/morning-brain-01.webp
 sortDate: "2024-11-01"
-displayTag: "one-off"
+displayTag: "One-off"
 images: 
     - ../../assets/website-images/project-images/morning-brain-01.webp
     - ../../assets/website-images/project-images/morning-brain-02.webp

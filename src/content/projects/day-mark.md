@@ -2,10 +2,10 @@
 
 title: "Day Mark"
 date: "12.24"
-id: 28
+id: 26
 coverImage: ../../assets/website-images/project-images/day-mark-01.webp
 sortDate: "2024-12-01"
-displayTag: "object"
+displayTag: "Object"
 images: 
     - ../../assets/website-images/project-images/day-mark-01.webp
     - ../../assets/website-images/project-images/day-mark-02.webp

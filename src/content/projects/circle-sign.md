@@ -2,10 +2,10 @@
 
 title: "Circle Sign"
 date: "05.23"
-id: 04
+id: 05
 coverImage: ../../assets/website-images/project-images/circle-sign.webp
 sortDate: "2023-05-01"
-displayTag: "painting"
+displayTag: "Painting"
 images: 
     - ../../assets/website-images/project-images/circle-sign.webp
 tags:

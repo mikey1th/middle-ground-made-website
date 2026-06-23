@@ -2,10 +2,10 @@
 
 title: "Goat Hoodie"
 date: "10.24"
-id: 09
+id: 23
 coverImage: ../../assets/website-images/project-images/goat-hoodie-03.webp
 sortDate: "2024-10-01"
-displayTag: "apparel"
+displayTag: "Apparel"
 images: 
     - ../../assets/website-images/project-images/goat-hoodie-01.webp
     - ../../assets/website-images/project-images/goat-hoodie-02.webp

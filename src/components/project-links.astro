@@ -42,6 +42,8 @@ const tags = [...new Set(allProjects.flatMap(p => p.data.tags ?? []))].sort();
                 <div class="date-details"> 
                     <span> {project.data.date} </span>
                     <span> / </span>
+                    <span> {project.data.id} </span>
+                    <span> / </span>
                     <span> {project.data.displayTag} </span>
                 </div>
                 <span class="compendium-project-title"> {project.data.title} </span>

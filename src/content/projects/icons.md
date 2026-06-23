@@ -2,10 +2,10 @@
 
 title: "ICONS"
 date: "07.24"
-id: 3
+id: 18
 coverImage: ../../assets/website-images/project-images/icons-edition-01-01.webp
 sortDate: "2024-07-01"
-displayTag: "one-off"
+displayTag: "One-off"
 images: 
     - ../../assets/website-images/project-images/icons-edition-01-01.webp
     - ../../assets/website-images/project-images/icons-edition-01-02.webp
@@ -17,4 +17,4 @@ tags:
 ---
 
 
-Innocuous Concepts Offering Novel Solutions, edition no. 001
+Innocuous Concepts Offering Novel Solutions, edition No. 001

@@ -2,10 +2,10 @@
 
 title: "Cranberry Dash"
 date: "11.25"
-id: 38
+id: 41
 coverImage: ../../assets/website-images/project-images/cranberry-dash-01.webp
 sortDate: "2025-11-01"
-displayTag: "one-off"
+displayTag: "One-off"
 images: 
     - ../../assets/website-images/project-images/cranberry-dash-01.webp
     - ../../assets/website-images/project-images/cranberry-dash-02.webp

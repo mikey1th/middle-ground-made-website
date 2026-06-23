@@ -2,7 +2,7 @@
 
 title: "Log Out"
 date: "01.25"
-id: 13
+id: 27
 merch: "March Coming Soon"
 coverImage: ../../assets/website-images/project-images/log-out-01.webp
 sortDate: "2025-01-01"

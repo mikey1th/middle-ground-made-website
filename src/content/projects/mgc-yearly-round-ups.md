@@ -1,11 +1,11 @@
 ---
 
-title: "MiddleVerse Icons"
+title: "Middle Ground Compendium Yearly Round Ups"
 date: "11.25"
-id: 43
+id: 42
 coverImage: ../../assets/website-images/project-images/mgc-year-four.webp
 sortDate: "2025-11-02"
-displayTag: "one-off"
+displayTag: "One-off"
 images: 
     - ../../assets/website-images/project-images/mgc-year-four.webp
     - ../../assets/website-images/project-images/mgc-year-three.webp

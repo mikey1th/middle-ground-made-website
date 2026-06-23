@@ -2,10 +2,10 @@
 
 title: "Tour De Swamp"
 date: "09.25"
-id: 37
+id: 40
 coverImage: ../../assets/website-images/project-images/tour-de-swamp-01.webp
 sortDate: "2025-09-01"
-displayTag: "one-off"
+displayTag: "One-off"
 images: 
     - ../../assets/website-images/project-images/tour-de-swamp-01.webp
     - ../../assets/website-images/project-images/tour-de-swamp-02.webp

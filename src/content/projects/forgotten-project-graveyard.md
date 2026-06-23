@@ -2,10 +2,10 @@
 
 title: "Forgotten Projects Graveyard"
 date: "01.25"
-id: 15
+id: 29
 coverImage: ../../assets/website-images/project-images/forgotten-projects-graveyard-01.webp
 sortDate: "2025-01-01"
-displayTag: "one-off"
+displayTag: "One-off"
 images: 
     - ../../assets/website-images/project-images/forgotten-projects-graveyard-01.webp
     - ../../assets/website-images/project-images/forgotten-projects-graveyard-02.webp

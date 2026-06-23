@@ -2,10 +2,10 @@
 
 title: "Alliterative Alphabet"
 date: "12.25"
-id: 39
+id: 44
 coverImage: ../../assets/website-images/project-images/alliterative-alphabet-01.webp
 sortDate: "2025-12-01"
-displayTag: "one-off"
+displayTag: "One-off"
 images: 
     - ../../assets/website-images/project-images/alliterative-alphabet-01.webp
     - ../../assets/website-images/project-images/alliterative-alphabet-02.webp

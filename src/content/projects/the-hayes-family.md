@@ -2,10 +2,10 @@
 
 title: "Hayes Family Crest"
 date: "05.25"
-id: 32
+id: 38
 coverImage: ../../assets/website-images/project-images/the-hayes-family-01.webp
 sortDate: "2025-05-25"
-displayTag: "one-off"
+displayTag: "One-off"
 images: 
     - ../../assets/website-images/project-images/the-hayes-family-01.webp
     - ../../assets/website-images/project-images/the-hayes-family-02.webp
