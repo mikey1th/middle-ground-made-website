@@ -1,0 +1,16 @@
+---
+
+title: "Greenville Ultimate Frisbee"
+date: "03.24"
+id: 11
+merch: "Merch Coming Soon"
+coverImage: ../../assets/website-images/project-images/gu-frisbee.webp
+sortDate: "2024-03-01"
+displayTag: "object"
+images: 
+    - ../../assets/website-images/project-images/gu-frisbee.webp
+tags:
+    - "object" 
+---
+
+Heat stamped frisbee for the folks over at Greenville Ultimate. Love seeing people toss this thing around!
