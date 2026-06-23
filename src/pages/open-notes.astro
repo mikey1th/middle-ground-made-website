@@ -12,7 +12,7 @@ import BackButton from '../components/back-button.astro';
 const files = import.meta.glob('../pages/open-notes-archive/*.md');
 const count = Object.keys(files).length;
 
-const pageTitle = "Open Notes"
+const pageTitle = "Open Notes — Middle Ground Made"
 
 ---
 
@@ -26,13 +26,22 @@ const pageTitle = "Open Notes"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta property="og:title" content="Middle Ground Made" />
+		<meta property="og:description" content="Heirloom design studio." />
+		<meta property="og:image" content="https://middlegroundmade.com/mg-social-share.webp" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Middle Ground Made" />
+		<meta name="twitter:description" content="Heirloom design studio." />
+		<meta name="twitter:image" content="https://middlegroundmade.com/mg-social-share.webp" />
     </head>
     <body>
         <PageWrapper>
         <Navigation/>
             <ContextSection>
-            <h2>{pageTitle}</h2> 
+            <h2>Open Notes</h2> 
 	        <hr>
               <p>
               Open Notes is a collection of observational essays and fantastical myths. I publish a few new entries per week,

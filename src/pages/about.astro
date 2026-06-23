@@ -1,16 +1,14 @@
 ---
 
-const pageTitle = "About";
+const pageTitle = "About — Middle Ground Made";
 
 
 import '../styles/global.css';
 import Navigation from '../components/navigation.astro'
-import Footer from '../components/footer.astro'
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
 import ContextSectionLinks from '../components/context-section-links.astro';
 import ContextSectionFooter from '../components/context-section-footer.astro';
-import Contact from './contact.astro';
 
 
 ---
@@ -25,12 +23,21 @@ import Contact from './contact.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta property="og:title" content="Middle Ground Made" />
+		<meta property="og:description" content="Heirloom design studio." />
+		<meta property="og:image" content="https://middlegroundmade.com/mg-social-share.webp" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Middle Ground Made" />
+		<meta name="twitter:description" content="Heirloom design studio." />
+		<meta name="twitter:image" content="https://middlegroundmade.com/mg-social-share.webp" />
 	</head>
 	<body>
 	  <PageWrapper>
 	    <Navigation />
 	      <ContextSection>
-          <h2>{pageTitle}</h2>
+          <h2>About</h2>
           <hr>
           <p>
               In my opinion, the "about" section is always the hardest to write, especially when what you're about is always changing. But here's a quick high-level view of my journey and where Middle Ground Currently stands.

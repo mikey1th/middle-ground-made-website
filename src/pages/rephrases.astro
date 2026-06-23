@@ -12,7 +12,7 @@ import rephrases from "../data/rephrases-data.js";
 const count = rephrases.length;
 
 
-const pageTitle = "Rephrases";
+const pageTitle = "Rephrases — Middle Ground Made";
 
 
 ---
@@ -27,12 +27,21 @@ const pageTitle = "Rephrases";
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+		<meta property="og:title" content="Middle Ground Made" />
+		<meta property="og:description" content="Heirloom design studio." />
+		<meta property="og:image" content="https://middlegroundmade.com/mg-social-share.webp" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Middle Ground Made" />
+		<meta name="twitter:description" content="Heirloom design studio." />
+		<meta name="twitter:image" content="https://middlegroundmade.com/mg-social-share.webp" />
 	</head>
 	<body>
 	<PageWrapper>
 	<Navigation />
 	<ContextSection>
-	<h2>{pageTitle}</h2>
+	<h2>Rephrases</h2>
 	<hr>
 	<p> 
 		Rephrases are short bits of writing that help me rethink common trains of thought. I created this list to both highlight a problem and provide a solution. As with all things on my website this list is a work in progress and with time will grow and change.

@@ -10,7 +10,7 @@ import ContextSectionFooter from '../components/context-section-footer.astro';
 
 
 
-const pageTitle = "Newsletter";
+const pageTitle = "Newsletter — Middle Ground Made";
 
 ---
 
@@ -23,12 +23,21 @@ const pageTitle = "Newsletter";
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+		<meta property="og:title" content="Middle Ground Made" />
+		<meta property="og:description" content="Heirloom design studio." />
+		<meta property="og:image" content="https://middlegroundmade.com/mg-social-share.webp" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Middle Ground Made" />
+		<meta name="twitter:description" content="Heirloom design studio." />
+		<meta name="twitter:image" content="https://middlegroundmade.com/mg-social-share.webp" />
 	</head>
 	<body>
 	<PageWrapper>
 	<Navigation />
 	<ContextSection>
-	<h2>{pageTitle}</h2>
+	<h2>Newsletter</h2>
 	<hr>
 	<p> 
 		The Middle Ground Newsletter is sent on a monthly basis and contains something I've written, something I've found, and something I've made. 

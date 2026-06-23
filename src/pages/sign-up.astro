@@ -9,7 +9,7 @@ import FooterNoEmail from '../components/footer-no-email.astro';
 import BackButton from '../components/back-button.astro';
 
 
-const pageTitle = "Sign Up";
+const pageTitle = "Sign Up — Middle Ground Made";
 
 ---
 
@@ -22,13 +22,22 @@ const pageTitle = "Sign Up";
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+		<meta property="og:title" content="Middle Ground Made" />
+		<meta property="og:description" content="Heirloom design studio." />
+		<meta property="og:image" content="https://middlegroundmade.com/mg-social-share.webp" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Middle Ground Made" />
+		<meta name="twitter:description" content="Heirloom design studio." />
+		<meta name="twitter:image" content="https://middlegroundmade.com/mg-social-share.webp" />
 	</head>
 	<body>
 		<PageWrapper>
 			<Navigation />
 
 			<ContextSection>
-				<h2> {pageTitle} </h2>
+				<h2>Sign Up</h2>
 				<hr>
 				<p> 
 					The Middle Ground Newsletter is sent monthly and includes a Note, a Rsource, and an entry from one of my design collections. I'll also occassionally send studio or merch related updates but avoid spamming.

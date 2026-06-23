@@ -12,7 +12,7 @@ import bookshelf from "../data/bookshelf-data.js";
 const count = bookshelf.length;
 
 
-const pageTitle = "Bookshelf";
+const pageTitle = "Bookshelf — Middle Ground Made";
 
 
 ---
@@ -27,12 +27,21 @@ const pageTitle = "Bookshelf";
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+		<meta property="og:title" content="Middle Ground Made" />
+		<meta property="og:description" content="Heirloom design studio." />
+		<meta property="og:image" content="https://middlegroundmade.com/mg-social-share.webp" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Middle Ground Made" />
+		<meta name="twitter:description" content="Heirloom design studio." />
+		<meta name="twitter:image" content="https://middlegroundmade.com/mg-social-share.webp" />
 	</head>
 	<body>
 	<PageWrapper>
 	<Navigation />
 	<ContextSection>
-	<h2>{pageTitle}</h2>
+	<h2>Bookshelf</h2>
 	<hr>
 	<p> 
 		This is a perpetually incomplete collection of the books I've read and can full-heartedly reccomend. This is also living archive, so come back for updates / additions.

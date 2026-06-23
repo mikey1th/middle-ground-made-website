@@ -17,8 +17,19 @@ const { frontmatter } = Astro.props;
 		<link rel="icon" href="/favicon.ico?v=2" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{frontmatter.title}</title>
+		<title>{frontmatter.title} — Middle Ground Made</title>
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+          <meta property="og:title" content="Middle Ground Made" />
+		<meta property="og:description" content="Heirloom design studio." />
+		<meta property="og:image" content="https://middlegroundmade.com/mg-social-share.webp" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Middle Ground Made" />
+		<meta name="twitter:description" content="Heirloom design studio." />
+		<meta name="twitter:image" content="https://middlegroundmade.com/mg-social-share.webp" />
+
+          
      </head>
 
      <body>

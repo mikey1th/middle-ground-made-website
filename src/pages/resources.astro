@@ -11,7 +11,7 @@ import ResourcesCollection from '../components/resources-collection.astro';
 import resources from "../data/resources-data.js";
 const count = resources.length;
 
-const pageTitle = "Resources";
+const pageTitle = "Resources — Middle Ground Made";
 
 
 ---
@@ -26,12 +26,21 @@ const pageTitle = "Resources";
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+		<meta property="og:title" content="Middle Ground Made" />
+		<meta property="og:description" content="Heirloom design studio." />
+		<meta property="og:image" content="https://middlegroundmade.com/mg-social-share.webp" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Middle Ground Made" />
+		<meta name="twitter:description" content="Heirloom design studio." />
+		<meta name="twitter:image" content="https://middlegroundmade.com/mg-social-share.webp" />
 	</head>
 	<body>
 	<PageWrapper>
 	<Navigation />
 	<ContextSection>
-	<h2>{pageTitle}</h2>
+	<h2>Resources</h2>
 	<hr>
 	<p> 
 		Resources are shared monthly in the Ground Up Newsletter, and are things I find remarkable, helpful, or sometimes just cool. Since these links are only shared once a month I prioritize quality over quantity. 

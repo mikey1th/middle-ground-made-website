@@ -4,11 +4,8 @@ import '../styles/global.css';
 import Navigation from '../components/navigation.astro';
 import PageWrapper from '../components/page-wrapper.astro';
 import ContextSection from '../components/context-section.astro';
-import FeaturedWorkLayout from '../components/featured-work-layout.astro';
-import FeaturedEssay from '../components/featured-essay-layout.astro';
 import ContextSectionFooter from '../components/context-section-footer.astro';
 import HomePageContent from '../components/home-page-content.astro';
-import BackButton from '../components/back-button.astro';
 
 const pageTitle = "Middle Ground Made";
 
@@ -23,6 +20,16 @@ const pageTitle = "Middle Ground Made";
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+		<meta property="og:title" content="Middle Ground Made" />
+		<meta property="og:description" content="Heirloom design studio." />
+		<meta property="og:image" content="https://middlegroundmade.com/mg-social-share.webp" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Middle Ground Made" />
+		<meta name="twitter:description" content="Heirloom design studio." />
+		<meta name="twitter:image" content="https://middlegroundmade.com/mg-social-share.webp" />
+</head>
 	</head>
 	<body>
 		<PageWrapper>
