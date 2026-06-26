@@ -193,7 +193,7 @@ const snippets =[
 
     {
         
-        text: "Created to connect. Convinced to consume.",
+        text: "Created to connect, convinced to consume.",
         id: 29
     
     },
