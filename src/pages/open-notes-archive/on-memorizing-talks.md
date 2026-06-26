@@ -1,6 +1,6 @@
 ---
 
-title: "A Pace That Works"
+title: "On Memorizing Talks"
 date: "06.26"
 number: "70"
 entry: 78
