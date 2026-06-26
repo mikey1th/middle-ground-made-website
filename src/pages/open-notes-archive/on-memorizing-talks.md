@@ -2,7 +2,7 @@
 
 title: "On Memorizing Talks"
 date: "06.26"
-number: "70"
+number: "78"
 entry: 78
 year: 2026
 volume: 1
