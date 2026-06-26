@@ -191,6 +191,13 @@ const snippets =[
     
     },
 
+    {
+        
+        text: "Created to connect. Convinced to consume.",
+        id: 29
+    
+    },
+
 
 
 
