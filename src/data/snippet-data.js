@@ -198,6 +198,22 @@ const snippets =[
     
     },
 
+    
+    {
+        
+        text: "Purpose can give you pleasure, but peleasure can't give you purpose.",
+        id: 30
+    
+    },
+
+
+    {
+        
+        text: "Endurance is a lifestyle.",
+        id: 31
+    
+    },
+
 
 
 
