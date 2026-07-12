@@ -17,4 +17,4 @@ What Caesar wants is our inner world, our thoughts, our hopes, our dreams, our c
 
 And the best way to do so is to dawn the appearance of a citizen of Rome. To position ourselves as rank and file members through deeds which usually equate to a certain level of belief in our conscriptors. To stop Caesar from wanting our inner world by appearing as if we have no interest in its preservation. 
 
-All the while a chasm of disinterest will be formed, which in the end, will protect us from trading our inner world for the trappings of Caesar’s decaying empire .
+All the while a chasm of disinterest will be formed, which in the end, will protect us from trading our inner world for the trappings of Caesar’s decaying empire.
