@@ -56,6 +56,12 @@ const rephrases =[
         id: 9
     },
 
+    {
+        original:"I’m not scared of what happens if I don’t open an investment account.",
+        improved: "I’m scared of what happens if I do open an investment account.",
+        id: 10
+    }
+
 ]
 
 export default rephrases

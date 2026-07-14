@@ -12,7 +12,7 @@ layout: ../../components/open-notes-layouts.astro
 
 I used to consider anything that seemed financially fishy a scam. But I’ve realized my blanket statement needs a bit of nuance.
 
-Price gouging drinks at a music festival is a scam. Scalpers charging more for collector’s cards is a scam. Forcing lactose-intolerant customers to pay 30%  extra for an oat milk latte is a scam.
+Price gouging drinks at a music festival is a scam. Scalpers charging more for collector’s cards is a scam. Forcing lactose-intolerant customers to pay 30% extra for an oat milk latte is a scam.
 
 But privatized healthcare—a business model that convinces the public to buy expensive coverage yet refuses to pay for claims, even to the point of death is, something different.
 
