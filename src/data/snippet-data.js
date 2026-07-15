@@ -180,7 +180,8 @@ const snippets =[
     {
         
         text: "Man shall not live on tech alone",
-        id: 27
+        id: 27,
+        design: "/compendium/#entry-222",
     
     },
 
