@@ -12,49 +12,49 @@ const snippets =[
 
 
     {
-        text: "Brick by brick",
+        text: "Brick by brick.",
         id: 2
     },
 
 
     {
-        text: "You're not weird, you're wired",
+        text: "You're not weird, you're wired.",
         id: 3 
     },
 
 
     {
-        text: "Haud perditus inter arbores",
+        text: "Haud perditus inter arbores.",
         design: "/compendium/#entry-189",
         id: 4
     },
 
 
     {
-        text: "Build things elsewhere",
+        text: "Build things elsewhere.",
         id: 5
     },
 
     {
-        text: "Zone two is my third place",
+        text: "Zone two is my third place.",
         id: 6
     },
 
     {
-        text: "Run the mut",
+        text: "Run the mut.",
         openNote: "/open-notes-archive/run-the-mutt/",
         id: 7
     },
 
 
    {
-        text: "Everything is made up",
+        text: "Everything is made up.",
         id: 8
     },
 
 
     {
-        text: "Optimal is optional",
+        text: "Optimal is optional.",
         openNote: "/open-notes-archive/optimal-is-optional/",
         id: 9
 
@@ -62,65 +62,65 @@ const snippets =[
 
 
     {
-        text: "Follow the spark",
-        design: "/compendium/",
+        text: "Follow the spark.",
+        design: "/compendium/#entry-211",
         id: 10
     },
 
 
     {
-        text: "Refuse to be a roma",
+        text: "Refuse to be a roma.",
         id: 11
     },
 
 
     {  
-        text: "In but not of",
+        text: "In but not of.",
          id: 12
     },
 
 
     {
-        text: "Subvert the system",
+        text: "Subvert the system.",
         id: 13
     },
 
 
     {
-        text: "Minimize shareholder value",
+        text: "Minimize shareholder value.",
         id: 14
     },
 
 
     {
-        text: "Guard your heart",
+        text: "Guard your heart.",
         design: "/compendium/#entry-212",
         id: 15
     },
   
     {
         
-        text: "Amor vincint omnia",
+        text: "Amor vincint omnia.",
         id: 16
     
     },
 
 
    {
-        text: "Consumerism is a psyop",
+        text: "Consumerism is a psyop.",
         id: 17,
         openNote: "/open-notes-archive/consumerism-is-a-psyop/"
     },        
 
 
     {
-        text: "Acre sized ambitions",
+        text: "Acre sized ambitions.",
         id: 18
     },
 
     {
         
-        text: "Life is laundry",
+        text: "Life is laundry.",
         id: 19,
         openNote: "/open-notes-archive/life-is-laundry/"
     
@@ -128,7 +128,7 @@ const snippets =[
 
     {
         
-        text: "Shipping is better than sharing",
+        text: "Shipping is better than sharing.",
         id: 20
     
     },
@@ -136,14 +136,14 @@ const snippets =[
 
     {
         
-        text: "Joy is found in the journey",
+        text: "Joy is found in the journey.",
         id: 21
     
     },
 
     {
         
-        text: "There are always two things",
+        text: "There are always two things.",
         id: 22
     
     },
@@ -151,43 +151,44 @@ const snippets =[
 
     {
         
-        text: "Take your time",
+        text: "Take your time.",
         id: 23
     
     },
     
     {
         
-        text: "Become the portal man",
+        text: "Become the portal man.",
         id: 24
     
     },
 
     {
         
-        text: "New shit same smell",
+        text: "New shit same smell.",
         id: 25
     
     },
 
     {
         
-        text: "Don't be a freak about it",
+        text: "Don't be a freak about it.",
         id: 26
     
     },
 
     {
         
-        text: "Man shall not live on tech alone",
+        text: "Man shall not live on tech alone.",
         id: 27,
         design: "/compendium/#entry-222",
+        openNote: "/open-notes-archive/lostman/"
     
     },
 
     {
         
-        text: "It's the heat that gets ya'",
+        text: "It's the heat that gets ya'.",
         id: 28
     
     },
@@ -202,7 +203,7 @@ const snippets =[
     
     {
         
-        text: "Purpose can give you pleasure, but peleasure can't give you purpose.",
+        text: "Purpose can give you pleasure, but pleasure can't give you purpose.",
         id: 30
     
     },
@@ -212,6 +213,42 @@ const snippets =[
         
         text: "Endurance is a lifestyle.",
         id: 31
+    
+    },
+
+    {
+        
+        text: "Never do whatever it takes.",
+        id: 32
+    
+    },
+
+    {
+        
+        text: "Become interested in becoming disinterested.",
+        id: 33
+    
+    },
+
+
+    {
+        
+        text: "I don't know how I did it. I just did it.",
+        id: 34
+    
+    },
+
+    {
+        
+        text: "It's a run not a race.",
+        id: 35
+    
+    },
+
+    {
+        
+        text: "Plans are nice. Projects are essential.",
+        id: 36
     
     },
 
