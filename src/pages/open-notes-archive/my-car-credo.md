@@ -12,7 +12,7 @@ layout: ../../components/open-notes-layouts.astro
 
 My car credo is designed to help me find, or keep in my possession, a vehicle that meets 85% of my perceivable car-based needs, and is as follows.
 
-*“My car must be able to provide reliable transportation, easily haul eight-foot boards, and comfortably seat at least five people. If my car can complete these three essential tasks, then all other features are simply nice and are therefore, optional. If the car I own can do all these things, I will not shop for another one.”*
+“My car must be able to provide reliable transportation, easily haul eight-foot boards, and comfortably seat at least five people. If my car can complete these three essential tasks, then all other features are simply nice and are therefore, optional. If the car I own can do all these things, I will not shop for another one.”
 
 Which is cool, but why even have a car credo in the first place?
 
