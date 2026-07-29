@@ -10,7 +10,7 @@ layout: ../../components/open-notes-layouts.astro
 
 ---
 
-NICE is an acronym that stands for Never, Innocuous, Considerably, Extra and is divided into two explanatory halves.  
+NICE is an acronym that stands for Never, Innocuous, Considerably, Extra and is divided into explanatory halves.  
 
 Never Innocuous: Because nice things, as with all things, are never neutral. And while nice things attempt to position themselves as helpful or at the very least non-harmful, they do have an effect on us. Primarily, they make us crave more things of their nature. Once we get a taste for the nicer side, it’s hard to develop a distaste for it. This craving for nice things eventually causes us to structure our entire lives around getting more of them. We hunger for nice experiences. We chase after nice artifacts. We dream of nice conditions. So in this way, nice things are “Never Innocuous”  because of the gravitational force created by their very existence. 
 
