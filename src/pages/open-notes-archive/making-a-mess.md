@@ -11,7 +11,8 @@ layout: ../../components/open-notes-layouts.astro
 ---
 
 When you’re in the middle of a project making a mess is a symptom, not a problem. 
-There’s paint because you’ve been painting. There’s ink because you’ve been printing. There’s sauce, and herbs, and a strange liquid on the counter because you’ve been cooking. There’s dirt and clippings on the floor because you’ve been gardening. Your manuscript is a wreck because you’ve been writing. 
+
+There’s paint on your clothes because you’ve been painting. There’s ink on the table because you’ve been printing. There’s sauce, and herbs, and a strange liquid on the counter because you’ve been cooking. There’s dirt and clippings on the floor because you’ve been gardening. Your manuscript is a wreck because you’ve been writing. 
 
 What’s more, a mess can always be minded. Putting stuff back, wiping down a counter, cleaning the floors are all annoying, yet manageable tasks.
 

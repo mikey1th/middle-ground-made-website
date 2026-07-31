@@ -252,6 +252,12 @@ const snippets =[
     
     },
 
+    {
+        
+        text: "When you’re broke, struggle meals are just meals.",
+        id: 37
+    
+    },
 
 
 
