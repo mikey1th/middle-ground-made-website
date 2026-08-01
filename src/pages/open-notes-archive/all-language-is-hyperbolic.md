@@ -14,7 +14,7 @@ Even the most technical boring prose completely devoid of style and metaphor. Ev
 
 All language is hyperbolic because our ability to communicate that which we understand is limited by our ability to understand that which we communicate. And our ability to understand that which we communicate is informed by a perception of reality dimmed down by our five senses, which cannot, and do not present reality as it truly is.
 
-This all may sound strange, but there are documented phenomena in the known universe that are a complete mystery to us because our senses, which are adapted to help us survive here on Earth cannot account for them. Without complex technologies we wouldn’t have the faintest conception of normal universal events, elements, and reactions  like dark-matter, subatomic quarks, quantum mechanics, thermal dynamics, and alternate states of matter. 
+Basic universal elements and reactions like dark-matter, subatomic particles, quantum mechanics, and thermal dynamics would never be conceptualized or understood without complex technologies. 
 
 But even if we did posses a perfect interpretation of reality—would language even be a permissible vessel to communicate its true essence? Wouldn’t cramming the infinite expanse of the known and unknown universe into the small and constrained bounds of language be an intrinsic impossibility? Yes, I think it would be. 
 
