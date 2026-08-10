@@ -3,7 +3,7 @@
 title: "Manna From Mammon"
 date: "08.26"
 number: "93"
-entry: 92
+entry: 93
 year: 2026
 volume: 2
 layout: ../../components/open-notes-layouts.astro
