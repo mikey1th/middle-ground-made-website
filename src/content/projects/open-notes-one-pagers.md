@@ -8,6 +8,8 @@ sortDate: "2026-07-28"
 displayTag: "Print"
 images: 
     - ../../assets/website-images/project-images/open-notes-project-images-86.webp
+    - ../../assets/website-images/open-notes-images/open-notes-86-pic.webp
+    
 tags:
     - "print"
 
@@ -25,6 +27,6 @@ I'm biased towards print, but I love how these things have turned out and I love
 
 Here's a running list of Open Note One-Pagers you can download for yourself!
 
----
-
 **<a href="/pdfs/open-notes-86.pdf" target="_blank" rel="noopener noreferrer" class="body-link">LOSTMAN - Open Notes No.86</a>**
+
+
