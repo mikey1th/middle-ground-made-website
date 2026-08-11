@@ -259,6 +259,12 @@ const snippets =[
     
     },
 
+    {
+        
+        text: "Omni festinatio ex parte diablo est.",
+        id: 38
+    
+    },
 
 
 
