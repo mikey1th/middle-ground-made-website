@@ -2,7 +2,7 @@
 
 title: "Heat Seeker"
 date: "08.26"
-id: 55
+id: 59
 coverImage: ../../assets/website-images/project-images/heat-seeker-brand-01.webp
 sortDate: "2026-07-28"
 displayTag: "One-Off"

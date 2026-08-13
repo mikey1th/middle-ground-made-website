@@ -2,7 +2,7 @@
 
 title: "The Coffee Taster's Flavor Table"
 date: "12.25"
-id: 57
+id: 45
 coverImage: ../../assets/website-images/project-images/flavor-table.webp
 sortDate: "2025-12-15"
 displayTag: "Print"

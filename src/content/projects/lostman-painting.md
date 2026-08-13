@@ -2,7 +2,7 @@
 
 title: "LOSTMAN"
 date: "07.26"
-id: 54
+id: 56
 coverImage: ../../assets/website-images/project-images/lostman.webp
 sortDate: "2026-07-15"
 displayTag: "Painting"

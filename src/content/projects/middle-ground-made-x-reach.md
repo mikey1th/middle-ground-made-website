@@ -2,7 +2,7 @@
 
 title: "Middle Ground Made X Reach GVL"
 date: "08.26"
-id: 54
+id: 58
 coverImage: ../../assets/website-images/project-images/middle-ground-made-x-reach-1.jpg
 sortDate: "2026-07-28"
 displayTag: "One-Off"

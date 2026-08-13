@@ -2,7 +2,7 @@
 
 title: "MiddleVerse Icons"
 date: "04.26"
-id: 46
+id: 47
 coverImage: ../../assets/website-images/project-images/middleverse-icons.webp
 sortDate: "2026-05-01"
 displayTag: "One-off"

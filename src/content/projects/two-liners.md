@@ -2,7 +2,7 @@
 
 title: "Two Liners"
 date: "07.26"
-id: 52
+id: 55
 coverImage: ../../assets/website-images/project-images/two-liners-01.webp
 sortDate: "2026-07-14"
 displayTag: "One-off"

@@ -1,8 +1,8 @@
 ---
 
 title: "Open Notes One Pagers"
-date: "08.26"
-id: 53
+date: "07.26"
+id: 57
 coverImage: ../../assets/website-images/project-images/open-notes-01.webp
 sortDate: "2026-07-28"
 displayTag: "Print"
