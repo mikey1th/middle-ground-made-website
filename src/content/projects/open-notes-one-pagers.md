@@ -3,13 +3,14 @@
 title: "Open Notes One Pagers"
 date: "08.26"
 id: 53
-coverImage: ../../assets/website-images/project-images/open-notes-project-images-86.webp
+coverImage: ../../assets/website-images/project-images/open-notes-01.webp
 sortDate: "2026-07-28"
 displayTag: "Print"
 images: 
+    - ../../assets/website-images/project-images/open-notes-01.webp
+    - ../../assets/website-images/project-images/open-notes-02.webp
     - ../../assets/website-images/project-images/open-notes-project-images-86.webp
-    - ../../assets/website-images/open-notes-images/open-notes-86-pic.webp
-    
+
 tags:
     - "print"
 

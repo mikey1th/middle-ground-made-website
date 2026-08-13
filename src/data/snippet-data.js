@@ -266,6 +266,13 @@ const snippets =[
     
     },
 
+    {
+        
+        text: "Step in to the shrouded expanse.",
+        id: 39
+    
+    },
+
 
 
 
