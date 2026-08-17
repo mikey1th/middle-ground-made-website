@@ -14,7 +14,7 @@ Not because I’m are scared of a doomsday event, the collapse of the job market
 
 But because the last time Silicon Valley unveiled a world-changing technology it created a generation addicted to digital devices and screen media who have to this day,  yet to recover.
 
-But because I’ve been sufficiently lobotomized by algorithms, content, rage-bait, click-bait, engagement strategies, troll farms, liking, subscribing, commenting, following, clicking, scrolling, and whatever else online platforms compel me to do. 
+But because my brain has been thoroughly rotted by algorithms, content, rage-bait, click-bait, engagement strategies, troll farms, liking, subscribing, commenting, following, clicking, scrolling, and whatever else online platforms compel me to do. 
 
 But because I can’t help but think that people who don’t care about internet numbers, who don’t have online profiles, and who aren’t glued to their laptops or phones all day are actually living the good life.
 
