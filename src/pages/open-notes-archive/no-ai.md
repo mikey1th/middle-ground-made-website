@@ -12,7 +12,7 @@ layout: ../../components/open-notes-layouts.astro
 
 Not because I’m are scared of a doomsday event, the collapse of the job market, or the end of human creativity. Not because I’m a Luddite, anxiously refusing modern innovation. Not because I’m stuck in my ways and don’t see any reason to change.
 
-But because the last time Silicon Valley unveiled a world-changing technology it created a generation addicted to digital devices and screen media who have to this day,  yet to recover.
+But because the last time Silicon Valley unveiled a world-changing technology it created a generation addicted to digital devices and screen media who have to this day, yet to recover.
 
 But because my brain has been thoroughly rotted by algorithms, content, rage-bait, click-bait, engagement strategies, troll farms, liking, subscribing, commenting, following, clicking, scrolling, and whatever else online platforms compel me to do. 
 
