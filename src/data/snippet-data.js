@@ -200,76 +200,55 @@ const snippets =[
     
     },
 
-    
-    {
-        
-        text: "Purpose can give you pleasure, but pleasure can't give you purpose.",
-        id: 30
-    
-    },
-
 
     {
         
         text: "Endurance is a lifestyle.",
-        id: 31
+        id: 30
     
     },
 
     {
         
         text: "Never do whatever it takes.",
-        id: 32
+        id: 31
     
     },
 
     {
         
         text: "Become interested in becoming disinterested.",
-        id: 33
-    
+        id: 32
+
     },
 
 
     {
         
         text: "I don't know how I did it. I just did it.",
-        id: 34
+        id: 33
     
     },
 
     {
         
         text: "It's a run not a race.",
-        id: 35
+        id: 34
     
     },
 
     {
         
         text: "Plans are nice. Projects are essential.",
-        id: 36
+        id: 35
     
     },
 
-    {
-        
-        text: "When you’re broke, struggle meals are just meals.",
-        id: 37
-    
-    },
 
     {
         
         text: "Omni festinatio ex parte diablo est.",
-        id: 38
-    
-    },
-
-    {
-        
-        text: "Step in to the shrouded expanse.",
-        id: 39
+        id: 36
     
     },
 
