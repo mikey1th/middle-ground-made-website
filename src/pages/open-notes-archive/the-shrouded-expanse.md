@@ -17,6 +17,7 @@ I remember the Shrouded Expanse looming when I had to brute-force my way through
 Slowly, I began to realize that this shadowy, ominous, blob wasn’t a threat or even necessarily an omen or harbinger. I saw first-hand, that the expanse being shrouded could be a calm pristine landscape or a chaotic dangerous landfill and that more often than not, the presence of The Shrouded Expanse had nothing to do with the expanse it was shrouding. I saw first-hand that the only way to know what was on the other side, was by stepping into the landscape that was being distorted. 
 
 And after reflecting on why I created The Shrouded Expanse in the first place, I realized that as a kid, I couldn’t shrink the problems I was facing to their accurately sized proportions, and lacked enough access to people who could. So instead of the unknown being a normal fact of life, it became a force of nature. It became an outsized obstacle. It became, The Shrouded Expanse. 
-And while I still encounter The Shrouded Expanse, it’s not something I’m terrified to see coming around the bend. I’ve learned that if I can manage to step into whatever is being shrouded, the hidden landscape becomes observable, and regardless of what lies before me, I’m able to see it for what it truly is. 
+
+While I still encounter The Shrouded Expanse, it’s not something I’m terrified to see coming around the bend. I’ve learned that if I can manage to step into whatever is being shrouded, the hidden landscape becomes observable, and regardless of what lies before me, I’m able to see it for what it truly is. 
 
 
