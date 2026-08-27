@@ -38,34 +38,42 @@ const rephrases =[
         id: 6
     },
 
-    {
-        original: "A plant does not harm because it is a weed.",
-        improved: "A plant is a weed because it does harm.",
-        id: 7
-    },
 
     {
         original: "Question and Response.",
         improved: "Question the Response.",
-        id: 8
+        id: 7
     },
 
     {
         original: "I don’t have enough time for anything I want to do.",
         improved: "I don’t have enough time for everything I want to do.",
-        id: 9
+        id: 8
     },
 
     {
         original:"I’m not scared of what happens if I don’t open an investment account.",
         improved: "I’m scared of what happens if I do open an investment account.",
-        id: 10
+        id: 9
     },
 
     {
         original: "Kinda fast for a slow runner.",
         improved: "Kinda slow for a fast runner.",
+        id: 10
+    },
+
+
+    {
+        original: "I'm not doing this because I'm creative.",
+        improved: "I'm creative because I'm doing this.",
         id: 11
+    },
+
+    {
+        original: "Do right.",
+        improved: "Do, write.",
+        id: 12
     }
 
 ]
