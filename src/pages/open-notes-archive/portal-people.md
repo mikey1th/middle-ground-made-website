@@ -7,6 +7,8 @@ entry: 97
 year: 2026
 volume: 2
 layout: ../../components/open-notes-layouts.astro
+series: 2-2
+
 
 ---
 
