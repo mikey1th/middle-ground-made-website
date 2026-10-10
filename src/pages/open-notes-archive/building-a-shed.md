@@ -19,7 +19,7 @@ But in the thick of what exactly? The thick of all the negative emotions this sh
 
 Honestly, If I had known just how thick the thick of it would be, I would have never broken ground. I would have never started saving reference photos. Instead, I would have bought a plastic kit or a pre-manufactured building right off the lot. But now, those options are off the table, and the thick of it is all that remains. The fear, the paralyzation, the sense of doubt, the unwanted obsession, the sense that I am doing something deeply wrong, the unbalanced equation drawn from trading so much for what feels like so little. 
 
-And now I don’t know what to do except to finish this damn thing, to keep taking one step after another into the shrouded expanse that is building this fucking shed and to write about this experience, to get it all out, to escape the thick of it by introducing the thinness of considerate prose. To do what I love, even though completing that which I have honestly grown to hate requires more of my time and energy.
+And now I don’t know what to do except to finish this damn thing, to keep taking one step after another into the shrouded expanse and to write about this experience, to get it all out, to escape the thick of it by introducing the thinness of considerate prose. To do what I love, even though completing that which I have honestly grown to hate requires more of my time and energy.
 
 
 
