@@ -3,7 +3,7 @@
 title: "Building a Shed"
 date: "10.26"
 number: "101"
-entry: 100
+entry: 101
 year: 2026
 volume: 2
 layout: ../../components/open-notes-layouts.astro
