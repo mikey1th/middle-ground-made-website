@@ -5,7 +5,7 @@ date: "10.26"
 number: "103"
 entry: 103
 year: 2026
-volume: 3
+volume: 2
 layout: ../../components/open-notes-layouts.astro
 series: 3-3
 
