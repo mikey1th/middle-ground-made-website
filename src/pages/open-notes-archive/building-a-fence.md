@@ -2,8 +2,8 @@
 
 title: "Building a Fence"
 date: "10.26"
-number: "106"
-entry: 106
+number: "107"
+entry: 107
 year: 2026
 volume: 2
 layout: ../../components/open-notes-layouts.astro
