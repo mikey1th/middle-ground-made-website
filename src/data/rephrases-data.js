@@ -74,6 +74,12 @@ const rephrases =[
         original: "Do right.",
         improved: "Do, write.",
         id: 12
+    },
+
+    {
+        original: "I'm not a working man.",
+        improved: "I'm working, man.",
+        id: 13
     }
 
 ]
