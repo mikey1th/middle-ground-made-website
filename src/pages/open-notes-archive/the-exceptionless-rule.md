@@ -10,7 +10,7 @@ layout: ../../components/open-notes-layouts.astro
 
 ---
 
-The rule, is that all rules have exceptions. But there are exceptions to this rule. So if we look hard enough we will eventually find tried and true “exception-less” rules.
+Although the rule is that all rules have exceptions, if we look hard enough we will eventually find rules that cannot be contradicted, rules that are truly  “exception-less.”
 
 One of these exception-less rules was discovered by Victor Frankl, a Jewish psychologist who was sentenced to four concentration camps. In essence, Frankl discovered that without exception—there are only two “races” the "race" of the decent man and the "race" of the indecent man, and in every group both can be found.
 
