@@ -80,6 +80,12 @@ const rephrases =[
         original: "I'm not a working man.",
         improved: "I'm working, man.",
         id: 13
+    },
+
+    {
+        original: "If you don't take shit serious.",
+        improved: "You'll be in serious shit.",
+        id: 14
     }
 
 ]

@@ -259,6 +259,13 @@ const snippets =[
     
     },
 
+    {
+        
+        text: "Go where good is good enough.",
+        id: 38
+    
+    },
+
 
 
 
