@@ -13,7 +13,9 @@ series: 1-3
 ---
 
 Although I will never believe that voting or politics will utopianize the modern world, I no longer think it’s completely useless. 
-I’ve turned a corner for two reasons. First, if the political apparatus was as useless as it seems, why would the sili-brained billionaires even bother buying off politicians. If investing in the political system didn’t work, the most wealthy among us wouldn’t be interested. 
+I’ve turned a corner for two reasons.
+
+First, if the political apparatus was as useless as it seems, why would the sili-brained billionaires even bother buying off politicians. If investing in the political system didn’t work, the most wealthy among us wouldn’t be interested. 
 
 Second, hundreds of thousands of years of following Natural Law has led us here—to politics, to voting cycles, to fake laws, to creating policies, to layers of management, to government offices. If Natural Law was the best way of managing society we probably wouldn’t have abandoned it. After generations of pillaging each other’s homes, stealing each other’s livestock, and taking matters into our own hands maybe we decided a political system was, in the end, a better arrangement. 
 
