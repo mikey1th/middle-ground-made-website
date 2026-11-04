@@ -1,7 +1,7 @@
 ---
 
 title: "Thoughts on Voting"
-date: "10.26"
+date: "11.26"
 number: "110"
 entry: 110
 year: 2026
