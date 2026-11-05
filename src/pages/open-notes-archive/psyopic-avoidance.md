@@ -24,7 +24,7 @@ What’s more, I think if I benefitted from the current political and legislativ
 
 And this sinister plot hatched by those who benefit from the way things are has achieved everything it was designed to do. Most Americans don’t vote. Most Americans think politics are broken beyond repair. Most Americans get systemically shit on by the “people” who “represent” them. Most Americans are barely getting by. Most Americans don’t realize that their avoidance of the lever is exactly what keeps them pinned down. 
 
-But seeing the strategy is only half the battle. The other half is deciding to pull the lever. The other half is deciding to wade into the shit-filled waters occupied by ghouls whose flesh is barley connected to the rest of their bodies. The other half is deciding to do something even while we recover from our psyopic avoidance . 
+But seeing the strategy is only half the battle. The other half is deciding to pull the lever. The other half is deciding to wade into the shit-filled waters occupied by ghouls whose flesh is barley connected to the rest of their bodies. The other half is deciding to do something even while we recover from our psyopic avoidance. 
 
 
 
