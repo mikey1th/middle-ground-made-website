@@ -266,6 +266,12 @@ const snippets =[
     
     },
 
+    {
+        
+        text: "By perseverance the snail reached the ark.",
+        id: 39
+    
+    }
 
 
 
